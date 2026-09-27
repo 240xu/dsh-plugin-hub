@@ -8,7 +8,7 @@ DeepSeek Harness（DSH）插件安装总览：本机全部插件的**一键安�
 
 ---
 
-## 1 · 自维护插件（GitHub 可装）
+## 1 · 自维护插件（npm / GitHub 均可装，v2026-09-27 起全量上架 npm）
 
 ### @240xu/dsh-message-ops · 消息回滚/删除/分支三合一
 会话头部按钮 + 侧栏菜单打开统一操作对话框：**回滚**（surface replace 遮蔽所选消息及之后全部，append-only 可恢复）、**删除**（仅遮蔽一条）、**分支**（从任意消息 fork 新会话，`parentSession` 关联，零破坏）。零 npm 依赖，Node ≥ 23.5。
@@ -20,8 +20,8 @@ dsh plugin --profile web add @240xu/dsh-message-ops
 # Windows
 dsh plugin --profile web add @240xu/dsh-message-ops
 # 或本地目录（双端通用写法）
-dsh plugin --profile web add file:C:/path/to/dsh-message-ops   # Windows
-dsh plugin --profile web add file:/path/to/dsh-message-ops     # Termux
+dsh plugin --profile web add @240xu/dsh-message-ops   # npm 已发布，双端同命令
+
 ```
 
 ### @240xu/dsh-websearch · 统一网页搜索
