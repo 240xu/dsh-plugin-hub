@@ -148,3 +148,20 @@
 - 官方 patch 语义 `@deepseek-ai/cordis-plugin-include/lib/index.js:48-112`（applyEntryPatches：insert 索引递增、warn-and-skip、name 不匹配拒绝）
 - npm：`@linxin666/dsh-web-all` 24 版（2026-08-24 → 09-26），latest 0.4.3，deps 精确锁 0.4.3（3 个 `^0.4.3`），0.4.x 已移除 dsh-better-sidebar 依赖
 - `https://dsh-market.com/manifest/plugins.json`（实测条目契约）
+
+---
+
+## 附：专家组讨论结论（2026-09-27，四位插件负责人逐一会签）
+
+**共识：采纳「meta 包 @240xu/dsh-suite 依赖聚合」方案**，附两条修订：
+
+1. **版本策略修订（websearch 负责人 + msgops 负责人）**：suite 对成熟子包用 `^` caret 区间（如 `^2.7.0`）而非精确锁版，或以 peerDeps 声明兼容区间——避免锁版列车卡紧急修复（restore 引擎拼写跟随、安全 fix 先发子包再随列车收编）。
+2. **幂等注册修订（devkit 负责人）**：`window.__dshDevkit.registerCommand` 对同 id 重复注册改为**幂等去重 + console.warn**（而非 throw），防 suite+standalone 并存双装载撞车；suite 内 devkit 只装一份避免路由冲突。
+
+各子包评估结论：
+- **message-ops**：无技术障碍（inject 空、tools 容错、`/api/message-ops/*` 前缀唯一）；apply 全路径 try/静默，纯函数核心不拖死 suite 启动；patch id `x240-` 对齐属一次性迁移。
+- **websearch**：设置项都在 unified-search namespace，cache/history 走 `$DSH_HOME/cache/websearch`（suite 壳不触碰，多实例同机共享缓存反而受益）；全部 fail-open，壳隔离等同功能关闭，主路径不受影响。
+- **session-lazy-view**：路由全挂 `/lazyview` GET-only、零跨包 import 面，无 archive-manager 式被移除依赖暴露面；仅需保证 package.json files 清单齐全；接受列车节奏。
+- **devkit**：低风险（registry 快照渲染 + deferred inject 容忍服务晚到）；子包晚注册的命令下次打开面板可见，属可接受弱耦合。
+
+**遗留决策点**：suite 精确锁版 vs caret 区间——两派意见（agg-researcher 主张精确锁版防漂移，websearch/msgops 主张 caret 保迭代）折中为「**主包 ^ 区间 + CI 冒烟测试守门**」，待 W1 冲刺落地时定稿。
