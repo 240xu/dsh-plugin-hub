@@ -92,3 +92,14 @@ dsh plugin --profile web add file:/path/to/plugin
 ```
 
 要求：Node ≥ 20（用到 zstd 的插件需 ≥ 23.5）；所有 @240xu 插件零原生依赖，Windows / Termux / Linux 行为一致。
+
+## 6 · 一键聚合全家桶：@240xu/dsh-suite
+
+不想一个个装？[240xu/dsh-suite](https://github.com/240xu/dsh-suite) 聚合包一条命令装齐五个自维护插件
+（websearch / message-ops / session-lazy-view / devkit / session-search），**shell 故障隔离**——
+任一子插件损坏只降级该行（`/api/dsh-suite/degraded` 可查），其余照常；逐行 disable 即回滚，
+standalone 安装与 suite 共存无冲突（已实测故障注入 + 共存矩阵）。
+
+```sh
+dsh plugin --profile web add @240xu/dsh-suite    # 双端同命令
+```
