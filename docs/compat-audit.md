@@ -136,3 +136,14 @@ dsh 已升级 0.2.0-rc.2（npm latest=next）。实测结论：
 - **websearch 2.7.3 双分支守卫在 0.2.0 实测生效**：installSection 缺失 → console.warn + cordis config 继续可用（日志实证）。
 - **第三方插件跳过清单**（0.2.0 版本门）：session-delete 0.3.1、chat-import 0.11.0、archived-sessions 0.1.2、message-rail 0.1.7、agent-alliance 0.1.0——均为上游 peerDeps 未跟进，需上游或 allow-version 豁免。
 - **settings 线**：0.2.0-rc.2 dsh-settings 仍是 SettingsForms（0.1.7 线延续）。
+
+## 追加 2（2026-09-30）：suite 模式下子包 patch 不加载（架构发现）
+
+实测（suitetest + suite 0.1.2）：子包自带的 cordis.patch.yml 在 suite 模式下**不会被读取**
+（loader 只执行 bundle 行（= suite）声明的 patch——suite 的 cordis.patch.yml；嵌套依赖的
+patch 文件不在加载面）。影响：子包的 patch 级功能（websearch 的 web 入口 auto-wire、设置段
+注入等）在 suite 模式下静默丢失。
+
+**处置**：suite 0.1.2 在自身 patch 补上 web 入口 override 行（searchProvider: unified）——
+suite 用户自动接线。原则：**suite 的 patch 必须显式覆盖全部子包的 patch 级需求**，新子包
+进 suite 时逐项核对（已写进 suite README 待办）。standalone 模式不受影响（子包自带 patch 正常执行）。
