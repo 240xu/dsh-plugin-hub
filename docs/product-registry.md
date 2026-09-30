@@ -136,3 +136,58 @@
 - **用户信号**：REQ-1「要查多查全」登记需求表并转化为产品语言；UPB-1 销账；UPB-2 复查仍未修复。
 - **销账 3 项**（证据见各包条目）：devkit 死命令 ✅（0.2.2 探测式派发 + websearch 2.7.1 ack 事件，lead 通报实测通过）、websearch CHANGELOG 断档 ✅（2.5.0–2.7.3 已补全至 2.0.5 无断档）、websearch 一键接线 ❌（README.md:59-65 仍手改指引，仍开放）。
 - **R2 断点计数：UPB 开放 1 个（UPB-2）+ 开放断点 4 条（websearch 接线、websearch history 出口、message-ops restore UI、devkit 发包/截图）+ OB-1 持续。无新增用户可感知断点。**
+
+
+---
+
+## 四、自研插件全量清单（2026-09-30 核实版）
+
+### A. 核心六包（npm + GitHub 双发布，suite 聚合覆盖）
+
+**1. @240xu/dsh-websearch 2.8.0** — 统一网页搜索
+- 职能：11 后端并发扇出（Exa/Parallel/DDG/SearXNG 免钥 + DeepSeek/Anthropic/OpenAI/Brave/Tavily/Serper/Mojeek 需钥）、URL 去重、可选重排、逐后端健康遥测
+- 查全查多：multiQuery 复杂查询派生 ≤3 变体 + RRF(k=60) 融合；deepCoverage 条数×1.5 + Tavily advanced/SearXNG 多类目/Exa category 推断
+- 稳定性：磁盘结果缓存（TTL 900s/LRU 200）、后端熔断（3 败→60s 冷却，全冷却 fail-open）、ddg/searxng 5s 超时上限
+- 系统性提示词：查询整形（剥寒暄/1500 字符钳制）、双语结果呈现头（要求逐条引用 URL）
+- 端点：GET /api/websearch/history（含 backends 观测）、POST /history/clear、GET /api/unified-search/health
+- 设置项：11 项（后端开关/keys/numResults/rerank/cache/breaker/history/multiQuery/deepCoverage）
+
+**2. @240xu/dsh-message-ops 0.2.4** — 消息回滚/删除/分支/导出
+- 职能：surface replace 语义（append-only 可恢复）的回滚（遮蔽尾部）/单条删除（遮蔽单条）/恢复（重放语义——引擎无 unshadow）；磁盘级分支 fork（parentSession 关联）；Markdown 导出
+- agent 工具：message_ops（list/revert/delete/branch/restore/export，容错注册）
+- UI：头部按钮 + 侧栏行菜单 + 统一对话框（消息列表可见性标注、风险确认、分批渲染 50 条/页）
+- 端点：GET messages、POST revert/delete/branch/restore、GET export
+- 兼容：v4/v3/legacy 三代会话格式、dsh 0.1.x/0.2.0 双线、Windows/Termux
+
+**3. @240xu/dsh-session-lazy-view 0.3.3** — 会话惰性查看器（纯只读）
+- 职能：stat-only 列出全部会话；只解压末尾 N 帧秒开大会话；会话内全文搜索（流式+可中止）；统计（fast/full）；Markdown 导出；Timeline 时间线视图（turn 分组折叠 + Go-to-Message 深链 /lazyview?session=&seq= + 遮蔽标注）
+- 端点：GET /lazyview（面板）、/api/list、tail、search、stats、export
+- 可访问性：44px 触控、aria-live、键盘可达折叠头
+
+**4. @240xu/dsh-devkit 0.2.3** — VS Code 式开发者体验（侧边栏零占用）
+- 职能：Ctrl+K 命令面板（>/#/@ 模式前缀 + MRU 最近使用）、和弦快捷键（Ctrl+K Ctrl+S 速查表）、Toast 标准件（aria-live/reduced-motion）、dev info 面板、开放贡献点 registerCommand/toast（同 id 幂等去重）
+- 端点：GET /api/devkit/commands、/api/devkit/health
+- 兼容：0.1.5/0.1.7/0.2.0 三代宿主（settingsScope feature-detect 由 websearch 侧对等实现）
+
+**5. @240xu/dsh-session-search 0.1.4** — 跨会话全文搜索
+- 职能：增量索引全部会话消息（mtime+size 门控，缓存 $DSH_HOME/cache，零写 sessions）；子串搜索（mtime 新→旧、±60 窗口 snippet、project 过滤）；独立面板页（深链 /lazyview?session=&seq= 直达 Timeline）
+- agent 工具：session_search（容错注册）
+- 端点：GET /api/session-search、/refresh、/panel、/health
+- 实测：185 会话首建 1.5s，中文/英文/project 过滤全过
+
+**6. @240xu/dsh-suite 0.1.2** — 一键聚合全家桶
+- 职能：一条命令装五包；shell 壳故障隔离（单行失败只降级自己，degraded 端点可查）；逐行 disable 回滚；web 入口自动接线（searchProvider: unified）；caret 区间随子包演进
+- 已验证：真实 pnpm 布局端到端 + 故障注入隔离 ×2（symlink 与 .pnpm 双布局）
+
+### B. 治理与配套（npm 发布、独立启用）
+
+- **@240xu/dsh-tech-lead 1.0.0**（bundle 0.3.1 / plugin 0.3.1 / core 0.3.0）：技术负责人生命周期 21+ 只读工具（classify/state/plan/evidence/gates/release/install-audit），零写入零子进程
+- **dsh-themis 1.5.0**：治理仲裁扩展（23 工具 + capability discovery）——注意 0.2.0-rc.2 下 peerDeps 待跟进（当前被版本门跳过）
+
+### C. 本机在用的第三方（非自研）
+
+session-delete 0.3.1（@huanlin，会话删除——0.2.0 版本门跳过中）、chat-import 0.11.0（240xu fork 维护，同跳过中）、archived-sessions 0.1.2、message-edit、message-rail、better-sidebar 0.24.1、openviking memory（0.2.0 跳过）、opencode-go-quota 0.3.2
+
+### D. 实验室/历史（不随 suite 发布）
+
+dsh-true-revert 0.1.0（回撤实验源，已并入 message-ops）、dsh-settings-scope-shim（0.1.5/0.1.7 兼容垫片，按需启用）、dsh-opencode-go-quota（GLFzr 原作本地版）
