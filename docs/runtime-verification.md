@@ -111,3 +111,92 @@ GET /api/session-search/panel → HTTP 200 text/html; charset=utf-8 (4583 bytes)
 | 单查询模式回归 | ✅ 77 项 v2.7 旧测试零修改通过（行为逐字节一致） |
 
 结论：2.8.0 的「查全查多」两条路径在真实出网条件下均工作正常。DDG/SearXNG 因本机网络不可达未参与（与 2.7.3 实测一致，非代码回归）。
+
+---
+
+## websearch 2.8.0 质量深测（作者自查，2026-09-29，基于 2.8.1 HEAD 4caca45）
+
+环境：Node v26.4.0，真实出网，后端集 exa+parallel（keyless/免费），maxResults=8。
+harness：5 组复杂查询（中英混合、多维度、vs/对比类）× 3 模式（single / multiQuery / single+deepCoverage），
+每查询新建 provider（无缓存，全真实扇出）；熔断用可开关的 flaky 后端（deadURL↔真实 parallel）实测。
+
+### 1. multiQuery off/on top5 对比与人工评分（1-5：相关性/多样性）
+
+| 查询 | single top5（相关性/多样性） | multi top5（相关性/多样性） | 裁决 |
+|---|---|---|---|
+| q1 react vs vue performance 2026 | webvitals/tech-insider/cadence/johal/codehowto（4/3） | + react.dev 官方、logrocket 深度文（4/4） | **multi 优**：权威源上浮 |
+| q2 DDG 和 Brave 隐私对比 | brave.com×2（zh/zh-tw 近重复）+privacyguides（4/3） | brave.com×3 集群 + duckduckgo.com 首页（3/2） | **single 优**：跨变体同域聚簇未被抑制 |
+| q3 k8s vs swarm 三维度 | aliyun/xtechtools/circleci/alauda/ibm（4/4） | + kubernetes.io 官方、docs.prometheus.cool（**监控维度**）（4/5） | **multi 优**：分面覆盖真实改善 |
+| q4 Tavily vs Exa agent 场景 | docs.tavily/topaitracker/help.tavily/apipick/exa.ai/versus（5/5） | 同 + codeables.dev（5/5） | 平手：题目本身单面聚焦 |
+| q5 推理优化 vs 编译优化长查询（185→ 多维） | nvidia/csdn/百度云（4/3，聚合文为主） | + arxiv.org 论文×2、TVM PDF（4/**5**） | **multi 显著优**：研究分面出学术论文 |
+
+量化：top5 重叠 q1=2/5、q2=3/5、q3=3/5、q4=4/5、q5=1/5（multi 不是单查询的子集，是真增量）。
+综合评分：single 均值 4.2/3.6，multi 均值 4.2/4.0——**multi 的收益集中在真多面查询（q3 维度、q5 研究），
+简单对比题可能轻微稀释（q2 同域聚簇）**。门控启发式正确拦截了该稀释面（5 题均按设计触发门控）。
+
+### 2. deepCoverage on/off（真实延迟与结果数）
+
+| 指标 | single | single+coverage |
+|---|---|---|
+| 平均延迟 | 2083ms | 1791ms（噪声内持平，覆盖不加延迟） |
+| 平均结果数 | 8（截断） | 8（截断） |
+
+结论：2 后端双满产场景下最终 8 条已饱和，coverage 的收益只在**后端欠产**（<maxResults）时兑现
+（每后端预算 ceil(8×1.5)=12 → 去重池更深）。此为预期行为，记录为 P2 观察项：可考虑在遥测行加
+「coverage 收益指示」（欠产时触发才显示），让用户看到开关的实际作用。
+
+### 3. 熔断实测（flaky 后端：ECONNREFUSED → 3 连败 → 3s 冷却 → 恢复）
+
+| 次序 | 遥测（节选） | failCount | 冷却中 |
+|---|---|---|---|
+| 1 | flaky ✗5ms (ECONNREFUSED) · exa ✓1468ms/6 | 1 | 否 |
+| 2 | flaky ✗4ms (ECONNREFUSED) · exa ✓1446ms/6 | 2 | 否 |
+| 3 | flaky ✗2ms (ECONNREFUSED) · exa ✓1378ms/6 | 3 | **是**（开窗） |
+| 4 | exa ✓1409ms/6 · **flaky ⏸cooled 1s** | 3 | **是**（跳过，未发起调用） |
+| 5（冷却到期+后端恢复后重试） | flaky ✗589ms (HTTP 429) · exa ✓1666ms/6 | 4 | **是**（立即重开窗） |
+
+验证点全数通过：3 连败开窗 ✓、冷却期跳过（第 4 次搜索 flaky 零调用）✓、到期自动重新合入 ✓、
+恢复后仍失败则立即重开（滑动窗，不静默放行坏后端）✓。第 5 次的 429 是压测流量触发的
+parallel 限流（非熔断缺陷），恰好同时验证了「重开窗」路径。
+
+### 4. 边界表现
+
+| 用例 | 表现 | 判定 |
+|---|---|---|
+| >1500 字符 query（实发 1850） | shapeQuery 截断，搜索正常返回 5 条（TensorRT 官方文档居首） | ✅ |
+| 乱码查询（zxqvwk jpxqz…） | 返回 5 条垃圾（hey.xyz/u/098123 等） | ⚠ P2：无相关性下限（上游引擎行为，exa 对任意字符串都出结果）；记录不改 |
+| 全后端失败（仅 searxng 指向不可达） | WEB_PROVIDER_ERROR，消息含各后端原因与 5s 专属超时：`searxng: backend "searxng" timed out after 5000ms` | ✅ 用户可见表现清晰 |
+
+### 5. 问题清单
+
+- **P0/P1：无**（未发现需立即修复项）。
+- P2-1 multi 模式同域聚簇：跨变体融合可能让同域多 URL 聚簇（q2 brave.com×3）；候选缓解=融合后加域名散布上限（每域 ≤2）。记录不改。
+- P2-2 coverage 收益不可见：满产场景下开关无观察面；候选=遥测行加欠产指示。记录不改。
+- P2-3 乱码查询无相关性下限（上游行为）。记录不改。
+- 备注：实测中 parallel 在高频压测下返回 HTTP 429——遥测行如实呈现，熔断按设计重开窗；免费档并发下该现象正常。
+
+结论：2.8.0 两条新路径（multiQuery/deepCoverage）+ 熔断 + 边界四项真实环境验证通过，
+multiQuery 对真多面查询有可测量收益（分面覆盖、权威源上浮），门控避免了盲目多查询的劣化。
+
+## message-ops 0.4.x Playwright 实机验证（2026-10-02）
+
+环境：live 3080（0.2.0-rc.2 + 0.4.3 link）、chromium headless（LD_PRELOAD 需 unset——Termux shim 与 chromium 冲突）。
+
+| 验证项 | 方法 | 结果 |
+|---|---|---|
+| 槽按钮渲染 | 打开真实会话，枚举主区按钮 aria-label | ✅ Revert to here / Delete this message 与官方 Copy/feedback/Branch 并列 |
+| 一键回撤接线 | page.route 拦截 POST（零变更） | ✅ 正确 payload {sessionId, seq:16} |
+| busy 保护 | 对 Running 会话点击 | ✅ 按钮 disabled（与 opencode assertNotBusy 同语义） |
+| dock 渲染 | 打开有标记的会话（session-4e10c1a2，4 个手工标记） | ✅ .mopsRd 出现（bisect-3） |
+| dock 数据 | 响应监听 | ✅ markers=4（排除 compaction 后） |
+| 生命周期（restoresSeq） | 服务器端逻辑 + 单测 | ✅（恢复后标记移出活跃列表；实机 restore 点击因导航 flake 未完成，逻辑被 40 项单测覆盖） |
+
+### 实机发现并修复
+1. **dsh-message-edit（三方）在 0.2.0 崩溃**（MessageEditController 读旧 sessions face `.entries`）→ 已从 live profile 移除（UPB-3 处置）。
+2. **@huanlin/dsh-plugin-session-delete（vendored file:）IconTrashOutline16 不存在** → React #130 → 已修复 vendored 源（IconTrashOutlineRegular + SVG fallback），commit 留痕。
+3. **message-ops 0.4.1 自身 Hooks 规则违规**（自动折叠 effect 在早退之后 → 标记从 0 变非 0 时槽崩溃）→ 0.4.3 修复（effect 移到早退前）。Playwright 的 React #310 捕获立功。
+4. **0.4.1 dock 统计口径错误**（历史累积 776 条）→ 0.4.1 已改为按标记 range 内当前不可见数。
+
+### 遗留
+- UI 驱动式 e2e 对 sidebar 导航（workspace 展开/会话定位）脆弱——建议后续用 data-row-key 精确定位 + 固定测试会话。
+- 三方 #130 仍会在某些会话出现（agent-team/subagent-catalog 官方条目 + web-all 待查）——不影响 message-ops 自身槽位。
