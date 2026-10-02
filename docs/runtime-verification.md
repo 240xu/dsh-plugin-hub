@@ -200,3 +200,10 @@ multiQuery 对真多面查询有可测量收益（分面覆盖、权威源上浮
 ### 遗留
 - UI 驱动式 e2e 对 sidebar 导航（workspace 展开/会话定位）脆弱——建议后续用 data-row-key 精确定位 + 固定测试会话。
 - 三方 #130 仍会在某些会话出现（agent-team/subagent-catalog 官方条目 + web-all 待查）——不影响 message-ops 自身槽位。
+
+## MCP exa 间歇性不可用排查（2026-10-02，用户报告 mcp__exa__* 时有时无）
+
+- 来源：web profile cordis.patch.yml 的 `mcp-exa-search`（dsh-mcp-client → https://mcp.exa.ai/mcp，streamable-http）。
+- 实测：端点本身稳定可达（405 GET-not-allowed，<2s，连续 3 次）；但 boot 日志里 `mcp-exa-search tools` 注册行**只在部分 boot 出现**（近期 17:58/19:19 两次 boot 均缺失）→ 连接在 dsh 启动期握手失败后**不会重试**，工具整轮缺失直到下次 boot。
+- 根因候选：①dsh 启动早期网络栈未就绪（Termux 出口晚于服务监听）；②streamable-http 会话握手一次失败即放弃。
+- 缓解建议：a) 给 dsh-mcp-client 加连接重试（上游功能请求）；b) 用户侧快速恢复 = 重启 dsh web；c) 把 mcp-exa-search 的 url 换成带重试的本地代理（可选）。
