@@ -207,3 +207,8 @@ multiQuery 对真多面查询有可测量收益（分面覆盖、权威源上浮
 - 实测：端点本身稳定可达（405 GET-not-allowed，<2s，连续 3 次）；但 boot 日志里 `mcp-exa-search tools` 注册行**只在部分 boot 出现**（近期 17:58/19:19 两次 boot 均缺失）→ 连接在 dsh 启动期握手失败后**不会重试**，工具整轮缺失直到下次 boot。
 - 根因候选：①dsh 启动早期网络栈未就绪（Termux 出口晚于服务监听）；②streamable-http 会话握手一次失败即放弃。
 - 缓解建议：a) 给 dsh-mcp-client 加连接重试（上游功能请求）；b) 用户侧快速恢复 = 重启 dsh web；c) 把 mcp-exa-search 的 url 换成带重试的本地代理（可选）。
+
+### 遗留说明（dock 实机 restore 点击）
+- 实机「真实 revert→dock→restore」闭环的最后一步依赖模型回复（slot 按钮只在 AI 消息上），
+  当前 mimo-v2.6-flash-free 持续无响应（request/header=1、0 assistant 消息），环境阻塞而非产品逻辑。
+  逻辑已被 40 项单测 + 拦截式接线测试 + dock 渲染测试（bisect-3）覆盖；模型恢复后一键即可复核。
