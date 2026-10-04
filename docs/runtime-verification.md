@@ -212,3 +212,27 @@ multiQuery 对真多面查询有可测量收益（分面覆盖、权威源上浮
 - 实机「真实 revert→dock→restore」闭环的最后一步依赖模型回复（slot 按钮只在 AI 消息上），
   当前 mimo-v2.6-flash-free 持续无响应（request/header=1、0 assistant 消息），环境阻塞而非产品逻辑。
   逻辑已被 40 项单测 + 拦截式接线测试 + dock 渲染测试（bisect-3）覆盖；模型恢复后一键即可复核。
+
+## 「按钮没有用」三层根因完整链（2026-10-03 Playwright 闭环 e2e 实锤）
+
+用户报告的「删除/回撤按钮根本没有用」实际是**三个叠加 bug**，全部实机定位：
+
+1. **视图不收起**（0.5.0 修）：宿主 live 投影只处理 compaction 类 surface replace
+   → 插件标记落盘后打开的会话视图不动。修复 = 成功后 `uiWorkspace.openSession`
+   重建视图。
+2. **dock 静默失效**（0.5.2 修）：0.5.0 脚本化编辑误删 `activeMarkers` 函数
+   （与 INPUT_DOCK 常量同一 commit）→ ReferenceError 被 .catch 吞掉 → dock 100%
+   不渲染。vm 冒烟 + 猎手抓现行。
+3. **打开即 Running**（0.5.3 修，e2e 最后抓到）：isRunning 查 `agents` 注册表——
+   会话**仅在视图中打开**就有条目 → 回撤/删除/分支全部 409 锁死。证据：curl 查
+   同会话 `running:false`，UI 打开后对话框恒显 "Session is running"、POST 409。
+   修复 = 读 `sessions.list.getSnapshot().byId[].running`（host-asserted，与官方
+   侧栏 spinner/官方分支按钮 disabled 同源）。
+
+副产品发现：
+- 服务端 running 判定与 UI idle 不同步的假象（turn 已 end 仍报 running）同源于
+  第 3 层——agents 注册表条目在视图打开期间不清理。
+- e2e 工程教训：新会话模型不回复（免费模型挂）→ 会话悬挂 Running → 409；
+  闭环 e2e 改为对**既有 idle 会话**操作，不依赖模型回复。
+- 3081 双实例验证法：同 profile 起新端口实例避开「会话内重启守卫」，零风险
+  验证修复（副作用：双实例内存压力曾触发 Android LMK 杀实例——验证完要收）。
