@@ -30,3 +30,19 @@ docs/dsh-mechanics/
 - 每条结论必须带**代码证据**（文件名 + 函数/片段），不写"应该/大概是"。
 - 实测结论（Playwright / API）与源码结论分开标注。
 - 如果某个结论在后续 DSH 版本变化，新开目录并在 `00-overview.md` 里标注差异。
+
+## 本地归档（远端不可达时的兜底）
+
+GitHub 推送在本机网络下经常失败；为保证"历史版本翻得到"，每个版本的研究册
+额外打一份本地快照：
+
+```
+.archives/dsh-mechanics-<dsh-version>-<date>.tar.gz
+```
+
+恢复方式：`tar -xzf .archives/dsh-mechanics-v0.2.0-rc.2-*.tar.gz`
+或 `git checkout mech-v0.2.0-rc.2`。
+
+| 快照 | DSH 版本 | 状态 |
+|---|---|---|
+| `dsh-mechanics-v0.2.0-rc.2-20261006.tar.gz` | 0.2.0-rc.2 | 首版（6 篇：overview/surface/persistence/slots/server-api/constraints） |
