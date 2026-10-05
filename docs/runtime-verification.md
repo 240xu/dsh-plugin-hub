@@ -236,3 +236,31 @@ multiQuery 对真多面查询有可测量收益（分面覆盖、权威源上浮
   闭环 e2e 改为对**既有 idle 会话**操作，不依赖模型回复。
 - 3081 双实例验证法：同 profile 起新端口实例避开「会话内重启守卫」，零风险
   验证修复（副作用：双实例内存压力曾触发 Android LMK 杀实例——验证完要收）。
+
+## 四层根因链完整版（2026-10-04 追记：0.5.4–0.5.8）
+
+「点回撤把 dsh 打死 / 永远失败」的完整真相（Playwright + 包装退出码 + 金标准
+事件镜像 实机定位，全部已修复发布）：
+
+| 层 | 症状 | 根因 | 修复 |
+|---|---|---|---|
+| 1 | 视图不收起 | 宿主 live 投影只处理 compaction 类 surface replace | 0.5.0 openSession 重建 |
+| 2 | dock 100% 不渲染 | 0.5.0 脚本编辑误删 `activeMarkers`（ReferenceError 被 .catch 吞） | 0.5.2 还原 |
+| 3 | 打开即 409 锁死 | isRunning 查 agents 注册表「有条目=running」；官方是 `status==="running"`（api-session-controller:1877） | 0.5.3/0.5.5 官方同源 |
+| 4 | **点一次 revert 整个进程 exit=1**（浏览器只见 Failed to fetch；此前所有「实例无故死亡」全是它） | 0.2.0 收紧 v4 行准入：system/message 必须带正整数 `data.turn/step` + 非空 `message.id`；持久层 `encodeEventBatch` 抛的 SessionFormatError **无任何层捕获 → fatal** | 0.5.4+0.5.5 `deriveTurnStep`（尾部回溯，兜底1/1）+ `randomUUID` id；包装器退出码 1 → 修后存活 |
+| 5 | store-miss → 404 not in registry | lazy-view 会话只在磁盘渲染、不进对象层；服务端无 retain 面 | 0.5.7 **磁盘帧追加路径**（镜像引擎金标准事件，等价 appendLines：encode→open('a')→sync+回滚）；0.5.8 修 `++now` const 赋值 |
+| 6 | dock 死按钮（空区间恒 409） | 遮蔽区间只有 tool/system 事件时无可重放 → 拒绝恢复 → 标记永驻 | 0.5.6 空计划 + 停用 notice（restoresSeq） |
+
+终验（e2e-loop3081 两次全通过 + 服务端断言）：revert `200 disk:true` → dock
+label 渲染 → restore `200`（重放/停用两形态）→ **active 标记 0 → dock 消失** →
+`[恢复]` 重放内容在日志、进程存活、插件零错误（仅官方 task-board 404）。
+
+工程教训：
+- **包装退出码**（run3081-wrapped.sh 记录 `$?`）是区分 LMK/JS崩溃/native 的唯一手段；
+  exit=1 + 栈 → JS fatal；无包装时 exit code 不可见，会误判 LMK。
+- e2e 对话框定位必须锁定「含 pick radio 的 role=dialog」——dblclick 会话行会弹出
+  官方「Rename session」对话框抢 `querySelector('[role=dialog]')`。
+- 侧栏行定位天然 flaky（分页 Show more / 列表重排 / 折叠态），devkit 切换浮层
+  是更稳的通道（本轮 devkit 浏览器侧未挂载 → 侧栏轮询兜底仍可用）。
+- 金标准镜像法：磁盘写新事件前，先从现有日志反解引擎亲手写出的同类事件，
+  逐键对照（根键序/3键 replace op/重放无 id）——比读类型定义快且不会漏版本差异。
