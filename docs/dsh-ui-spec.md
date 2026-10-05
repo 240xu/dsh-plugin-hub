@@ -127,3 +127,30 @@ V1-V8 全部仍开放（见 r2-fe.md）。新增：
 - **V9**：Timeline 折叠组在 360px 的展开/收起触控与 aria-expanded 表现（修 G-L1 后验证）。
 - **V10**：Go to Message 深链端到端：session-search 结果 → lazy-view Timeline 高亮可见（修 G-L2/G-S2 后验证）。
 - **V11**：message-ops "显示更多"渐进展开在 200 条大会话上的滚动流畅度（替代原 V4 的部分目标）。
+
+---
+
+# 修订 0.2.0 · S13 槽内 UI 规范 + GAP 增量（ui-deep 轮）
+
+## S13 · conversation.chat.assistant-actions 槽内按钮规范（message-ops 0.3.x 首个实战）
+
+> 依据：0.2.0 编译产物内原生 action strip 的真实 CSS（ui-chat `.xzv4MW_actions`/`.xzv4MW_action`）与官方 occupant（message-feedback，id 'feedback'，order 10）的实现逐字提取；槽声明见 runner key 目录（ownerProps 仅 `messageId`）。
+
+- **S13.1 尺寸与命中区**：跟随原生 strip 而非 S3——按钮 `calc(28px + var(--dsh-content-font-delta,0px))` 见方、`padding:6px`、`border-radius:var(--dsw-radius-sm)`、内嵌 svg `15px`（同 delta 缩放）、容器高 28px、按钮间 `gap:8px`。**S3 的 44px 在 chat strip 内豁免**（平台习语优先；触控设备该 strip 常显且有整行 hover 面）。
+- **S13.2 hover 显隐 = 完全继承容器**：原生 strip 携带 `data-actions-reveal="hover"`——`(hover:hover)` 下非活跃行 `opacity:0`（80ms 过渡），行 `:hover`/`:focus-within` 显形。槽内按钮**禁止自带 opacity/hover-reveal 逻辑**；必须可聚焦（真 `<button>`），否则 focus-within 显形链断裂、键盘用户永远看不到按钮。
+- **S13.3 颜色态**：默认 `--dsw-alias-label-tertiary`；hover `--dsw-alias-interactive-bg-hover` + `label-secondary`；禁用/不可用 `data-unavailable`（`opacity:.4`、`cursor:default`、hover 不变色不加底）。**破坏性动作（回滚/删除）在 strip 内保持中性图标色**——红色只出现在确认弹层（原生模式：strip 是入口不是警告位）。
+- **S13.4 图标**：15px 线性风格内联 SVG（primitives 现役图标族无通用 trash/branch，按 message-ops `BRANCH_PATH` 模式自制，`fill:currentColor`）；`aria-label` 必带（原生用 visuallyHidden 文本，读屏路径不可省）。
+- **S13.5 排列**：**单一 slot entry**（id 如 `'message-ops'`）+ `order:20`（官方 feedback=10 之后；slot 升序排列，多个 entry 会与官方排序规则纠缠）；entry 内部按钮序 = 回滚 → 删除 → 分支（非破坏操作置尾）。
+- **S13.6 注册形状与数据面**：`ctx.slots.register({ name, id:'message-ops', order:20, locale:NS, label }, Component)`；entry 收到的唯一 currency 是 **messageId**——回滚/删除需要的 seq 必须经 `useChat`/`useProjection` 由 messageId 映射，禁止自行从 DOM/文本反解；`inject(sessionId)` 返回 API 对象（仿 feedback 的 hooks/ensure/current 面）。
+- **S13.7 禁用态（会话 running）**：按钮置 `data-unavailable` 样式并保留 `title`/`aria-label` 说明原因（"会话运行中，先停止再操作"），不得隐藏按钮——隐藏会让功能在运行中"消失"而非"不可用"。
+- **S13.8 双语**：locale.register zh/en 齐备（S8）；读屏 label 不用 emoji/符号。
+
+## GAP 增量（ui-deep 轮，承接上文 GAP 清单编号续 G-13a…）
+
+| # | 级别 | 对象 | 内容 |
+|---|---|---|---|
+| G-13a | P1 | message-ops 0.3.x | 按 S13.5 用**单一 entry + order 20** 注入 assistant-actions；若已按三 entry 注册需合并，否则与官方 feedback(10) 的升序语义纠缠 |
+| G-13b | P2 | message-ops 0.3.x | strip 内按钮禁止自带 hover-reveal/opacity（S13.2）；确认可聚焦性（S13.2 键盘链） |
+| G-13c | P2 | devkit 0.2.7 | `pickUiWorkspaceTargetId` 的 `uw.mainView.sessionId` 探测是**死代码**——"mainView" 是 retention source 名（workspace/client.js:973 `retain(target,{source:'mainView'})`），不是 uiWorkspace 服务字段；删除该探测或注明仅防御性 |
+| G-13d | P2 | devkit 0.2.7 | `openSession()` 仍探 `svc.open`——0.2.0 该方法不存在（`sessions.list`/`create` 已确认存活，见 ui-deep-02.md 对 B2 的修正）；打开会话改走 `uiWorkspace.openSession(target)`，refreshList 由 list store 订阅天然替代 |
+| G-13e | P2 | devkit、session-search | 按下方/ui-deep-02.md 令牌修正表迁移 fallback（B4 终裁落地） |
