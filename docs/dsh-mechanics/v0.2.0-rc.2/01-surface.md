@@ -92,3 +92,15 @@ function assertSystemHeadRewrite(event, state, startIdx, shadowedSeqs, events, b
 
 ⇒ **结论**：事件 data 上附加自定义字段（如 `restoresSeq`、未来可能的
 `restoredSourceSeqs`）**是允许的**；但 message 的必要字段一个都不能少。
+
+## 9. 实证补记（message-ops 0.8.0，2026-10-06）
+
+- **引擎确实原样持久化 data 上的自定义字段**：恢复 notice 的
+  `restoredSourceSeqs` 在磁盘事件里逐字节可读（`[8]` → `[8,9,10,11,23]` 累积），
+  引擎不剥离、不校验其内容。
+- 但 **`/api/message-ops/messages` 的行字段由 listMessages 决定**——
+  未列入白名单的新字段不会出现在 HTTP 行上（restoresSeq 在、
+  restoredSourceSeqs 不在）→ 插件自算进度时要么扩 listMessages，
+  要么像 0.8.0 一样在服务端用原始 events 计算后以自有字段下发。
+- 步进恢复的坑（B1）：`planRestore` 若只按 upToSeq 截断而不排除
+  已重放源 seq，每轮都会从区间头重放 → 消息副本刷屏（实测 seq8 被重放 5 次）。
