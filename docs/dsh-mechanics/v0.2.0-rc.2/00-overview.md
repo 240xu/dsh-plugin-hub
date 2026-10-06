@@ -38,3 +38,25 @@
 - 回滚（revert）= 追加一个 replace 标记事件，遮蔽「目标..末尾」。
 - 恢复（restore）= 追加 notice + 被遮蔽消息的重放副本（干净文本、无前缀）。
 - 两者都只追加，日志不变；视图由投影决定。
+
+---
+# v2 增补（2026-10-06，研发线共识）
+
+以下结论经案例实证与源码复核，**修订/强化**早期认知：
+
+1. **传输层**：GUI↔宿主**不走 REST**（三次网络层抓取 0 个 /api/ 调用）；
+   `/api/*` 是插件专属带外面（见 07）。
+2. **跨实例写入**：Termux 无 flock（`ERR_FLOCK_UNSUPPORTED_PLATFORM`）+
+   live 层不读盘 → 跨实例追加**必然碰撞**；已发生并修复（5 dup seq，
+   行级手术，详见 06）；修复后引擎全新加载 CLEAN。
+3. **恢复语义 v2**：恢复=按轮步进重放（0.8.0），标记活跃判定=服务端
+   `restoreComplete`（restoredSourceSeqs 进度）；惰性标记（无可重放内容）
+   自动失效——用户主会话 8 个测试标记由此自愈，"虚假贴条"根除。
+4. **slot 遮蔽规则**（08 §1.0）：同 cell 按 priority 升序**最低者渲染**；
+   `chain` 选举唯 `conversation.composer`；`root` 禁碰；全屏用 `shell.overlay`。
+   免费槽：`conversation.chat.turnTail`、`conversation.input.left/right`、
+   `conversation.session.header.corner`（演进候选位）。
+5. **注入安全分级**（08 §4）：动作行 append 与 data-* 属性锚=稳定；
+   哈希类全名与文本匹配=易碎。
+6. **宿主升级即换血**：用户已重启 3080 → 0.8.1 全量生效（restoreComplete
+   字段实测在场），主会话贴条归零；8 死队友名册同清。
