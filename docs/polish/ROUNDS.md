@@ -81,7 +81,25 @@ properties of undefined (reading 'length')`。
   91 测试维持、包体与冷启动、错误面文案。
 - 出口：审计表逐项结论（保持/修复）+ 必要修复发布。
 
-## Round D：lazy-view + session-search 审计（④轴为主）
+## Round D：lazy-view + session-search 审计（2026-10-06，完成）
+
+### session-search 0.1.6
+- ①对接：`host.register` 三路由 + 官方契约注释；硬约束"对 ~/.dsh/sessions
+  **零写入**"（索引存 $DSH_HOME/cache）✓ 合规
+- ②UI：panel.js（103 行）独立面板 ✓
+- ③质量：模块清晰（678 行/5 文件），含 fence 鉴权 ✓
+- ④性能（3080 实测）：搜索 API 首次 **4.95s**，后续 0.07s / 0.013s；
+  索引 3.2MB / 296 会话，原子写（tmp+rename）；limit 1-100 + project 过滤
+- **待优化**：冷启动 4.95s → 插件 apply 时预热索引（装载挪到启动期）；
+  **验证需重启实例**（用户在用，择窗口执行）
+
+### lazy-view 0.3.5（源码已找回）
+- 测试 **16/16** ✓
+- ④已针对大会话优化：`countFrames` **1MB 分块流式 + 3 字节重叠**统计 zstd 帧
+  （不解压、`?fast=1` 有界内存）——实测最大日志 11MB（正是用户主会话）有界 ✓
+- ①-③：1125 行 / lib（frames/index/timeline/artifact），单文件内联页面无打包
+
+
 - 大会话（>4k 事件）渲染/搜索路径的复杂度与内存；
   投影缓存（session_projcache）协同；虚拟化窗口与 DOM 注入的相互作用。
 - 出口：性能基线数字（打开/搜索耗时）+ 修复。
