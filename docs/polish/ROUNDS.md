@@ -63,7 +63,20 @@ properties of undefined (reading 'length')`。
   补 e2e（命令面板/会话切换走 devkit 而非侧栏轮询，e2e 稳定性↑）。
 - 出口：profile 版本=0.2.8、window 面可用、e2e 用 devkit 打开会话成功。
 
-## Round C：websearch 审计（①④轴为主）
+## Round C：websearch 审计（2026-10-06，完成）
+实测（2301 行 / 7 模块）：
+- ①官方对接：`settings.section` 槽注入（client.js:569）、`ctx.locale.register`
+  官方 i18n；HTTP 走插件带外面（history/health 用 ws.register）；网络调用
+  **AbortController + 超时**（provider.js:322-327）✓
+- ②UI：client.js（612 行）使用官方令牌（--dsw-alias-*/--dsh-*）✓
+- ③质量：无 TODO/FIXME/console.log 残留；模块划分清晰；**修掉文档债**：
+  CHANGELOG 滞后（版本 2.8.3 vs 日志只到 2.8.1）→ 已补 2.8.2、2.8.3 条目
+- ④性能：缓存 TTL 900s / 容量 200 / mtime 淘汰 / TTL 可运行时变更；并发上限
+  默认 6（provider.js:14）；熔断 breaker 有测试 ✓
+- 遗留（低优先）：测试目录分裂 `test/` 与 `tests/`，可统一
+- 验证：单测 91/91 复跑通过
+
+
 - 清单：官方 fetch 约定（超时/取消/重试上限）、缓存命中与失效、
   91 测试维持、包体与冷启动、错误面文案。
 - 出口：审计表逐项结论（保持/修复）+ 必要修复发布。
