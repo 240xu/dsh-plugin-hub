@@ -35,7 +35,28 @@
 - [x] 用户 3080 已重启 → 0.8.1 生效（restoreComplete 实测在场），惰性标记全失效，
   主会话贴条归零；8 死队友名册随重启清空。
 
-## Round B：devkit 修复（高优先：影响开发者体验与 e2e）
+## Round B：devkit 复核（2026-10-06 实测，结论更新）
+
+**版本与清单：已对齐**——profile 与源码同为 0.2.8，profile package.json 声明
+`"@240xu/dsh-devkit": "0.2.8"`，安装副本 `src/client.js` 含 `window.__dshDevkit`
+挂载代码（5 处），`主/导出/dsh` 清单字段与源码一致。旧问题"profile 钉 0.2.3"已消除。
+
+**但浏览器实测未激活（3080，三次独立探针）**：
+- `window.__dshDevkit` = false、`__dshDevkitKeysInstalled` = false
+- **Ctrl+K 无命令面板**（[role=dialog] 0）
+- 打开会话视图后（composer 存在）仍同样为 false
+
+**对照实验（关键）**：同一页面上**所有插件客户端都未激活**——
+message-ops 头部按钮 false、`.mopsRd` false、websearch 按钮 false；
+控制台报 `[session-controller] control stream failed: RemoteError: Cannot read
+properties of undefined (reading 'length')`。
+
+⇒ 不是 devkit 自身缺陷；阻断点在**宿主插件客户端加载 / RemoteStreamMux 控制流**
+（这也解释了 07 里"GUI 零 HTTP 请求"——传输是流式复用通道，非 REST）。
+**待用户确认**：真实 GUI 上插件 UI 是否正常（会话头 Message ops 按钮？Ctrl+K 面板？）
+——若是探针环境假象则 Round B 结案；若否，需重建 profile 客户端 bundle 后复验。
+
+
 - 问题：profile 里 devkit 是 npm 安装快照 0.2.3，源码 0.2.8 未生效；
   实测浏览器 `window.__dshDevkit` 缺失。
 - 计划：`dsh plugin --profile web add` 重装/符号链接对齐 → 实测 window 面 →
