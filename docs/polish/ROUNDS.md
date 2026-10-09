@@ -6,14 +6,18 @@
 
 ## 状态矩阵
 
-| 插件 | 版本 | ①官方API | ②UI | ③质量 | ④性能 | 下一步 |
-|---|---|---|---|---|---|---|
-| message-ops | 0.8.1 | ✅ 官方槽+令牌+引擎准入合规 | ✅ 贴条gap=1/按钮入官方动作行/按轮恢复 | ✅ 49 测试、无冗余面 | 中（大日志逐帧让出✓；messages 全量载荷待减） | Round A 收尾观察 |
-| devkit | 0.2.8(src)/0.2.3(profile) | ⚠️ profile 钉旧版（window.__dshDevkit 实测缺失） | – | 待审计 | – | **Round B：profile 重装对齐 + 面审计** |
-| websearch | 2.8.3 | 待审计（fetch 规范/超时/重试） | – | 91 测试 | 待审计（缓存命中路径） | Round C |
-| session-search | 0.1.6 | 待审计 | – | 22 测试 | 待审计（索引重建成本） | Round D |
-| lazy-view | 0.3.5 | 待审计（虚拟化/投影缓存协同） | 待审计 | 16 测试 | 待审计（大会话渲染） | Round D |
-| suite | 0.1.4 | – | – | 聚合层 | – | Round E 随各件定版 |
+| 插件 | 版本 | git | 状态 | 下一步 |
+|---|---|---|---|---|
+| message-ops | 0.9.0 | 同步 | **用户另行推进，本线不碰** | — |
+| dsh-websearch | 2.8.3 | 同步 | 单测 91/91 ✓ | Round C：API/缓存/性能审计 |
+| dsh-session-search | 0.1.6 | 已修（origin/main） | 健康 | Round D：索引重建成本/性能 |
+| dsh-session-lazy-view | (源码已找回) | 新建克隆 | 待体检 | Round D：大会话渲染/投影缓存协同 |
+| dsh-devkit | 0.2.8 | 同步 | profile 曾钉旧版（重启后复核） | Round B：window 面 + e2e 通道 |
+| dsh-suite | 0.1.4 | 已修（origin/main） | 健康 | Round E：聚合层版本对齐 |
+| dsh-plugin-session-delete | 0.3.1 | **ahead 2（未推）** | 需补推 | Round E |
+| dsh-agent-alliance / archived-sessions / opencode-go-quota | — | 同步 | 健康 | 随需 |
+| dsh-better-sidebar / tech-lead* / themis / true-revert / mcp-skill-hub / settings-scope-shim / sessionfix | — | **无 git** | 无版本追溯 | 评估是否纳入版本线 |
+| removed-* / *.old | — | 已归档至 ~/dsh-plugins-attic | 清出工作区 | — |
 
 ## Round A（进行中→收尾）：message-ops 0.8.0 按轮步进恢复
 - [x] 服务端 upToSeq/restoredSourceSeqs/进度判定（49/49）
