@@ -104,7 +104,16 @@ properties of undefined (reading 'length')`。
   投影缓存（session_projcache）协同；虚拟化窗口与 DOM 注入的相互作用。
 - 出口：性能基线数字（打开/搜索耗时）+ 修复。
 
-## Round E：suite 聚合层 + 文档同步
+## Round E：suite 聚合 + 提交清理（2026-10-06）
+- **suite 0.1.5**：聚合依赖版本声明滞后（声明 ^2.8.2/^0.5.2/^0.3.4/^0.1.5）→
+  已对齐实际（websearch ^2.8.3 / message-ops ^0.9.0 / lazy-view ^0.3.5 /
+  session-search ^0.1.6）；测试 6/6 通过 ✓（提交 d237afc，推送待网络）
+- **dsh-plugin-session-delete 0.3.1**：2 个提交（0.2.0 compat + IconTrash
+  React #130 修复）**多次推送失败**（网络 TLS/连接错误），仍 ahead 2 → 待补推
+- **网络阻塞**：本日 git/npm 出口反复中断（GitHub 时通时断、registry.npmjs.org
+  基本不通），影响发布环节；文档与代码提交均已在本地落盘，无丢失风险
+
+
 - 版本对齐、hub README、研究册差异标注（若 DSH 升版，新开 mechanics 目录）。
 
 ## 纪律
