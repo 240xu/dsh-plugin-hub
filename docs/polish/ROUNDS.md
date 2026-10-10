@@ -108,8 +108,11 @@ properties of undefined (reading 'length')`。
 - **suite 0.1.5**：聚合依赖版本声明滞后（声明 ^2.8.2/^0.5.2/^0.3.4/^0.1.5）→
   已对齐实际（websearch ^2.8.3 / message-ops ^0.9.0 / lazy-view ^0.3.5 /
   session-search ^0.1.6）；测试 6/6 通过 ✓（提交 d237afc，推送待网络）
-- **dsh-plugin-session-delete 0.3.1**：2 个提交（0.2.0 compat + IconTrash
-  React #130 修复）**多次推送失败**（网络 TLS/连接错误），仍 ahead 2 → 待补推
+- **dsh-plugin-session-delete 0.3.1**：推送 **403**——远端是他人仓库
+  `lsz-asd/dsh-plugin-session-delete`（无权限，非网络问题）。
+  **不影响运行**：profile 以 `file:` 引用本地目录，2 个修复（0.2.0 compat +
+  IconTrashOutlineRegular SVG fallback 修 React #130 崩溃）已生效 ✓。
+  云端追溯方案待用户定：保持本地 / fork 后 PR 上游 / 改挂自己仓库下（改 remote）
 - **网络阻塞**：本日 git/npm 出口反复中断（GitHub 时通时断、registry.npmjs.org
   基本不通），影响发布环节；文档与代码提交均已在本地落盘，无丢失风险
 
