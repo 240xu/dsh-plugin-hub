@@ -1,12 +1,18 @@
-# @240xu/dsh-suite bundle layer：四条 family 行（x240-*，经本包 shell 子路径）
-# + 一条 web 接线行（searchProvider 统一到 websearch；强耦合见 README）
+# @240xu/dsh-suite bundle layer：一条裸锚行（本包根，提供 browser client
+# graph entry）+ 四条 family 行（x240-*，经本包 shell 子路径）+ 一条 web 接线行。
 # 挂载（会签方案 aggregation-weball.md §7 MVA：行 name → @240xu/dsh-suite/<family>
 # （永不失败的隔离壳），真实包名放 config.plugin，由 shell 动态 import——
 # 任一子包 import/start 失败只降级该行，不拖垮 bundle 事务组、不 abort dsh web。
+# 裸锚行的 host apply 只持有 /degraded + /rows 路由；它的 client bundle 折入
+# message-ops/websearch 的 UI，并按 /rows 的 active 行 gate 挂载。
 # id 统一 x240- 前缀：与各子包 standalone patch 的 id（dsh-websearch 等）不冲突，
-# suite 与 standalone 可共存（standalone 优先，见 README）。
+# suite 与 standalone 可共存（浏览器半 standalone 优先；宿主工具可能有一行
+# already registered 警告，见 README）。
 # 若验证期需要绕过 shell 直接挂子包，把 name 换成子包名并删掉 config 即可
 # （对照行保留在文件尾注释）。
+- insert:
+    - id: x240-suite
+      name: '@240xu/dsh-suite'
 - insert:
     - id: x240-websearch
       name: '@240xu/dsh-suite/websearch'

@@ -1,7 +1,7 @@
 {
   "name": "@240xu/dsh-suite",
-  "version": "0.1.5",
-  "description": "@240xu 生态聚合包（骨架）：一条 dsh plugin add 装全家。行 name 指向本包 shell 子路径做故障隔离，config.plugin 指向真实子包；逐行 disable 即回滚，standalone 安装不受影响。",
+  "version": "0.2.0",
+  "description": "@240xu 生态聚合包：一条 dsh plugin add 装全家。宿主半用 shell 子路径行做故障隔离，浏览器半折进本包单个 client graph entry；逐行 disable 即回滚，standalone 安装不受影响。",
   "type": "module",
   "license": "MIT",
   "author": "240xu",
@@ -11,6 +11,7 @@
   "main": "src/index.js",
   "exports": {
     ".": "./src/index.js",
+    "./client": "./client/index.js",
     "./shell": "./src/shell.js",
     "./websearch": "./src/shell.js",
     "./message-ops": "./src/shell.js",
@@ -22,6 +23,8 @@
   },
   "files": [
     "src",
+    "client",
+    "scripts",
     "cordis.patch.yml",
     "README.md",
     "LICENSE"
@@ -37,11 +40,14 @@
   },
   "dependencies": {
     "@240xu/dsh-websearch": "^2.8.3",
-    "@240xu/dsh-message-ops": "^0.9.0",
+    "@240xu/dsh-message-ops": "^0.11.0",
     "@240xu/dsh-session-lazy-view": "^0.3.5",
-    "@240xu/dsh-session-search": "^0.1.6"
+    "@240xu/dsh-session-search": "^0.1.10"
   },
   "scripts": {
+    "build:client": "node scripts/build-client.mjs",
+    "check:client": "node scripts/build-client.mjs --check",
+    "prepack": "node scripts/build-client.mjs --check",
     "test": "node --test test/*.test.js"
   },
   "engines": {

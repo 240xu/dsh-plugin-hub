@@ -9,38 +9,38 @@ importers:
   .:
     dependencies:
       '@240xu/dsh-message-ops':
-        specifier: ^0.5.2
-        version: 0.5.2(@deepseek-ai/dsh-tools@0.1.0-rc.8(ca0ce42452094c45ca64260a014be474))
+        specifier: ^0.11.0
+        version: 0.11.0(@deepseek-ai/dsh-tools@0.1.0-rc.8(ca0ce42452094c45ca64260a014be474))
       '@240xu/dsh-session-lazy-view':
-        specifier: ^0.3.4
-        version: 0.3.4
+        specifier: ^0.3.5
+        version: 0.3.5
       '@240xu/dsh-session-search':
-        specifier: ^0.1.5
-        version: 0.1.5(@deepseek-ai/dsh-tools@0.1.0-rc.8(ca0ce42452094c45ca64260a014be474))
+        specifier: ^0.1.10
+        version: 0.1.10(@deepseek-ai/dsh-tools@0.1.0-rc.8(ca0ce42452094c45ca64260a014be474))
       '@240xu/dsh-websearch':
-        specifier: ^2.8.2
-        version: 2.8.2(b553a2da8f7d427ffbd49400ae387d22)
+        specifier: ^2.8.3
+        version: 2.8.6(b553a2da8f7d427ffbd49400ae387d22)
 
 packages:
 
-  '@240xu/dsh-message-ops@0.5.2':
-    resolution: {integrity: sha512-UHS22aH5GPSACfFdr9F4R+Ms5WIoF/JVF+11XVa5ifMeLHB5QWruVxU4e5IEIQPRc+X8b522tc094atpuTjxxQ==}
+  '@240xu/dsh-message-ops@0.11.0':
+    resolution: {integrity: sha512-0f8S069xUG/Q5KDIh+N/8ZTQ5fpGMchSNenhi3BnS/LWi8zYWjFl4CUU5Z5tafHKg52xzPTMzsPxcST+McGt/w==}
     engines: {node: '>=23.5'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6 || ^0.2.0-rc.1
 
-  '@240xu/dsh-session-lazy-view@0.3.4':
-    resolution: {integrity: sha512-1XvvLxSa77rWs+8RzbjG9D6byyFJJnhmqR2+YkkKODjEYv/fA/9LzrHFrJK9iVCkUfauE7ebqhiW3u6HVn12Xw==}
+  '@240xu/dsh-session-lazy-view@0.3.5':
+    resolution: {integrity: sha512-Zladz8s5kzkl2tGrZpLs0hcaO08tY2AJTtTqymIQCVlx1brn06qLl7lLHp9i4E0EVFHLs9fAp+x7Sslp6b4Gjw==}
     engines: {node: '>=24'}
 
-  '@240xu/dsh-session-search@0.1.5':
-    resolution: {integrity: sha512-IUHqazcr9GGxUNt5my3u/n+qWGhfmClSViVmeRA/9Yui1AglyVpyNIGUjz6Vja0Q1xJaZOPavnhNR0xv4oFg5A==}
+  '@240xu/dsh-session-search@0.1.10':
+    resolution: {integrity: sha512-r2Wz8O9oIMioj119wCPBOsuZEryU4wXyBGz9D/i5t0XNKsKhSSy0/bzr662gfkrUpy9HX1Afl8EstcnVRkK1aA==}
     engines: {node: '>=23.5'}
     peerDependencies:
       '@deepseek-ai/dsh-tools': ^0.1.0-rc.6 || ^0.2.0-rc.1
 
-  '@240xu/dsh-websearch@2.8.2':
-    resolution: {integrity: sha512-n+WerZVfyxPPTW1/6HRAg9B0qDpwvuehS64wN9H+zFkhet1yw11hXN1LrZKZRcclnV5qC4zg4xZMnyC5vdRTUQ==}
+  '@240xu/dsh-websearch@2.8.6':
+    resolution: {integrity: sha512-zUiRzgMmv/94BWHl2rE79/KQ9Ys+kee6sIGM5Efaio0ePTU0lTYtb/QmL0VpxQrkqsuHFdbX3IQAwC06sBsC4g==}
     engines: {node: '>=20.3'}
     peerDependencies:
       '@deepseek-ai/cordis': '*'
@@ -206,17 +206,17 @@ packages:
 
 snapshots:
 
-  '@240xu/dsh-message-ops@0.5.2(@deepseek-ai/dsh-tools@0.1.0-rc.8(ca0ce42452094c45ca64260a014be474))':
+  '@240xu/dsh-message-ops@0.11.0(@deepseek-ai/dsh-tools@0.1.0-rc.8(ca0ce42452094c45ca64260a014be474))':
     dependencies:
       '@deepseek-ai/dsh-tools': 0.1.0-rc.8(ca0ce42452094c45ca64260a014be474)
 
-  '@240xu/dsh-session-lazy-view@0.3.4': {}
+  '@240xu/dsh-session-lazy-view@0.3.5': {}
 
-  '@240xu/dsh-session-search@0.1.5(@deepseek-ai/dsh-tools@0.1.0-rc.8(ca0ce42452094c45ca64260a014be474))':
+  '@240xu/dsh-session-search@0.1.10(@deepseek-ai/dsh-tools@0.1.0-rc.8(ca0ce42452094c45ca64260a014be474))':
     dependencies:
       '@deepseek-ai/dsh-tools': 0.1.0-rc.8(ca0ce42452094c45ca64260a014be474)
 
-  '@240xu/dsh-websearch@2.8.2(b553a2da8f7d427ffbd49400ae387d22)':
+  '@240xu/dsh-websearch@2.8.6(b553a2da8f7d427ffbd49400ae387d22)':
     dependencies:
       '@deepseek-ai/cordis': 4.0.4
       '@deepseek-ai/dsh-credentials': 0.0.1-rc.1(@deepseek-ai/cordis@4.0.4)(@deepseek-ai/dsh-brand@0.0.1-rc.1(@deepseek-ai/cordis@4.0.4)(@deepseek-ai/dsh-invariants@0.1.0-rc.8(@deepseek-ai/cordis@4.0.4)))(@deepseek-ai/dsh-invariants@0.1.0-rc.8(@deepseek-ai/cordis@4.0.4))

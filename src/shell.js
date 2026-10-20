@@ -8,18 +8,25 @@
 // 全部 patch 行当一个事务组挂载，裸挂时坏插件会 abort dsh web，壳把失败面
 // 收窄到单行。
 //
-// 与 web-all 的刻意差异（骨架最小化）：
-//   1. 无 activeRows 账本与 /rows 路由（那是为 browser half 折叠挂载服务的，
-//      suite 各子包自带独立 dsh.client 声明，browser half 不经本壳）。
-//   2. 保留 loopback-only /api/dsh-suite/degraded 健康路由（观测面），
-//      注册走嵌套 inject(["webServer"]) fiber——壳比宿主 webServer 先激活，
-//      直接读会 miss（web-all lib/index.js:117-141 同款时序处理）。
+// 浏览器半（0.2.0）：子包 client bundle 由 build-client.mjs 折进 suite 的单个
+// graph entry（exports["./client"]），不再依赖“子路径行被 client graph 扫描”
+// ——dsh-client-modules 只解析裸包名，子路径行永远拿不到 dsh.client。
+// activeRows 账本 + /api/dsh-suite/rows 路由给折叠挂载做 gate：被 disable 的行
+// 没有 shell apply，UI 不挂；import/start 降级的行仍算 active（UI 保留，降级
+// 状态让用户看得见）。degraded 路由仍 loopback+Host 双围栏。
+// 两条健康路由都走嵌套 inject(["webServer"]) fiber——壳比宿主 webServer 先激活，
+// 直接读会 miss（web-all 同款时序处理）。
 
 const KEY = Symbol.for("dsh-suite.shell-state");
 
 /** 进程级共享壳状态：bundler 分裂多份模块副本时也只有一份（web-all 同款）。 */
 function shellState() {
-  return (globalThis[KEY] ??= { degraded: new Map(), healthRoutes: { count: 0 } });
+  const state = (globalThis[KEY] ??= {});
+  state.degraded ??= new Map();
+  // plugin -> refcount：同一真实包可能被多行/standalone 同时挂载，计数归零才删。
+  state.activeRows ??= new Map();
+  state.healthRoutes ??= { count: 0 };
+  return state;
 }
 
 /** 安全 JSON：circular/BigInt/toJSON 抛出时降级为占位串（0.1.4 P2 护栏）。 */
@@ -46,9 +53,29 @@ export function listDegraded() {
   return [...shellState().degraded.values()];
 }
 
-/** 测试专用：清空降级账本。 */
+/** 一行 shell entry 已 apply（即使真实插件随后 import/start 降级）。 */
+function recordActiveRow(plugin) {
+  const rows = shellState().activeRows;
+  rows.set(plugin, (rows.get(plugin) ?? 0) + 1);
+}
+
+/** 一行 shell entry 已 dispose；同包仍有别的行挂载时保留。 */
+function removeActiveRow(plugin) {
+  const rows = shellState().activeRows;
+  const next = (rows.get(plugin) ?? 0) - 1;
+  if (next > 0) rows.set(plugin, next);
+  else rows.delete(plugin);
+}
+
+/** active 行快照（真实插件包名，插入顺序）。browser 半据此 gate 折叠挂载。 */
+export function listActiveRows() {
+  return [...shellState().activeRows.keys()];
+}
+
+/** 测试专用：清空降级/active 账本与健康路由计数。 */
 export function _resetDegraded() {
   shellState().degraded.clear();
+  shellState().activeRows.clear();
   shellState().healthRoutes.count = 0;
 }
 
@@ -77,17 +104,41 @@ function makeDegradedRoute() {
   };
 }
 
-/** 健康路由注册（webServer 迟到安全）：嵌套 inject fiber，随本行 dispose。 */
+/** active-row 路由：不设 loopback 围栏（远端浏览器同源读取；载荷只是包名）。 */
+function makeRowsRoute() {
+  return {
+    kind: "exact",
+    path: "/api/dsh-suite/rows",
+    handler: async (_req, res) => {
+      res.writeHead(200, { "content-type": "application/json", "cache-control": "no-store" });
+      res.end(JSON.stringify({ ok: true, children: listActiveRows() }));
+    },
+  };
+}
+
+/** 健康路由注册（webServer 迟到安全）：嵌套 inject fiber，随本行 dispose。
+ *  degraded + rows 作为一个原子组注册/注销：任一失败回滚另一条。 */
 function holdHealthRoute(ctx) {
   ctx.inject?.(["webServer"], (scoped) => {
     const webServer = scoped.webServer;
     if (webServer === undefined || typeof webServer.register !== "function") return;
     const routes = shellState().healthRoutes;
     if (routes.count === 0) {
+      let unregisterDegraded;
+      let unregisterRows;
       try {
-        routes.unregister = webServer.register(makeDegradedRoute());
+        unregisterDegraded = webServer.register(makeDegradedRoute());
+        try {
+          unregisterRows = webServer.register(makeRowsRoute());
+        } catch (error) {
+          try { unregisterDegraded?.(); } catch { /* already gone */ }
+          throw error;
+        }
+        routes.unregister = () => {
+          try { unregisterRows?.(); } finally { unregisterDegraded?.(); }
+        };
       } catch (error) {
-        console.warn("[dsh-suite] failed to register degraded route:", error);
+        console.warn("[dsh-suite] failed to register health routes:", error);
         return;
       }
     }
@@ -99,7 +150,7 @@ function holdHealthRoute(ctx) {
         try { routes.unregister?.(); } catch { /* already gone */ }
         routes.unregister = undefined;
       }
-    }, "dsh-suite: health route");
+    }, "dsh-suite: health routes");
   });
 }
 
@@ -120,6 +171,16 @@ async function applyShell(ctx, config) {
     return;
   }
   if (RETIRED_PLUGINS.has(spec)) return;
+  // 先记账再 import：disabled 行没有 shell apply，故不会进账本；import/start
+  // 降级的行仍在账本里，browser 半保留其 UI（降级状态可见，web-all 同语义）。
+  recordActiveRow(spec);
+  try {
+    ctx.effect?.(() => () => {
+      removeActiveRow(spec);
+    }, "dsh-suite: active row ledger");
+  } catch (error) {
+    console.warn("[dsh-suite] failed to register active-row cleanup:", error);
+  }
   let mod;
   try {
     mod = await import(/* @vite-ignore */ spec);
