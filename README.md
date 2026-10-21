@@ -1,1 +1,204 @@
-IyBAMjQweHUvZHNoLXBsdWdpbi1odWIKCkAyNDB4dSDnlJ/mgIHkuIDplK7ogZrlkIjljIXvvIh2MC4yLjDvvInvvJrkuIDmnaHlkb3ku6Tlronoo4XlhajlrrbvvIzpgJDooYzlvIDlhbPljbPlm57mu5rjgIIK5p625p6E5L6d5o2u5LiT5a6257uE5Lya562+5pa55qGIIGBkc2gtcGx1Z2luLWh1Yi9kb2NzL2FnZ3JlZ2F0aW9uLXdlYmFsbC5tZGAK77yI5a+5IEBsaW54aW42NjYvZHNoLXdlYi1hbGwg55qE6YCG5ZCR5ouG6Kej77yJ44CCCgojIyDlronoo4UKCmBgYHNoCmRzaCBwbHVnaW4gLS1wcm9maWxlIHdlYiBhZGQgQDI0MHh1L2RzaC1wbHVnaW4taHViQGxhdGVzdApkc2ggd2ViCmBgYAoK5a6J6KOF5Y2z5byV5YWl5Zub5Liq5a2Q5YyF77yIZGVwZW5kZW5jaWVzIGNhcmV0IOWMuumXtO+8ieW5tuaMgui9veWbm+adoSBmYW1pbHkg6KGMICsg5LiA5p2h6KO46ZSa6KGMICsK5LiA5p2hIHdlYiDmjqXnur/ooYzvvJoKCnwg6KGMIGlkIHwg5a2Q6Lev5b6EIC8g5YWl5Y+jIHwg55yf5a6e5o+S5Lu2IHwKfC0tLXwtLS18LS0tfAp8IHgyNDAtc3VpdGUgfCBgQDI0MHh1L2RzaC1wbHVnaW4taHViYO+8iOijuOmUmu+8jOWUr+S4gCBjbGllbnQgZ3JhcGggZW50cnnvvIkgfCDml6DvvIjmtY/op4jlmajljYrnlLEgYGV4cG9ydHNbIi4vY2xpZW50Il1gIOaKmOWPoO+8iSB8CnwgeDI0MC13ZWJzZWFyY2ggfCBAMjQweHUvZHNoLXBsdWdpbi1odWIvd2Vic2VhcmNoIHwgQDI0MHh1L2RzaC13ZWJzZWFyY2ggXjIuOC4zIHwKfCB4MjQwLW1lc3NhZ2Utb3BzIHwgQDI0MHh1L2RzaC1wbHVnaW4taHViL21lc3NhZ2Utb3BzIHwgQDI0MHh1L2RzaC1tZXNzYWdlLW9wcyBeMC4xMS4wIHwKfCB4MjQwLXNlc3Npb24tbGF6eS12aWV3IHwgQDI0MHh1L2RzaC1wbHVnaW4taHViL3Nlc3Npb24tbGF6eS12aWV3IHwgQDI0MHh1L2RzaC1zZXNzaW9uLWxhenktdmlldyBeMC4zLjUgfAp8IHgyNDAtc2Vzc2lvbi1zZWFyY2ggfCBAMjQweHUvZHNoLXBsdWdpbi1odWIvc2Vzc2lvbi1zZWFyY2ggfCBAMjQweHUvZHNoLXNlc3Npb24tc2VhcmNoIF4wLjEuMTAgfAoKYHgyNDAtc3VpdGVgIOWPquaJv+i9vSBjbGllbnQgZ3JhcGggZW50cnkg5LiO6KeC5rWL6Lev55Sx77yb56aB55So5a6D5Lya5YWz6Zet5rWP6KeI5ZmoIFVJCu+8iOWbm+adoSBob3N0IOihjOS7jee7p+e7reW3peS9nO+8ieOAguWPquaDs+WFs+afkOS4qiBVSSDml7bvvIxkaXNhYmxlIOWvueW6lOeahCBmYW1pbHkg6KGM5Y2z5Y+v44CCCgojIyDlt7Lnn6XlvLrogKblkIjvvIh3ZWIg5o6l57q/6KGM77yJCgpgd2ViYCDooYzml6DmnaHku7bmioogYHNlYXJjaFByb3ZpZGVyYCDnva7kuLogYHVuaWZpZWRg77yId2Vic2VhcmNoIOeahCBQUk9WSURFUl9JRO+8ieOAggroi6UgYHgyNDAtd2Vic2VhcmNoYCDooYzooqsgZGlzYWJsZS9pbXBvcnQg6ZmN57qn77yMZHNoLXdlYiDmr4/mrKHmkJzntKLkvJrnoazmipsKYFdFQl9QUk9WSURFUl9DT05GSUdVUkVEX01JU1NJTkdg77yI6L+e5Z2Q5omT5q275pys5Y+v5Zue6YCAIGRlZXBzZWVrLW9mZmljaWFsIOeahCB3ZWIK5pCc57Si77yJ44CC56aB55SoIHdlYnNlYXJjaCDooYzml7bor7flkIzmraXliKDmjokgYHdlYmAg6KGM55qEIGBzZWFyY2hQcm92aWRlcmAg6KaG55uW44CCCgojIyDmlYXpmpzpmpTnprvvvIhzaGVsbCDlo7PvvIkKCuWumOaWuSBsb2FkZXIg5oqK5LiA5LiqIGJ1bmRsZSDnmoTlhajpg6ggcGF0Y2gg6KGM5b2T5LiA5Liq5LqL5Yqh57uE5oyC6L2977ya6KO45oyC5pe25Lu75LiA5o+S5Lu2CmltcG9ydC9zdGFydCDlpLHotKXkvJrlm57mu5rmlbTnu4TlubYgYWJvcnQgYGRzaCB3ZWJg44CC5Zug5q2k5q+P6KGMIGBuYW1lYCDmjIflkJHmnKzljIXnmoQKc2hlbGwg5a2Q6Lev5b6E77yIYHNyYy9zaGVsbC5qc2DvvIzmsLjkuI3lpLHotKXvvInvvIznnJ/lrp7ljIXlkI3mlL7lnKggYGNvbmZpZy5wbHVnaW5g77yM55Sx5aOzCuWKqOaAgSBpbXBvcnTigJTigJQqKuWksei0peaUtueqhOWIsOWNleihjCoq77ya6K6w5b2V6ZmN57qn77yIbG9vcGJhY2stb25seQpgR0VUIC9hcGkvZHNoLXBsdWdpbi1odWIvZGVncmFkZWRgIOWPr+afpe+8ie+8jOWFtuS9meihjOeFp+W4uOaMgui9veOAggoKIyMg5rWP6KeI5Zmo5Y2K77yI5Y2VIGdyYXBoIGVudHJ5ICsgcm93cyBnYXRpbmfvvIkKCkRTSCDnmoQgY2xpZW50IGdyYXBoIOWPquiupCAqKkxvYWRlciDooYznmoTljIXlkI0qKuOAguWtkOi3r+W+hOihjApgQDI0MHh1L2RzaC1wbHVnaW4taHViL21lc3NhZ2Utb3BzYCDkuI3kvJrooqvmiavmiJAgZ3JhcGggZW50cnnvvIzlrZDljIXnmoQgYGRzaC5jbGllbnRgCuWboOatpOawuOi/nOS4jeS8muWKoOi9veOAguaJgOS7peWinuihpeijuOmUmuihjCBgeDI0MC1zdWl0ZWDvvIhgbmFtZTogQDI0MHh1L2RzaC1wbHVnaW4taHViYO+8ie+8jArnlLEgYGV4cG9ydHNbIi4vY2xpZW50Il1gIOaMh+WQkeeUn+aIkOeahCBgY2xpZW50L2luZGV4LmpzYO+8jOS9nOS4uioq5ZSv5LiAKiogc3VpdGUgZ3JhcGgKZW50cnnvvJttZXNzYWdlLW9wcyAvIHdlYnNlYXJjaCDnmoQgY2xpZW50IOa6kOeggeWcqOaehOW7uuaXtuaKmOWPoOi/m+S4gOS4qiBmYWN0b3J577yMCuS4jeWGjeWNleeLrOazqOWGjOWGhemDqCBpZO+8iOmBv+WFjSBITVIg6YeN6L29IHN1aXRlIOaXtiBpZCDph43lpI3ms6jlhozvvInjgIIKCua1j+iniOWZqOWNiuWQr+WKqOaXtu+8mgoKMS4gYEdFVCBhcGkvZHNoLXBsdWdpbi1odWIvcm93c2DvvIjnm7jlr7not6/lvoTvvIzml6DliY3lr7wgYC9g77yMMTUwMG1zIOi2heaXtu+8ieOAggoyLiDlj6rlr7nlrr/kuLvmiqXlkYogYWN0aXZlIOeahCBmYW1pbHkg5YyF6LCD55SoIGBjdHgucGx1Z2luYO+8m+avj+mhueS/neeVmeiHquW3seeahAogICBgaW5qZWN0YO+8iOWmgiBtZXNzYWdlLW9wcyDnmoQgYHNsb3RzYO+8ie+8jOaVhemanOmAkOmhuSB0cnkvY2F0Y2jvvIzkuI3ov57lnZDjgIIKMy4g5aaC5p6cIGBfX0RTSF9CT09UX18uZW50cmllc2Ag6YeM5bey5pyJ5p+Q5Liq5a2Q5YyF55qEIHN0YW5kYWxvbmUgZ3JhcGggZW50cnnvvIwKICAg6Lez6L+H5oqY5Y+g5Ymv5pys77yM5Lqk57uZIHN0YW5kYWxvbmUg5oyC6L2977yId2ViLWFsbCDlkIzmrL7or63kuYnvvInjgIIKNC4gcm93cyDor7fmsYLlpLHotKUv6LaF5pe2L+S4jeehruWumuaXtiBmYWlsLW9wZW4g5YWo5oyC6L2977yb5bey5oyC6L296ZuG5ZCI55SoCiAgIGBTeW1ib2wuZm9yKCJkc2gtcGx1Z2luLWh1Yi5tb3VudGVkLWNsaWVudC1wbHVnaW5zIilgIOi3qCBidW5kbGUg5Y676YeN44CCCgpgY2xpZW50L2luZGV4LmpzYCDmmK/nlJ/miJDnianvvIzliKvmiYvmlLnvvJvmlLnlrZDljIXmiJYgcnVudGltZSDlkI7ov5DooYwKYHBucG0gcnVuIGJ1aWxkOmNsaWVudGDvvIxgcG5wbSBydW4gY2hlY2s6Y2xpZW50YCDlpLHotKXljbPkuqfnianov4fmnJ/jgIIKCuaui+S9memjjumZqe+8muaKmOWPoOWtkOWMheeahCBDU1Mg5b2S5bGeIHN1aXRlIGdyYXBoIGVudHJ544CCc3VpdGUg6Ieq6LqrIEhNUiBpbnZhbGlkYXRlCuS4jeS8mua4heaOieWtkOagt+W8j++8jOWPr+iDvemHjeWkjeazqOWFpSBgPHN0eWxlPmDvvJvlip/og73kuI3lj5flvbHlk43vvIzliLfmlrDpobXpnaLlj6/muIXlubLlh4DjgIIKCiMjIOmAkOihjCBkaXNhYmxl77yI5Zue5rua5Li76Lev5b6E77yJCgrorr7nva4g4oaSIOaPkuS7tiDihpIg5o+S5Lu2566h55CG77yM5oiWIHByb2ZpbGUg55So5oi35bGCIGBjb3JkaXMucGF0Y2gueW1sYO+8mgoKYGBgeWFtbAotIGlkOiB4MjQwLXNlc3Npb24tc2VhcmNoCiAgZGlzYWJsZWQ6IHRydWUKYGBgCgrooqvnpoHooYzkuI3liqDovb3vvJvlhbbkvZnooYzkuI3lj5flvbHlk43jgILml6DpnIDljbjovb3mlbTljIXjgIIKCiMjIOWbnua7miAvIOmAgOWHuuiBmuWQiAoKYGBgc2gKZHNoIHBsdWdpbiAtLXByb2ZpbGUgd2ViIHJlbW92ZSBAMjQweHUvZHNoLXBsdWdpbi1odWIKYGBgCgrooYwgaWQg5bimIGB4MjQwLWAg5YmN57yA77yM5LiO5ZCE5a2Q5YyFIHN0YW5kYWxvbmUg5a6J6KOF55qEIGlk77yIYGRzaC13ZWJzZWFyY2hgIOetie+8ieS4jQrlhrLnqoHvvIzlj6/kuI4gc3RhbmRhbG9uZSDlhbHlrZjjgILkuKTogIXpg73lnKjml7bvvIwqKua1j+iniOWZqOWNiioq55SxIHN0YW5kYWxvbmUg5LyY5YWI77yaCnN1aXRlIOajgOa1i+WIsOWQjOWQjSBncmFwaCBlbnRyeSDlkI7ot7Pov4fmipjlj6Dlia/mnKzvvIxVSSDlj6rlh7rnjrDkuIDku73vvIjlt7Llrp7mtYvvvJrkuIDkuKoKaGVhZGVyIOaMiemSruOAgeS4gOS4qiBwYW5lbO+8ieOAgioq5a6/5Li75Y2KKirnmoTlm5vmnaEgc2hlbGwg6KGM5LuN5Lya5oyC6L2977yM5Zug5q2k6Iul5a2Q5YyFCuiHqui6q+S4jeaYr+W5guetieazqOWGjO+8iOS+i+WmgiBtZXNzYWdlLW9wcyDnmoQgYG1lc3NhZ2Vfb3BzYCDlt6XlhbfvvInvvIzml6Xlv5flj6/og73lh7rnjrDkuIDooYwKYGFscmVhZHkgcmVnaXN0ZXJlZGAg6K2m5ZGK77yb5bel5YW35Y+q5L+d55WZ5LiA5Lu977yM5Yqf6IO95LiN5Y+X5b2x5ZON44CC6ZyA6KaB5a6M5YWo5peg6K2m5ZGK5pe2CuS4jeimgeWQjOaXtuWuieijhSBzdGFuZGFsb25l44CCCgrlj6rmg7PopoHkuKrliKvmj5Lku7bvvJrnm7TmjqUgYGRzaCBwbHVnaW4gYWRkIEAyNDB4dS9kc2gtd2Vic2VhcmNoYO+8jOS4jee7jyBzdWl0ZeOAggoKIyMg5LiOIHdlYi1hbGwg5qih5byP55qE5beu5byCCgoxLiBzdWl0ZSDlj6rms6jlhowgKirkuIDkuKoqKiBjbGllbnQgZ3JhcGggZW50cnnvvIjoo7jplJrooYzvvInvvIzlrZDljIUgY2xpZW50IOa6kOeggeaKmOWPoOi/mwogICDor6UgZmFjdG9yee+8m+S4jeWDjyB3ZWItYWxsIOmCo+agt+azqOWGjOWkmuS4quWGhemDqCBpZOOAgmFjdGl2ZVJvd3MgLyBgL3Jvd3NgIGNhc2UKICAgZ2F0aW5nIOS/neeVme+8jOS4lCBzdGFuZGFsb25lIOWQjOWQjSBncmFwaCBlbnRyeSDkvJrorqnmipjlj6Dlia/mnKzorqnkvY3jgIIKMi4gY2FyZXQg5Yy66Ze06IGa5ZCI77yI6Z2e5a625pePIGxvY2tzdGVw77yJ77ya5ZCE5a2Q5YyF54us56uL5Y+R54mI54us56uL5pu05paw77yMc3VpdGUg5Y+q5YGa5LiL6ZmQ57qm5p2f44CCCjMuIOS/neeVmSB3ZWItYWxsIOeahO+8mmdsb2JhbFRoaXMg5Y2V5L6L5aOz54q25oCB44CBUkVUSVJFRF9QTFVHSU5TIOmdmem7mOWMluacuuWItuS9jeOAgQogICBsb29wYmFjay1vbmx5IGRlZ3JhZGVkIOingua1i+i3r+eUseOAgeW1jOWllyBpbmplY3QoWyJ3ZWJTZXJ2ZXIiXSkg5pe25bqP5aSE55CG44CCCgojIyDpqozor4HnirbmgIEKCi0g5aOz6ZqU56a76K+t5LmJ77yaYG5wbSB0ZXN0YO+8iG5vZGUgLS10ZXN077yJMjQg6aG55YWo6L+H4oCU4oCUZ29vZCDmjILovb0gLyBpbXBvcnQg5aSx6LSl6ZmN57qnIC8KICBzaGFwZSDpmY3nuqcgLyBzdGFydCDmipvplJnpmY3nuqfkuJTlhYTlvJ/ooYznhafluLggLyDnqbrooYzpnZnpu5ggLyDlgaXlurfot6/nlLHov5/liLDms6jlhowgLwogIGFjdGl2ZVJvd3Mg6LSm5pysIC8gcm93cyDot6/nlLEgLyBkZWdyYWRlZCDlm7TmoI8gLyDljZUgZ3JhcGggZW50cnkgLyBjYXB0dXJlIC8KICByb3dzIGdhdGluZyAvIGZhaWwtb3BlbiAvIHN0YW5kYWxvbmUgc2tpcCAvIOWNleWtkOWksei0pemalOemuyAvIOS6jOasoeaMgui9veWOu+mHjSAvCiAgYnVuZGxlIOaWsOmynOW6piAvIGRpc3Bvc2Ug6YeK5pS+5oyC6L29IGNsYWlt44CCZml4dHVyZXMg5ZyoIGB0ZXN0L2ZpeHR1cmVzL2DjgIIKLSAqKuecn+WuniBFMkUg5bey6aqMKirvvIgyMDI2LTEwLTIw77yM5LiA5qyh5oCnIGBzdWl0ZWZpeC1lMmVgIHByb2ZpbGXvvInvvJpsaW5rIOWuieijheOAgQogIHJvb3QgSFRNTCDlj6rmnInkuIDkuKogYEAyNDB4dS9kc2gtcGx1Z2luLWh1YmAgY2xpZW50IGVudHJ544CB57uE5ZCIIGJ1bmRsZSAyMDDjgIFNZXNzYWdlCiAgb3BzIDU2McOXOTAwIHBhbmVs77yIZml4dHVyZSBgc2Vzc2lvbi1hYjZmZWZmMi3igKZg77yJ44CBV2ViIFNlYXJjaCDorr7nva7pobXlj6/nlKjvvJsKICDpgJDooYwgZGlzYWJsZSDlkI4gcm93cyDmjpLpmaTor6XooYzkuJQgVUkg5LiN5oyC6L2977yb5pWF6Zqc5rOo5YWl5ZCOIGRlZ3JhZGVkIOWPquWIl+Wdj+ihjOOAgQogIOWFtuS9mSBVSSDlrZjmtLvvvJtzdGFuZGFsb25lIG1lc3NhZ2Utb3BzIOWFseWtmOaXtiBVSSDljZXku73jgIIKCiMjIOerr+WIsOerr+mqjOivgeatpemqpO+8iOWPkeW4g+WJjeW/heWBmu+8iQoKMS4gYGNkIH4vZHNoLXBsdWdpbnMtc3JjL2RzaC1wbHVnaW4taHViICYmIHJtIC1yZiBub2RlX21vZHVsZXNg77yI5riF5o6JIFBvQyBmaXh0dXJlc++8jAogICDmjaLnnJ/lrp7kvp3otZbvvJrmiorlm5vkuKrlrZDljIXnm67lvZUgbG4gLXMg6L+bIG5vZGVfbW9kdWxlcy9AMjQweHUv77yM5oiWIHBucG0gbGlua++8ieOAggoyLiBgZHNoIHBsdWdpbiAtLXByb2ZpbGUgd2ViIGFkZCBsaW5rOiQocHdkKWDvvIjmtYvor5UgcHJvZmlsZSDmm7TnqLPvvJoKICAgYC0tcHJvZmlsZSBzdWl0ZXRlc3Rg77yJ44CCCjMuIGBkc2ggLS1wcm9maWxlIHN1aXRldGVzdCAtLWR1bXAtY29uZmlnYO+8muehruiupOijuOmUmiBgeDI0MC1zdWl0ZWAgKyDlm5vmnaEKICAgYHgyNDAtKmAgZmFtaWx5IOihjCArIHdlYiDooYzlrZjlnKjjgIFmYW1pbHkgbmFtZSDkuLogc2hlbGwg5a2Q6Lev5b6E44CBCiAgIGNvbmZpZy5wbHVnaW4g5Li655yf5a6e5YyF5ZCN77yM5LiUIHN1aXRlIOWPquacieS4gOS4qiBjbGllbnQgZ3JhcGggZW50cnnjgIIKNC4gYGRzaCAtLXByb2ZpbGUgc3VpdGV0ZXN0IC0tcG9ydCAzOTk5YO+8muS6lOaPkuS7tuWKn+iDveWPr+eUqO+8mwogICBgY3VybCAtcyBodHRwOi8vMTI3LjAuMC4xOjxwb3J0Pi9hcGkvZHNoLXBsdWdpbi1odWIvZGVncmFkZWRgIOW6lOi/lOWbngogICBgeyJvayI6dHJ1ZSwiZGVncmFkZWQiOltdfWDvvIxgL2FwaS9kc2gtcGx1Z2luLWh1Yi9yb3dzYCDlupTliJflh7rlm5vooYzlr7nlupTnmoTnnJ/lrp7ljIXjgIIKNS4g5pWF6Zqc5rOo5YWl6aqM6K+B6ZqU56a777ya5Li05pe25pS55Z2P5LiA5Liq5a2Q5YyF5a+85Ye677yI5oiWIHBhdGNoIOihjCBjb25maWcucGx1Z2luIOaMh+WQkeS4jeWtmOWcqAogICDnmoTljIXlkI3vvInvvIzph43lkK8g4oaSIGBkc2ggd2ViYCDlupTmraPluLjlkK/liqjvvIzku4UgZGVncmFkZWQg5YiX5Ye66K+l6KGM77yM5YW25L2Z5Zub6KGM5Y+v55So44CCCjYuIOmqjOivgSBzdGFuZGFsb25lIOWFseWtmO+8muWQjCBwcm9maWxlIOWGjSBgZHNoIHBsdWdpbiBhZGQgbGluazouLi9kc2gtbWVzc2FnZS1vcHNg77yMCiAgIOehruiupCBncmFwaCBlbnRyeSDlkIzml7blrZjlnKjjgIFzdWl0ZSDnmoQgZm9sZGVkIOWJr+acrOiuqeS9jeOAgemhtemdouWPquacieS4gOS4qgogICBNZXNzYWdlIG9wcyDmjInpkq4vcGFuZWzvvJvlrr/kuLsgYG1lc3NhZ2Vfb3BzYCDlt6Xlhbflj6/og73mnInkuIDooYwgYWxyZWFkeSByZWdpc3RlcmVkCiAgIOitpuWRiu+8iOWPquS/neeVmeS4gOS7ve+8ieOAggo3LiDlhajpg6jpgJrov4flkI7liKDpmaTkuIDmrKHmgKcgcHJvZmlsZeOAgeWPkSBucG3vvIjlhYjlrZDljIXlkI4gc3VpdGXvvInjgIIKCiMjIOerr+WIsOerr+mqjOivgee7k+aenO+8iDIwMjYtMDktMjjvvIxzdWl0ZXRlc3QgcHJvZmlsZSDlrp7mtYvvvIkKCnwg5q2l6aqkIHwg57uT5p6cIHwKfC0tLXwtLS18CnwgMS4gbGluayDkupTkuKrnnJ/lrp7lrZDljIUgfCDinIXvvIhsYXp5LXZpZXcg5rqQ56CB5ZyoIHNsdi1jaGVjayDnm67lvZXvvIxzeW1saW5rIOaMh+WQkeivpeWkhO+8iSB8CnwgMi4gYGRzaCBwbHVnaW4gYWRkIGxpbms6YCB8IOKchSBzdWl0ZSDms6jlhozkuLogYnVuZGxlIHwKfCAzLiBkdW1wLWNvbmZpZyB8IOKchSDlm5vmnaEgeDI0MC0qIOihjOOAgW5hbWU9c2hlbGwg5a2Q6Lev5b6E44CBY29uZmlnLnBsdWdpbj3nnJ/lrp7ljIXlkI0gfAp8IDQuIGBkc2ggLS1wcm9maWxlPXN1aXRldGVzdCAtLXBvcnQgMzk5OWAgfCDinIUgaHR0cD00MDHjgIFkZWdyYWRlZCDnqbrjgIHkupTnq6/ngrnlhajlk43lupTvvIg0MDAvMjAwLzIwMC80MDEvMjAwIOWdh+S4uumihOacn+WAvO+8iSB8CnwgNS4g5pWF6Zqc5rOo5YWl77yIc2Vzc2lvbi1zZWFyY2ggaW5kZXguanMg5oqb6ZSZ77yJIHwg4pyFICoq6ZqU56a755Sf5pWIKirvvJrmnI3liqHmraPluLjlkK/liqjvvIg0MDHvvInvvIxkZWdyYWRlZCDku4XliJcgYEAyNDB4dS9kc2gtc2Vzc2lvbi1zZWFyY2ggW2ltcG9ydF1g77yM5YW25L2Z5Zub6KGM56uv54K55YWo6YOo5a2Y5rS7IHwKfCA2LiBzdGFuZGFsb25lIOWFseWtmO+8iHN1aXRlIOWGhSBkZXZraXQgKyBzdGFuZGFsb25lIGRzaC1kZXZraXQg5ZCMIHByb2ZpbGXvvIkgfCDinIUg5ZCv5Yqo5peg6YeN5aSNIGlkIOWGsueqge+8iGJ1bmRsZSBwYXRjaCBpbnNlcnQgd2Fybi1hbmQtc2tpcO+8ieOAgWRlZ3JhZGVkIOepuuOAgS9hcGkvZGV2a2l0L2hlYWx0aCDljZXlrp7kvosgMjAw44CB57uE5ZCI5qCR5Ye6546wIDQg5aSEIGRzaC1kZXZraXQg5byV55So77yIc3VpdGUg6KGMK3N0YW5kYWxvbmUg6KGMK+WFg+aVsOaNru+8iSB8CgojIyMg5a6e5rWL5Y+R546w55qE6L+Q57u05LqL5a6e77yI5Y+R5biD5YmN6aG755+l77yJCjEuICoqc2x2LWNoZWNrIOijuOWFi+mahumcgOimgSBub2RlX21vZHVsZXMgc2hpbSoq77yaYEBkZWVwc2Vlay1haS9zY2hlbWFzdGVyeWAg5oyH5ZCRIHByb2ZpbGUg5a6J6KOF77yIYGxuIC1zZm4gPHByb2ZpbGU+L25vZGVfbW9kdWxlcy9AZGVlcHNlZWstYWkvc2NoZW1hc3Rlcnkgc2x2LWNoZWNrL25vZGVfbW9kdWxlcy9AZGVlcHNlZWstYWkvc2NoZW1hc3Rlcnlg77yJ44CCbnBtIOWPkeW4g+eJiOaXoOatpOmXrumimO+8iOecn+WunuWuieijheeUsSBwbnBtIGhvaXN0ZWQg5o+Q5L6b77yJ44CCCjIuICoqQ0xJIOivreazlSoq77yaYGRzaCAtLXByb2ZpbGU9PG5hbWU+IC0tcG9ydCA8cD4gLS1uby1vcGVuYO+8iGAtLXByb2ZpbGUgPG5hbWU+IHdlYmAg55qEIGB3ZWJgIOS8muiiq+W9k+WkmuS9mSBhcHAg5Y+C5pWw5ouS57ud77ybYGRzaCA8bmFtZT4gd2ViYCDlkIzmoLfvvInjgIIKMy4gKipwcm9maWxlIOS+nei1luS4pOS4quWGheW7uiBidW5kbGUqKu+8mmBAZGVlcHNlZWstYWkvZHNoLWJhc2VgICsgYEBkZWVwc2Vlay1haS9kc2gtd2ViLWFwcGDvvIjnvLrlkI7ogIXliJnml6AgSFRUUCDpnaLvvInjgIIKNC4g5aOz6ZqU56a75Zyo56ysIDUg5q2l57uP5Y+X5L2P5LqG55yf5a6e5pWF6Zqc5rOo5YWl4oCU4oCU6L+Z5q2j5piv5LiT5a6257uE5Lya562+5pa55qGI55qE5qC45b+D6aqM5pS244CCCgojIyDnq6/liLDnq6/pqozor4Hnu5PmnpwgUjLvvIgyMDI2LTA5LTMw77yM55yf5a6eIHBucG0g5L6d6LWW5biD5bGA77yJCgrliY3nva7kv67mraPvvJrkuIrova7pqozor4HnlKjnmoTmmK/miYvlt6Ugc3ltbGlua++8m+acrOi9ruaUueS4uioq55yf5a6eIHBucG0g5a6J6KOFKirvvIhzdWl0ZSBkZXBlbmRlbmNpZXMgY2FyZXQg5Yi35paw5YiwCuW9k+WJjeeJiOacrO+8jG5vZGVfbW9kdWxlcy8ucG5wbSDluIPlsYDvvInjgILnu5PmnpzvvJoKMS4gc3VpdGUg6Ieq6LqrIGBwbnBtIGluc3RhbGxgIOaLiem9kOWbm+WtkOWMhe+8iGRldmtpdCAwLjEueCDml7bku6Plt7Llh7rliJfvvIninIUKMi4gcHJvZmlsZSBgcG5wbSBpbnN0YWxsYCDnuqfogZTvvIhsaW5rOiBzdWl0ZSDkv53mjIHoh6rluKYgbm9kZV9tb2R1bGVz77yMc2hlbGwg5Yqo5oCBIGltcG9ydCDku44gc3VpdGUg55uu5b2V6Kej5p6Q77yJ4pyFCjMuIGBkc2ggLS1wcm9maWxlPXN1aXRldGVzdCAtLXBvcnQgMzk5OWAg5ZCv5YqoIOKGkiBkZWdyYWRlZCDnqbrjgIHkupTnq6/ngrnlhajlk43lupQg4pyFCjQuICoq5pWF6Zqc5rOo5YWl77yI5a+5IC5wbnBtIOecn+WunuWJr+acrOWGmSB0aHJvd++8iSoqIOKGkiBkZWdyYWRlZCDnsr7noa7liJflh7ror6XooYzvvIzlhbbkvZnlm5vooYzlrZjmtLsg4pyF77yI6ZqU56a75ZyoIG5wbSDluIPlsYDkuIvlpI3pqozvvIkKNS4g6YCQ6KGMIGRpc2FibGUg6K+t5LmJ55SxIHNoZWxsIOWFnOW6le+8iOS4iui9ruW3sumqjO+8iQoKIyMjIOi/kOe7tOazqOaEjwotIHN1aXRlIOS7pSBsaW5rOiDmlrnlvI/lronoo4Xml7bvvIzlhbYgZGVwZW5kZW5jaWVzIOeUsSBzdWl0ZSDnm67lvZXlhoUgcG5wbSBpbnN0YWxsIOaPkOS+m++8iHByb2ZpbGUg55qECiAgaW5zdGFsbCDkuI3nqb/otoogbGluayDovrnnlYzvvInigJTigJTpg6jnvbLohJrmnKzlv4XpobvlhYjlnKggc3VpdGUg55uu5b2V6LeRIGluc3RhbGzjgIIKLSDkuIrmuLggZml4IOWQjuaBouWkje+8muWvuSAucG5wbSDlia/mnKwgYGdpdCBjaGVja291dGAv6YeN6KOF5Y2z5Y+v77yM5peg6ZyA6YeN6KOF5pW05LiqIHByb2ZpbGXjgIIKCiMjIOerr+WIsOerr+mqjOivgee7k+aenCBSM++8iDIwMjYtMTAtMjDvvIzljZUgZ3JhcGggZW50cnkgKyByb3dzIGdhdGluZ++8iQoK5LiA5qyh5oCnIHByb2ZpbGUgYHN1aXRlZml4LWUyZWDvvIjku47pu5jorqQgd2ViIOa0vueUn++8jOa1i+WujOWIoOmZpO+8ie+8jGxpbmsg5a6J6KOFIHN1aXRl77yaCgoxLiBgLS1kdW1wLWNvbmZpZ2DvvJpgeDI0MC1zdWl0ZWAg6KO46ZSaICsg5Zub5p2hIGZhbWlseSArIHdlYiDooYzpvZDlhajvvJtzdWl0ZSDlj6rmnIkKICAgYEAyNDB4dS9kc2gtcGx1Z2luLWh1YmAg5LiA5LiqIGNsaWVudCBncmFwaCBlbnRyee+8jG1lc3NhZ2Utb3BzL3dlYnNlYXJjaCDml6Dni6znq4sgZW50cnnjgIIKMi4gcm9vdCBIVE1MIOeahCBncmFwaCBlbnRyeSBgdXJsYCDmjIflkJHnu4TlkIggYnVuZGxl77yb5oqT5Y+WIDIwMO+8jOWGheWQq+S4pOS4quWtkCBjbGllbnQKICAg5rqQ56CB5LiOIHJvd3Mg6Lev5b6E44CCCjMuIGZpeHR1cmUgYHNlc3Npb24tYWI2ZmVmZjIt4oCmYO+8mk1lc3NhZ2Ugb3BzIGhlYWRlciDmjInpkq7lh7rnjrDvvIxwYW5lbCA1NjHDlzkwMO+8jAogICB0aXRsZS9zZXNzaW9uIGlkIOato+ehru+8m2B3aW5kb3cuX19kc2hXZWJzZWFyY2hTZXR0aW5nc1JlYWR5ID09PSB0cnVlYO+8jOiuvue9rumhtQogICDigJxXZWIgU2VhcmNo4oCdIOWujOaVtOa4suafk++8iGAvYXBpL3VuaWZpZWQtc2VhcmNoL3NldHRpbmdzYCA1MDMKICAgYG5hbWVzcGFjZS1ub3QtZm91bmRgIOaYr+Wuv+S4u+WPquivuy9zZXR0aW5ncyBuYW1lc3BhY2Ug54q25oCB77yM5LiN5b2x5ZONIFVJIOaMgui9ve+8ieOAggo0LiBkaXNhYmxlIGB4MjQwLW1lc3NhZ2Utb3BzYO+8mmAvYXBpL2RzaC1wbHVnaW4taHViL3Jvd3NgIOS4jeWGjeWIl+WHuuivpeWMhe+8jOmhtemdouaXoAogICBNZXNzYWdlIG9wcyDmjInpkq7vvIx3ZWJzZWFyY2gg5LuN5oyC6L2944CCCjUuIOaVhemanOazqOWFpe+8iGBjb25maWcucGx1Z2luYCDmjIflkJHkuI3lrZjlnKjnmoTljIXvvInvvJpgZHNoIHdlYmAg5q2j5bi45ZCv5Yqo77yMCiAgIGAvZGVncmFkZWRgIOWPquWIl+ivpeihjO+8jOWFtuS7liBVSSDlrZjmtLvvvIzml6AgcGFnZWVycm9y44CCCjYuIHN0YW5kYWxvbmUgYEAyNDB4dS9kc2gtbWVzc2FnZS1vcHNgIOWFseWtmO+8mmdyYXBoIGVudHJpZXMg5ZCM5pe25pyJIHN1aXRlIOS4jgogICBzdGFuZGFsb25l77ybc3VpdGUg55qEIGBtb3VudGVkYCDlj6rliakgd2Vic2VhcmNo77yMc3RhbmRhbG9uZSDmj5DkvpsgTWVzc2FnZSBvcHPvvJsKICAg6aG16Z2iICoqMSDkuKoqKiBoZWFkZXIg5oyJ6ZKu44CBKioxIOS4qioqIHBhbmVs44CC5a6/5Li75pel5b+X5pyJCiAgIGB0b29sICJtZXNzYWdlX29wcyIgaXMgYWxyZWFkeSByZWdpc3RlcmVkYCDorablkYrvvIjlt6Xlhbfkv53nlZnkuIDku73vvInvvIzlsZ7lt7Lnn6XlhbHlrZgKICAg5Zmq6Z+z44CCCgojIyAwLjEuNCDCtyBCdWcg54yO5Zy65L+u5aSNCgotICoqW1AyXSBjb3JkaXMucGF0Y2gueW1sIOepuiBgLSBpbnNlcnQ6YCDmrbvooYwqKu+8iGRldmtpdCDliKDpmaTmrovnlZnvvInigJTigJRsb2FkZXIg5q+P5qyh5ZCv5YqoCiAgd2Fybi1hbmQtc2tpcOOAguW3suWIoO+8m+WktOazqOmHiuaUueOAjOWbm+adoSBmYW1pbHkg6KGMICsg5LiA5p2hIHdlYiDmjqXnur/ooYzjgI3jgIIKLSAqKltQMl0g5L6d6LWWIGNhcmV0IOWkqeiKseadvyoq77yabWVzc2FnZS1vcHMgXjAuMi54IOawuOi/nOijheS4jeWIsCAwLjPigJMwLjUg54m55oCnIOKGkiDlm5vkuKoKICBjYXJldCDlhajpg6jlr7npvZDlvZPliY3mnIDmlrDvvIh3ZWJzZWFyY2ggXjIuOC4yIC8gbWVzc2FnZS1vcHMgXjAuNS4yIC8gbGF6eS12aWV3IF4wLjMuNCAvCiAgc2Vzc2lvbi1zZWFyY2ggXjAuMS4177yJ77ybcG5wbS1sb2NrIOWIt+aWsO+8iGZyb3plbi1sb2NrZmlsZSDlj6/nlKjvvInvvIxkZXZraXQg5b275bqV5Ye65YiX44CCCi0gKipbUDJdIGRlZ3JhZGVkIOi3r+eUsee8uiBIb3N0IOWbtOagjyoq77ya5LuF5p+lIHJlbW90ZUFkZHJlc3PvvIxETlMtcmViaW5kaW5nIOWPr+ivu+mZjee6pwogIOa4heWNle+8iOWQqyBlcnJvci5zdGFjayDnu53lr7not6/lvoTvvInihpIg6KGlIEhvc3Qg55m95ZCN5Y2V77yIbG9jYWxob3N0LzEyNy4wLjAuMS9bOjoxXe+8ieOAggotICoqW1AyXSByZWNvcmREZWdyYWRlZCDoh6rmiqTmoI8qKu+8mnN0YWNrIGdldHRlci90b1N0cmluZyDmipvlh7rkvJrpgIPlh7ogYXBwbHlTaGVsbCDop6blj5EKICDmlbQgYnVuZGxlIOS6i+WKoeWbnua7mu+8iOaBsOaYr+Wjs+imgemYsueahO+8ie+8m3N0YXJ0IOWbnuiwg+WMhSB0cnkvY2F0Y2gg6ZiyIHVuaGFuZGxlZFJlamVjdGlvbgogIOadgOi/m+eoi++8m2BKU09OLnN0cmluZ2lmeShjb25maWcpYCDihpIgc2FmZVN0cmluZ2lmeeOAggotICoqW1AyXSBSRUFETUUg5L6d6LWW6KGoIDQvNCDov4fmnJ8gKyDjgIzkupTmnaEv5LqU5a2Q5YyF44CN5Y+j5b6EKiog4oaSIOWFqOmDqOWQjOatpe+8m+aWsOWinuOAjOW3suefpQogIOW8uuiApuWQiOOAjeeroOiKgu+8iHdlYnNlYXJjaCDooYzpmY3nuqfov57lnZAgZHNoLXdlYiDmkJzntKLnmoTlpITnva7mlrnms5XvvInjgIIK
+# @240xu/dsh-plugin-hub
+
+@240xu 生态一键聚合包（v0.2.0）：一条命令安装全家，逐行开关即回滚。
+架构依据专家组会签方案 `dsh-plugin-hub/docs/aggregation-weball.md`
+（对 @linxin666/dsh-web-all 的逆向拆解）。
+
+## 安装
+
+```sh
+dsh plugin --profile web add @240xu/dsh-plugin-hub@latest
+dsh web
+```
+
+安装即引入四个子包（dependencies caret 区间）并挂载四条 family 行 + 一条裸锚行 +
+一条 web 接线行：
+
+| 行 id | 子路径 / 入口 | 真实插件 |
+|---|---|---|
+| x240-suite | `@240xu/dsh-plugin-hub`（裸锚，唯一 client graph entry） | 无（浏览器半由 `exports["./client"]` 折叠） |
+| x240-websearch | @240xu/dsh-plugin-hub/websearch | @240xu/dsh-websearch ^2.8.3 |
+| x240-message-ops | @240xu/dsh-plugin-hub/message-ops | @240xu/dsh-message-ops ^0.11.0 |
+| x240-session-lazy-view | @240xu/dsh-plugin-hub/session-lazy-view | @240xu/dsh-session-lazy-view ^0.3.5 |
+| x240-session-search | @240xu/dsh-plugin-hub/session-search | @240xu/dsh-session-search ^0.1.10 |
+
+`x240-suite` 只承载 client graph entry 与观测路由；禁用它会关闭浏览器 UI
+（四条 host 行仍继续工作）。只想关某个 UI 时，disable 对应的 family 行即可。
+
+## 已知强耦合（web 接线行）
+
+`web` 行无条件把 `searchProvider` 置为 `unified`（websearch 的 PROVIDER_ID）。
+若 `x240-websearch` 行被 disable/import 降级，dsh-web 每次搜索会硬抛
+`WEB_PROVIDER_CONFIGURED_MISSING`（连坐打死本可回退 deepseek-official 的 web
+搜索）。禁用 websearch 行时请同步删掉 `web` 行的 `searchProvider` 覆盖。
+
+## 故障隔离（shell 壳）
+
+官方 loader 把一个 bundle 的全部 patch 行当一个事务组挂载：裸挂时任一插件
+import/start 失败会回滚整组并 abort `dsh web`。因此每行 `name` 指向本包的
+shell 子路径（`src/shell.js`，永不失败），真实包名放在 `config.plugin`，由壳
+动态 import——**失败收窄到单行**：记录降级（loopback-only
+`GET /api/dsh-plugin-hub/degraded` 可查），其余行照常挂载。
+
+## 浏览器半（单 graph entry + rows gating）
+
+DSH 的 client graph 只认 **Loader 行的包名**。子路径行
+`@240xu/dsh-plugin-hub/message-ops` 不会被扫成 graph entry，子包的 `dsh.client`
+因此永远不会加载。所以增补裸锚行 `x240-suite`（`name: @240xu/dsh-plugin-hub`），
+由 `exports["./client"]` 指向生成的 `client/index.js`，作为**唯一** suite graph
+entry；message-ops / websearch 的 client 源码在构建时折叠进一个 factory，
+不再单独注册内部 id（避免 HMR 重载 suite 时 id 重复注册）。
+
+浏览器半启动时：
+
+1. `GET api/dsh-plugin-hub/rows`（相对路径，无前导 `/`，1500ms 超时）。
+2. 只对宿主报告 active 的 family 包调用 `ctx.plugin`；每项保留自己的
+   `inject`（如 message-ops 的 `slots`），故障逐项 try/catch，不连坐。
+3. 如果 `__DSH_BOOT__.entries` 里已有某个子包的 standalone graph entry，
+   跳过折叠副本，交给 standalone 挂载（web-all 同款语义）。
+4. rows 请求失败/超时/不确定时 fail-open 全挂载；已挂载集合用
+   `Symbol.for("dsh-plugin-hub.mounted-client-plugins")` 跨 bundle 去重。
+
+`client/index.js` 是生成物，别手改；改子包或 runtime 后运行
+`pnpm run build:client`，`pnpm run check:client` 失败即产物过期。
+
+残余风险：折叠子包的 CSS 归属 suite graph entry。suite 自身 HMR invalidate
+不会清掉子样式，可能重复注入 `<style>`；功能不受影响，刷新页面可清干净。
+
+## 逐行 disable（回滚主路径）
+
+设置 → 插件 → 插件管理，或 profile 用户层 `cordis.patch.yml`：
+
+```yaml
+- id: x240-session-search
+  disabled: true
+```
+
+被禁行不加载；其余行不受影响。无需卸载整包。
+
+## 回滚 / 退出聚合
+
+```sh
+dsh plugin --profile web remove @240xu/dsh-plugin-hub
+```
+
+行 id 带 `x240-` 前缀，与各子包 standalone 安装的 id（`dsh-websearch` 等）不
+冲突，可与 standalone 共存。两者都在时，**浏览器半**由 standalone 优先：
+suite 检测到同名 graph entry 后跳过折叠副本，UI 只出现一份（已实测：一个
+header 按钮、一个 panel）。**宿主半**的四条 shell 行仍会挂载，因此若子包
+自身不是幂等注册（例如 message-ops 的 `message_ops` 工具），日志可能出现一行
+`already registered` 警告；工具只保留一份，功能不受影响。需要完全无警告时
+不要同时安装 standalone。
+
+只想要个别插件：直接 `dsh plugin add @240xu/dsh-websearch`，不经 suite。
+
+## 与 web-all 模式的差异
+
+1. suite 只注册 **一个** client graph entry（裸锚行），子包 client 源码折叠进
+   该 factory；不像 web-all 那样注册多个内部 id。activeRows / `/rows` case
+   gating 保留，且 standalone 同名 graph entry 会让折叠副本让位。
+2. caret 区间聚合（非家族 lockstep）：各子包独立发版独立更新，suite 只做下限约束。
+3. 保留 web-all 的：globalThis 单例壳状态、RETIRED_PLUGINS 静默化机制位、
+   loopback-only degraded 观测路由、嵌套 inject(["webServer"]) 时序处理。
+
+## 验证状态
+
+- 壳隔离语义：`npm test`（node --test）24 项全过——good 挂载 / import 失败降级 /
+  shape 降级 / start 抛错降级且兄弟行照常 / 空行静默 / 健康路由迟到注册 /
+  activeRows 账本 / rows 路由 / degraded 围栏 / 单 graph entry / capture /
+  rows gating / fail-open / standalone skip / 单子失败隔离 / 二次挂载去重 /
+  bundle 新鲜度 / dispose 释放挂载 claim。fixtures 在 `test/fixtures/`。
+- **真实 E2E 已验**（2026-10-20，一次性 `suitefix-e2e` profile）：link 安装、
+  root HTML 只有一个 `@240xu/dsh-plugin-hub` client entry、组合 bundle 200、Message
+  ops 561×900 panel（fixture `session-ab6feff2-…`）、Web Search 设置页可用；
+  逐行 disable 后 rows 排除该行且 UI 不挂载；故障注入后 degraded 只列坏行、
+  其余 UI 存活；standalone message-ops 共存时 UI 单份。
+
+## 端到端验证步骤（发布前必做）
+
+1. `cd ~/dsh-plugins-src/dsh-plugin-hub && rm -rf node_modules`（清掉 PoC fixtures，
+   换真实依赖：把四个子包目录 ln -s 进 node_modules/@240xu/，或 pnpm link）。
+2. `dsh plugin --profile web add link:$(pwd)`（测试 profile 更稳：
+   `--profile suitetest`）。
+3. `dsh --profile suitetest --dump-config`：确认裸锚 `x240-suite` + 四条
+   `x240-*` family 行 + web 行存在、family name 为 shell 子路径、
+   config.plugin 为真实包名，且 suite 只有一个 client graph entry。
+4. `dsh --profile suitetest --port 3999`：五插件功能可用；
+   `curl -s http://127.0.0.1:<port>/api/dsh-plugin-hub/degraded` 应返回
+   `{"ok":true,"degraded":[]}`，`/api/dsh-plugin-hub/rows` 应列出四行对应的真实包。
+5. 故障注入验证隔离：临时改坏一个子包导出（或 patch 行 config.plugin 指向不存在
+   的包名），重启 → `dsh web` 应正常启动，仅 degraded 列出该行，其余四行可用。
+6. 验证 standalone 共存：同 profile 再 `dsh plugin add link:../dsh-message-ops`，
+   确认 graph entry 同时存在、suite 的 folded 副本让位、页面只有一个
+   Message ops 按钮/panel；宿主 `message_ops` 工具可能有一行 already registered
+   警告（只保留一份）。
+7. 全部通过后删除一次性 profile、发 npm（先子包后 suite）。
+
+## 端到端验证结果（2026-09-28，suitetest profile 实测）
+
+| 步骤 | 结果 |
+|---|---|
+| 1. link 五个真实子包 | ✅（lazy-view 源码在 slv-check 目录，symlink 指向该处） |
+| 2. `dsh plugin add link:` | ✅ suite 注册为 bundle |
+| 3. dump-config | ✅ 四条 x240-* 行、name=shell 子路径、config.plugin=真实包名 |
+| 4. `dsh --profile=suitetest --port 3999` | ✅ http=401、degraded 空、五端点全响应（400/200/200/401/200 均为预期值） |
+| 5. 故障注入（session-search index.js 抛错） | ✅ **隔离生效**：服务正常启动（401），degraded 仅列 `@240xu/dsh-session-search [import]`，其余四行端点全部存活 |
+| 6. standalone 共存（suite 内 devkit + standalone dsh-devkit 同 profile） | ✅ 启动无重复 id 冲突（bundle patch insert warn-and-skip）、degraded 空、/api/devkit/health 单实例 200、组合树出现 4 处 dsh-devkit 引用（suite 行+standalone 行+元数据） |
+
+### 实测发现的运维事实（发布前须知）
+1. **slv-check 裸克隆需要 node_modules shim**：`@deepseek-ai/schemastery` 指向 profile 安装（`ln -sfn <profile>/node_modules/@deepseek-ai/schemastery slv-check/node_modules/@deepseek-ai/schemastery`）。npm 发布版无此问题（真实安装由 pnpm hoisted 提供）。
+2. **CLI 语法**：`dsh --profile=<name> --port <p> --no-open`（`--profile <name> web` 的 `web` 会被当多余 app 参数拒绝；`dsh <name> web` 同样）。
+3. **profile 依赖两个内建 bundle**：`@deepseek-ai/dsh-base` + `@deepseek-ai/dsh-web-app`（缺后者则无 HTTP 面）。
+4. 壳隔离在第 5 步经受住了真实故障注入——这正是专家组会签方案的核心验收。
+
+## 端到端验证结果 R2（2026-09-30，真实 pnpm 依赖布局）
+
+前置修正：上轮验证用的是手工 symlink；本轮改为**真实 pnpm 安装**（suite dependencies caret 刷新到
+当前版本，node_modules/.pnpm 布局）。结果：
+1. suite 自身 `pnpm install` 拉齐四子包（devkit 0.1.x 时代已出列）✅
+2. profile `pnpm install` 级联（link: suite 保持自带 node_modules，shell 动态 import 从 suite 目录解析）✅
+3. `dsh --profile=suitetest --port 3999` 启动 → degraded 空、五端点全响应 ✅
+4. **故障注入（对 .pnpm 真实副本写 throw）** → degraded 精确列出该行，其余四行存活 ✅（隔离在 npm 布局下复验）
+5. 逐行 disable 语义由 shell 兜底（上轮已验）
+
+### 运维注意
+- suite 以 link: 方式安装时，其 dependencies 由 suite 目录内 pnpm install 提供（profile 的
+  install 不穿越 link 边界）——部署脚本必须先在 suite 目录跑 install。
+- 上游 fix 后恢复：对 .pnpm 副本 `git checkout`/重装即可，无需重装整个 profile。
+
+## 端到端验证结果 R3（2026-10-20，单 graph entry + rows gating）
+
+一次性 profile `suitefix-e2e`（从默认 web 派生，测完删除），link 安装 suite：
+
+1. `--dump-config`：`x240-suite` 裸锚 + 四条 family + web 行齐全；suite 只有
+   `@240xu/dsh-plugin-hub` 一个 client graph entry，message-ops/websearch 无独立 entry。
+2. root HTML 的 graph entry `url` 指向组合 bundle；抓取 200，内含两个子 client
+   源码与 rows 路径。
+3. fixture `session-ab6feff2-…`：Message ops header 按钮出现，panel 561×900，
+   title/session id 正确；`window.__dshWebsearchSettingsReady === true`，设置页
+   “Web Search” 完整渲染（`/api/unified-search/settings` 503
+   `namespace-not-found` 是宿主只读/settings namespace 状态，不影响 UI 挂载）。
+4. disable `x240-message-ops`：`/api/dsh-plugin-hub/rows` 不再列出该包，页面无
+   Message ops 按钮，websearch 仍挂载。
+5. 故障注入（`config.plugin` 指向不存在的包）：`dsh web` 正常启动，
+   `/degraded` 只列该行，其他 UI 存活，无 pageerror。
+6. standalone `@240xu/dsh-message-ops` 共存：graph entries 同时有 suite 与
+   standalone；suite 的 `mounted` 只剩 websearch，standalone 提供 Message ops；
+   页面 **1 个** header 按钮、**1 个** panel。宿主日志有
+   `tool "message_ops" is already registered` 警告（工具保留一份），属已知共存
+   噪音。
+
+## 0.1.4 · Bug 猎场修复
+
+- **[P2] cordis.patch.yml 空 `- insert:` 死行**（devkit 删除残留）——loader 每次启动
+  warn-and-skip。已删；头注释改「四条 family 行 + 一条 web 接线行」。
+- **[P2] 依赖 caret 天花板**：message-ops ^0.2.x 永远装不到 0.3–0.5 特性 → 四个
+  caret 全部对齐当前最新（websearch ^2.8.2 / message-ops ^0.5.2 / lazy-view ^0.3.4 /
+  session-search ^0.1.5）；pnpm-lock 刷新（frozen-lockfile 可用），devkit 彻底出列。
+- **[P2] degraded 路由缺 Host 围栏**：仅查 remoteAddress，DNS-rebinding 可读降级
+  清单（含 error.stack 绝对路径）→ 补 Host 白名单（localhost/127.0.0.1/[::1]）。
+- **[P2] recordDegraded 自护栏**：stack getter/toString 抛出会逃出 applyShell 触发
+  整 bundle 事务回滚（恰是壳要防的）；start 回调包 try/catch 防 unhandledRejection
+  杀进程；`JSON.stringify(config)` → safeStringify。
+- **[P2] README 依赖表 4/4 过期 + 「五条/五子包」口径** → 全部同步；新增「已知
+  强耦合」章节（websearch 行降级连坐 dsh-web 搜索的处置方法）。
