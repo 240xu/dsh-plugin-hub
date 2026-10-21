@@ -21,11 +21,14 @@ dsh web
 | x240-message-ops | @240xu/dsh-plugin-hub/message-ops | @240xu/dsh-message-ops ^0.11.0 |
 | x240-session-lazy-view | @240xu/dsh-plugin-hub/session-lazy-view | @240xu/dsh-session-lazy-view ^0.3.5 |
 | x240-session-search | @240xu/dsh-plugin-hub/session-search | @240xu/dsh-session-search ^0.1.10 |
-| experimental-inspector | `@deepseek-ai/dsh-experimental-inspector` | 官方 Inspector（DevTools / 请求抓取 / session 日志） |
-| session-inspector | `@deepseek-ai/dsh-experimental-session-inspector` | 官方 Session 检查器 |
+| experimental-inspector | `@deepseek-ai/dsh-experimental-inspector` | 官方 Inspector Worker（DevTools/请求抓取/session 日志） |
+| session-inspector | `@deepseek-ai/dsh-experimental-session-inspector` | 官方 Session 检查面板 |
 
 `x240-suite` 只承载 client graph entry 与观测路由；禁用它会关闭浏览器 UI
 （四条 host 行仍继续工作）。只想关某个 UI 时，disable 对应的 family 行即可。
+
+**当前不含 devkit**：`devkit` 已于 0.1.3 出列，`exports["./devkit"]` 也在 0.3.2 移除；
+下方早期验证表中出现 devkit 的段落属于历史记录。
 
 ## 已知强耦合（web 接线行）
 
@@ -119,7 +122,7 @@ header 按钮、一个 panel）。**宿主半**的四条 shell 行仍会挂载�
 ## 端到端验证步骤（发布前必做）
 
 1. `cd ~/dsh-plugins-src/dsh-plugin-hub && rm -rf node_modules`（清掉 PoC fixtures，
-   换真实依赖：把四个子包目录 ln -s 进 node_modules/@240xu/，或 pnpm link）。
+   换真实依赖：把四个社区子包与 Inspector 依赖装齐（pnpm install / link）。
 2. `dsh plugin --profile web add link:$(pwd)`（测试 profile 更稳：
    `--profile suitetest`）。
 3. `dsh --profile suitetest --dump-config`：确认裸锚 `x240-suite` + 四条
@@ -140,12 +143,12 @@ header 按钮、一个 panel）。**宿主半**的四条 shell 行仍会挂载�
 
 | 步骤 | 结果 |
 |---|---|
-| 1. link 五个真实子包 | ✅（lazy-view 源码在 slv-check 目录，symlink 指向该处） |
+| 1. link 四个社区子包 + Inspector | ✅（lazy-view 源码在 slv-check 目录，symlink 指向该处） |
 | 2. `dsh plugin add link:` | ✅ suite 注册为 bundle |
 | 3. dump-config | ✅ 四条 x240-* 行、name=shell 子路径、config.plugin=真实包名 |
 | 4. `dsh --profile=suitetest --port 3999` | ✅ http=401、degraded 空、五端点全响应（400/200/200/401/200 均为预期值） |
 | 5. 故障注入（session-search index.js 抛错） | ✅ **隔离生效**：服务正常启动（401），degraded 仅列 `@240xu/dsh-session-search [import]`，其余四行端点全部存活 |
-| 6. standalone 共存（suite 内 devkit + standalone dsh-devkit 同 profile） | ✅ 启动无重复 id 冲突（bundle patch insert warn-and-skip）、degraded 空、/api/devkit/health 单实例 200、组合树出现 4 处 dsh-devkit 引用（suite 行+standalone 行+元数据） |
+| 6. standalone 共存（suite 内 message-ops + standalone message-ops 同 profile） | ✅ 浏览器半单份；宿主工具可能有一行 already registered 警告（只保留一份） |
 
 ### 实测发现的运维事实（发布前须知）
 1. **slv-check 裸克隆需要 node_modules shim**：`@deepseek-ai/schemastery` 指向 profile 安装（`ln -sfn <profile>/node_modules/@deepseek-ai/schemastery slv-check/node_modules/@deepseek-ai/schemastery`）。npm 发布版无此问题（真实安装由 pnpm hoisted 提供）。
@@ -157,7 +160,7 @@ header 按钮、一个 panel）。**宿主半**的四条 shell 行仍会挂载�
 
 前置修正：上轮验证用的是手工 symlink；本轮改为**真实 pnpm 安装**（suite dependencies caret 刷新到
 当前版本，node_modules/.pnpm 布局）。结果：
-1. suite 自身 `pnpm install` 拉齐四子包（devkit 0.1.x 时代已出列）✅
+1. `pnpm install` 拉齐四个社区子包 + 官方 Inspector bundle ✅
 2. profile `pnpm install` 级联（link: suite 保持自带 node_modules，shell 动态 import 从 suite 目录解析）✅
 3. `dsh --profile=suitetest --port 3999` 启动 → degraded 空、五端点全响应 ✅
 4. **故障注入（对 .pnpm 真实副本写 throw）** → degraded 精确列出该行，其余四行存活 ✅（隔离在 npm 布局下复验）
