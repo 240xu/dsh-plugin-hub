@@ -1,1 +1,6 @@
-bWluaW11bVJlbGVhc2VBZ2VFeGNsdWRlOgogIC0gJ0AyNDB4dS9kc2gtZGV2a2l0QDAuMi4zJwogIC0gJ0AyNDB4dS9kc2gtbWVzc2FnZS1vcHNAMC4yLjMgfHwgMC41LjIgfHwgMC4xMS4wJwogIC0gJ0AyNDB4dS9kc2gtc2Vzc2lvbi1zZWFyY2hAMC4xLjIgfHwgMC4xLjUgfHwgMC4xLjEwJwogIC0gJ0AyNDB4dS9kc2gtd2Vic2VhcmNoQDIuNy4zIHx8IDIuOC4wIHx8IDIuOC4yJwogIC0gJ0AyNDB4dS9kc2gtc2Vzc2lvbi1sYXp5LXZpZXdAMC4zLjQnCg==
+minimumReleaseAgeExclude:
+  - '@240xu/dsh-devkit@0.2.3'
+  - '@240xu/dsh-message-ops@0.2.3 || 0.5.2 || 0.11.0'
+  - '@240xu/dsh-session-search@0.1.2 || 0.1.5 || 0.1.10'
+  - '@240xu/dsh-websearch@2.7.3 || 2.8.0 || 2.8.2'
+  - '@240xu/dsh-session-lazy-view@0.3.4'
