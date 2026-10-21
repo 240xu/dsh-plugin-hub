@@ -11,6 +11,7 @@ jobs:
       - name: Inspect npm 0.11.0
         run: |
           set -e
+          mkdir -p audit
           V=0.11.0
           URL=$(curl -fsSL "https://registry.npmjs.org/@240xu%2Fdsh-message-ops/$V" | python3 -c "import json,sys;print(json.load(sys.stdin)['dist']['tarball'])")
           curl -fsSL "$URL" -o /tmp/m.tgz
@@ -25,7 +26,6 @@ jobs:
           } > audit/msgops-011.md
       - name: Commit report
         run: |
-          mkdir -p audit
           git config user.name 240xu
           git config user.email 240xu@users.noreply.github.com
           git add audit/msgops-011.md
