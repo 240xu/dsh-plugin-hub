@@ -1,0 +1,12 @@
+name: inspect-030
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect
+        run: |
+          curl -fsSL https://registry.npmjs.org/@240xu%2Fdsh-plugin-hub | python3 -c "import json,sys;d=json.load(sys.stdin);print('dist-tags',d['dist-tags']);v=d['versions'].get('0.3.0');print('0.3.0 exists',bool(v));print('0.3.0 deps',v.get('dependencies') if v else None);print('0.3.0 time',d.get('time',{}).get('0.3.0'))"
