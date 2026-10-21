@@ -41,3 +41,14 @@
   name: '@deepseek-ai/dsh-web'
   config:
     searchProvider: unified
+
+# Optional official Inspector bundle: mounted from the aggregate package so one
+# `dsh plugin add @240xu/dsh-plugin-hub` also installs log/session/DevTools tools.
+- insert:
+    - id: experimental-inspector
+      name: '@deepseek-ai/dsh-experimental-inspector'
+      disabled: false
+      config:
+        captureFetch: true
+    - id: session-inspector
+      name: '@deepseek-ai/dsh-experimental-session-inspector'
