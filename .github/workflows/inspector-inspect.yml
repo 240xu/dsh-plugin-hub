@@ -1,0 +1,24 @@
+name: inspector-inspect
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+      - name: Pack and inspect
+        run: |
+          set -e
+          mkdir -p /tmp/ip /tmp/ii /tmp/is
+          npm pack @deepseek-ai/dsh-experimental-inspector-profile@0.2.1-rc.2 --pack-destination /tmp/ip
+          npm pack @deepseek-ai/dsh-experimental-inspector@0.2.1-rc.2 --pack-destination /tmp/ii
+          npm pack @deepseek-ai/dsh-experimental-session-inspector@0.2.1-rc.2 --pack-destination /tmp/is
+          for f in /tmp/ip/*.tgz /tmp/ii/*.tgz /tmp/is/*.tgz; do
+            echo "=== $f"
+            tar -xOf "$f" package/package.json | python3 -c "import json,sys;d=json.load(sys.stdin);print(d['name'],d['version']);print('deps',d.get('dependencies'));print('peer',d.get('peerDependencies'));print('dsh',d.get('dsh'))"
+          done
