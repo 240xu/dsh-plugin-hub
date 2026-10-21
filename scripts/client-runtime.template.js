@@ -1,1 +1,121 @@
-d2luZG93Ll9fTW9kdWxlTG9hZGVyX18ubG9hZCh7CiAgaWQ6ICJAMjQweHUvZHNoLXBsdWdpbi1odWIiLAogIGZhY3Rvcnk6IChyZXF1aXJlKSA9PiB7CiAgICBjb25zdCBDSElMRFJFTiA9IF9fQ0hJTERSRU5fXzsKICAgIGNvbnN0IFJPV1NfUEFUSCA9ICJhcGkvZHNoLXBsdWdpbi1odWIvcm93cyI7CiAgICBjb25zdCBGRVRDSF9USU1FT1VUX01TID0gMTUwMDsKICAgIGNvbnN0IE1PVU5URUQgPSBTeW1ib2wuZm9yKCJkc2gtcGx1Z2luLWh1Yi5tb3VudGVkLWNsaWVudC1wbHVnaW5zIik7CgogICAgZnVuY3Rpb24gbW91bnRlZFJlZ2lzdHJ5KCkgewogICAgICBjb25zdCByb290ID0gZ2xvYmFsVGhpczsKICAgICAgcmV0dXJuIChyb290W01PVU5URURdID8/PSBuZXcgU2V0KCkpOwogICAgfQoKICAgIGZ1bmN0aW9uIG93bkNsaWVudEVudHJ5SWRzKCkgewogICAgICBjb25zdCBlbnRyaWVzID0gZ2xvYmFsVGhpcy5fX0RTSF9CT09UX18/LmVudHJpZXM7CiAgICAgIGNvbnN0IGlkcyA9IG5ldyBTZXQoKTsKICAgICAgaWYgKCFBcnJheS5pc0FycmF5KGVudHJpZXMpKSByZXR1cm4gaWRzOwogICAgICBmb3IgKGNvbnN0IGVudHJ5IG9mIGVudHJpZXMpIHsKICAgICAgICBpZiAodHlwZW9mIGVudHJ5ID09PSAic3RyaW5nIikgaWRzLmFkZChlbnRyeSk7CiAgICAgICAgZWxzZSBpZiAoZW50cnkgJiYgdHlwZW9mIGVudHJ5LmlkID09PSAic3RyaW5nIikgaWRzLmFkZChlbnRyeS5pZCk7CiAgICAgIH0KICAgICAgcmV0dXJuIGlkczsKICAgIH0KCiAgICBhc3luYyBmdW5jdGlvbiBmZXRjaEFjdGl2ZVJvd3MoKSB7CiAgICAgIGlmICh0eXBlb2YgZmV0Y2ggIT09ICJmdW5jdGlvbiIpIHJldHVybiB1bmRlZmluZWQ7CiAgICAgIGxldCB0aW1lcjsKICAgICAgdHJ5IHsKICAgICAgICBjb25zdCBjb250cm9sbGVyID0gbmV3IEFib3J0Q29udHJvbGxlcigpOwogICAgICAgIHRpbWVyID0gc2V0VGltZW91dCgoKSA9PiBjb250cm9sbGVyLmFib3J0KCksIEZFVENIX1RJTUVPVVRfTVMpOwogICAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZmV0Y2goUk9XU19QQVRILCB7CiAgICAgICAgICBjcmVkZW50aWFsczogInNhbWUtb3JpZ2luIiwKICAgICAgICAgIGhlYWRlcnM6IHsgYWNjZXB0OiAiYXBwbGljYXRpb24vanNvbiIgfSwKICAgICAgICAgIHNpZ25hbDogY29udHJvbGxlci5zaWduYWwsCiAgICAgICAgfSk7CiAgICAgICAgaWYgKCFyZXNwb25zZS5vaykgcmV0dXJuIHVuZGVmaW5lZDsKICAgICAgICBjb25zdCBwYXlsb2FkID0gYXdhaXQgcmVzcG9uc2UuanNvbigpOwogICAgICAgIGlmICghcGF5bG9hZCB8fCBwYXlsb2FkLm9rICE9PSB0cnVlIHx8ICFBcnJheS5pc0FycmF5KHBheWxvYWQuY2hpbGRyZW4pKSByZXR1cm4gdW5kZWZpbmVkOwogICAgICAgIHJldHVybiBuZXcgU2V0KHBheWxvYWQuY2hpbGRyZW4uZmlsdGVyKChuYW1lKSA9PiB0eXBlb2YgbmFtZSA9PT0gInN0cmluZyIpKTsKICAgICAgfSBjYXRjaCB7CiAgICAgICAgcmV0dXJuIHVuZGVmaW5lZDsKICAgICAgfSBmaW5hbGx5IHsKICAgICAgICBpZiAodGltZXIgIT09IHVuZGVmaW5lZCkgY2xlYXJUaW1lb3V0KHRpbWVyKTsKICAgICAgfQogICAgfQoKICAgIGZ1bmN0aW9uIHBsdWdpblNoYXBlKG1vZHVsZSkgewogICAgICBjb25zdCBmYWNlID0gbW9kdWxlICYmIG1vZHVsZS5kZWZhdWx0ICE9PSB1bmRlZmluZWQgPyBtb2R1bGUuZGVmYXVsdCA6IG1vZHVsZTsKICAgICAgaWYgKHR5cGVvZiBmYWNlID09PSAiZnVuY3Rpb24iKSByZXR1cm4geyBhcHBseTogZmFjZSwgaW5qZWN0OiB1bmRlZmluZWQgfTsKICAgICAgaWYgKGZhY2UgJiYgdHlwZW9mIGZhY2UuYXBwbHkgPT09ICJmdW5jdGlvbiIpIHsKICAgICAgICByZXR1cm4geyBhcHBseTogZmFjZS5hcHBseSwgaW5qZWN0OiBmYWNlLmluamVjdCB9OwogICAgICB9CiAgICAgIHJldHVybiB1bmRlZmluZWQ7CiAgICB9CgogICAgYXN5bmMgZnVuY3Rpb24gbW91bnRDaGlsZHJlbihjdHgsIG9wdGlvbnMgPSB7fSkgewogICAgICBjb25zdCBhY3RpdmUgPSBhd2FpdCBmZXRjaEFjdGl2ZVJvd3MoKTsKICAgICAgaWYgKG9wdGlvbnMuaXNEaXNwb3NlZD8uKCkpIHJldHVybjsKICAgICAgY29uc3Qgb3duID0gb3duQ2xpZW50RW50cnlJZHMoKTsKICAgICAgY29uc3QgcmVnaXN0cnkgPSBtb3VudGVkUmVnaXN0cnkoKTsKICAgICAgY29uc3QgY2xhaW1lZCA9IG9wdGlvbnMuY2xhaW1lZCA/PyBuZXcgU2V0KCk7CiAgICAgIGNvbnN0IGNyZWF0ZSA9IG9wdGlvbnMuY3JlYXRlID8/ICgoY2hpbGQpID0+IGNoaWxkLmNyZWF0ZShyZXF1aXJlKSk7CiAgICAgIGZvciAoY29uc3QgY2hpbGQgb2YgQ0hJTERSRU4pIHsKICAgICAgICBpZiAob3B0aW9ucy5pc0Rpc3Bvc2VkPy4oKSkgcmV0dXJuOwogICAgICAgIGlmIChhY3RpdmUgIT09IHVuZGVmaW5lZCAmJiAhYWN0aXZlLmhhcyhjaGlsZC5uYW1lKSkgY29udGludWU7CiAgICAgICAgaWYgKG93bi5oYXMoY2hpbGQubmFtZSkpIGNvbnRpbnVlOwogICAgICAgIGlmIChyZWdpc3RyeS5oYXMoY2hpbGQubmFtZSkpIGNvbnRpbnVlOwogICAgICAgIHJlZ2lzdHJ5LmFkZChjaGlsZC5uYW1lKTsKICAgICAgICBjbGFpbWVkLmFkZChjaGlsZC5uYW1lKTsKICAgICAgICB0cnkgewogICAgICAgICAgY29uc3Qgc2hhcGUgPSBwbHVnaW5TaGFwZShjcmVhdGUoY2hpbGQpKTsKICAgICAgICAgIGlmIChzaGFwZSA9PT0gdW5kZWZpbmVkKSB7CiAgICAgICAgICAgIHJlZ2lzdHJ5LmRlbGV0ZShjaGlsZC5uYW1lKTsKICAgICAgICAgICAgY2xhaW1lZC5kZWxldGUoY2hpbGQubmFtZSk7CiAgICAgICAgICAgIGNvbnNvbGUuZXJyb3IoYFtkc2gtcGx1Z2luLWh1Yl0gZm9sZGVkIGNsaWVudCAke2NoaWxkLm5hbWV9IGhhcyBubyB1c2FibGUgcGx1Z2luIHNoYXBlYCk7CiAgICAgICAgICAgIGNvbnRpbnVlOwogICAgICAgICAgfQogICAgICAgICAgY29uc3QgZGVmaW5pdGlvbiA9IHsKICAgICAgICAgICAgbmFtZTogY2hpbGQubmFtZSwKICAgICAgICAgICAgaW5qZWN0OiBBcnJheS5pc0FycmF5KHNoYXBlLmluamVjdCkgPyBbLi4uc2hhcGUuaW5qZWN0XSA6IFtdLAogICAgICAgICAgICBhcHBseTogc2hhcGUuYXBwbHksCiAgICAgICAgICB9OwogICAgICAgICAgY29uc3QgZmliZXIgPSBjdHgucGx1Z2luKGRlZmluaXRpb24pOwogICAgICAgICAgUHJvbWlzZS5yZXNvbHZlKGZpYmVyKS50aGVuKHVuZGVmaW5lZCwgKGVycm9yKSA9PiB7CiAgICAgICAgICAgIHJlZ2lzdHJ5LmRlbGV0ZShjaGlsZC5uYW1lKTsKICAgICAgICAgICAgY2xhaW1lZC5kZWxldGUoY2hpbGQubmFtZSk7CiAgICAgICAgICAgIGNvbnNvbGUuZXJyb3IoYFtkc2gtcGx1Z2luLWh1Yl0gZm9sZGVkIGNsaWVudCAke2NoaWxkLm5hbWV9IGZhaWxlZCB0byBzdGFydDpgLCBlcnJvcik7CiAgICAgICAgICB9KTsKICAgICAgICB9IGNhdGNoIChlcnJvcikgewogICAgICAgICAgcmVnaXN0cnkuZGVsZXRlKGNoaWxkLm5hbWUpOwogICAgICAgICAgY2xhaW1lZC5kZWxldGUoY2hpbGQubmFtZSk7CiAgICAgICAgICBjb25zb2xlLmVycm9yKGBbZHNoLXBsdWdpbi1odWJdIGZvbGRlZCBjbGllbnQgJHtjaGlsZC5uYW1lfSBmYWlsZWQgdG8gbW91bnQ6YCwgZXJyb3IpOwogICAgICAgIH0KICAgICAgfQogICAgfQoKICAgIGZ1bmN0aW9uIGFwcGx5KGN0eCwgb3B0aW9ucyA9IHt9KSB7CiAgICAgIGNvbnN0IGNsYWltZWQgPSBuZXcgU2V0KCk7CiAgICAgIGxldCBkaXNwb3NlZCA9IGZhbHNlOwogICAgICB0cnkgewogICAgICAgIGN0eC5lZmZlY3QoKCkgPT4gKCkgPT4gewogICAgICAgICAgZGlzcG9zZWQgPSB0cnVlOwogICAgICAgICAgY29uc3QgcmVnaXN0cnkgPSBtb3VudGVkUmVnaXN0cnkoKTsKICAgICAgICAgIGZvciAoY29uc3QgbmFtZSBvZiBjbGFpbWVkKSByZWdpc3RyeS5kZWxldGUobmFtZSk7CiAgICAgICAgICBjbGFpbWVkLmNsZWFyKCk7CiAgICAgICAgfSwgImRzaC1wbHVnaW4taHViOiBjbGllbnQgbW91bnQgY2xhaW1zIik7CiAgICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgICAgY29uc29sZS53YXJuKCJbZHNoLXBsdWdpbi1odWJdIGZhaWxlZCB0byByZWdpc3RlciBjbGllbnQgbW91bnQgY2xlYW51cDoiLCBlcnJvcik7CiAgICAgIH0KICAgICAgdm9pZCBtb3VudENoaWxkcmVuKGN0eCwgeyAuLi5vcHRpb25zLCBjbGFpbWVkLCBpc0Rpc3Bvc2VkOiAoKSA9PiBkaXNwb3NlZCB9KS5jYXRjaCgoZXJyb3IpID0+IHsKICAgICAgICBjb25zb2xlLmVycm9yKCJbZHNoLXBsdWdpbi1odWJdIGZvbGRlZCBjbGllbnQgYnJpZGdlIGZhaWxlZDoiLCBlcnJvcik7CiAgICAgIH0pOwogICAgfQoKICAgIHJldHVybiB7CiAgICAgIGFwcGx5LAogICAgICBpbmplY3Q6IFtdLAogICAgICBfX3Rlc3Q6IHsgQ0hJTERSRU4sIG1vdW50Q2hpbGRyZW4sIGZldGNoQWN0aXZlUm93cywgb3duQ2xpZW50RW50cnlJZHMsIG1vdW50ZWRSZWdpc3RyeSB9LAogICAgfTsKICB9LAp9KTsK
+window.__ModuleLoader__.load({
+  id: "@240xu/dsh-plugin-hub",
+  factory: (require) => {
+    const CHILDREN = __CHILDREN__;
+    const ROWS_PATH = "api/dsh-plugin-hub/rows";
+    const FETCH_TIMEOUT_MS = 1500;
+    const MOUNTED = Symbol.for("dsh-plugin-hub.mounted-client-plugins");
+
+    function mountedRegistry() {
+      const root = globalThis;
+      return (root[MOUNTED] ??= new Set());
+    }
+
+    function ownClientEntryIds() {
+      const entries = globalThis.__DSH_BOOT__?.entries;
+      const ids = new Set();
+      if (!Array.isArray(entries)) return ids;
+      for (const entry of entries) {
+        if (typeof entry === "string") ids.add(entry);
+        else if (entry && typeof entry.id === "string") ids.add(entry.id);
+      }
+      return ids;
+    }
+
+    async function fetchActiveRows() {
+      if (typeof fetch !== "function") return undefined;
+      let timer;
+      try {
+        const controller = new AbortController();
+        timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+        const response = await fetch(ROWS_PATH, {
+          credentials: "same-origin",
+          headers: { accept: "application/json" },
+          signal: controller.signal,
+        });
+        if (!response.ok) return undefined;
+        const payload = await response.json();
+        if (!payload || payload.ok !== true || !Array.isArray(payload.children)) return undefined;
+        return new Set(payload.children.filter((name) => typeof name === "string"));
+      } catch {
+        return undefined;
+      } finally {
+        if (timer !== undefined) clearTimeout(timer);
+      }
+    }
+
+    function pluginShape(module) {
+      const face = module && module.default !== undefined ? module.default : module;
+      if (typeof face === "function") return { apply: face, inject: undefined };
+      if (face && typeof face.apply === "function") {
+        return { apply: face.apply, inject: face.inject };
+      }
+      return undefined;
+    }
+
+    async function mountChildren(ctx, options = {}) {
+      const active = await fetchActiveRows();
+      if (options.isDisposed?.()) return;
+      const own = ownClientEntryIds();
+      const registry = mountedRegistry();
+      const claimed = options.claimed ?? new Set();
+      const create = options.create ?? ((child) => child.create(require));
+      for (const child of CHILDREN) {
+        if (options.isDisposed?.()) return;
+        if (active !== undefined && !active.has(child.name)) continue;
+        if (own.has(child.name)) continue;
+        if (registry.has(child.name)) continue;
+        registry.add(child.name);
+        claimed.add(child.name);
+        try {
+          const shape = pluginShape(create(child));
+          if (shape === undefined) {
+            registry.delete(child.name);
+            claimed.delete(child.name);
+            console.error(`[dsh-plugin-hub] folded client ${child.name} has no usable plugin shape`);
+            continue;
+          }
+          const definition = {
+            name: child.name,
+            inject: Array.isArray(shape.inject) ? [...shape.inject] : [],
+            apply: shape.apply,
+          };
+          const fiber = ctx.plugin(definition);
+          Promise.resolve(fiber).then(undefined, (error) => {
+            registry.delete(child.name);
+            claimed.delete(child.name);
+            console.error(`[dsh-plugin-hub] folded client ${child.name} failed to start:`, error);
+          });
+        } catch (error) {
+          registry.delete(child.name);
+          claimed.delete(child.name);
+          console.error(`[dsh-plugin-hub] folded client ${child.name} failed to mount:`, error);
+        }
+      }
+    }
+
+    function apply(ctx, options = {}) {
+      const claimed = new Set();
+      let disposed = false;
+      try {
+        ctx.effect(() => () => {
+          disposed = true;
+          const registry = mountedRegistry();
+          for (const name of claimed) registry.delete(name);
+          claimed.clear();
+        }, "dsh-plugin-hub: client mount claims");
+      } catch (error) {
+        console.warn("[dsh-plugin-hub] failed to register client mount cleanup:", error);
+      }
+      void mountChildren(ctx, { ...options, claimed, isDisposed: () => disposed }).catch((error) => {
+        console.error("[dsh-plugin-hub] folded client bridge failed:", error);
+      });
+    }
+
+    return {
+      apply,
+      inject: [],
+      __test: { CHILDREN, mountChildren, fetchActiveRows, ownClientEntryIds, mountedRegistry },
+    };
+  },
+});
