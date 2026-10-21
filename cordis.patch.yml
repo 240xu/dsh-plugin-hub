@@ -1,1 +1,43 @@
-IyBAMjQweHUvZHNoLXBsdWdpbi1odWIgYnVuZGxlIGxheWVy77ya5LiA5p2h6KO46ZSa6KGM77yI5pys5YyF5qC577yM5o+Q5L6bIGJyb3dzZXIgY2xpZW50CiMgZ3JhcGggZW50cnnvvIkrIOWbm+adoSBmYW1pbHkg6KGM77yIeDI0MC0q77yM57uP5pys5YyFIHNoZWxsIOWtkOi3r+W+hO+8iSsg5LiA5p2hIHdlYiDmjqXnur/ooYzjgIIKIyDmjILovb3vvIjkvJrnrb7mlrnmoYggYWdncmVnYXRpb24td2ViYWxsLm1kIMKnNyBNVkHvvJrooYwgbmFtZSDihpIgQDI0MHh1L2RzaC1wbHVnaW4taHViLzxmYW1pbHk+CiMg77yI5rC45LiN5aSx6LSl55qE6ZqU56a75aOz77yJ77yM55yf5a6e5YyF5ZCN5pS+IGNvbmZpZy5wbHVnaW7vvIznlLEgc2hlbGwg5Yqo5oCBIGltcG9ydOKAlOKAlAojIOS7u+S4gOWtkOWMhSBpbXBvcnQvc3RhcnQg5aSx6LSl5Y+q6ZmN57qn6K+l6KGM77yM5LiN5ouW5Z6uIGJ1bmRsZSDkuovliqHnu4TjgIHkuI0gYWJvcnQgZHNoIHdlYuOAggojIOijuOmUmuihjOeahCBob3N0IGFwcGx5IOWPquaMgeaciSAvZGVncmFkZWQgKyAvcm93cyDot6/nlLHvvJvlroPnmoQgY2xpZW50IGJ1bmRsZSDmipjlhaUKIyBtZXNzYWdlLW9wcy93ZWJzZWFyY2gg55qEIFVJ77yM5bm25oyJIC9yb3dzIOeahCBhY3RpdmUg6KGMIGdhdGUg5oyC6L2944CCCiMgaWQg57uf5LiAIHgyNDAtIOWJjee8gO+8muS4juWQhOWtkOWMhSBzdGFuZGFsb25lIHBhdGNoIOeahCBpZO+8iGRzaC13ZWJzZWFyY2gg562J77yJ5LiN5Yay56qB77yMCiMgc3VpdGUg5LiOIHN0YW5kYWxvbmUg5Y+v5YWx5a2Y77yI5rWP6KeI5Zmo5Y2KIHN0YW5kYWxvbmUg5LyY5YWI77yb5a6/5Li75bel5YW35Y+v6IO95pyJ5LiA6KGMCiMgYWxyZWFkeSByZWdpc3RlcmVkIOitpuWRiu+8jOingSBSRUFETUXvvInjgIIKIyDoi6Xpqozor4HmnJ/pnIDopoHnu5Xov4cgc2hlbGwg55u05o6l5oyC5a2Q5YyF77yM5oqKIG5hbWUg5o2i5oiQ5a2Q5YyF5ZCN5bm25Yig5o6JIGNvbmZpZyDljbPlj68KIyDvvIjlr7nnhafooYzkv53nlZnlnKjmlofku7blsL7ms6jph4rvvInjgIIKLSBpbnNlcnQ6CiAgICAtIGlkOiB4MjQwLXN1aXRlCiAgICAgIG5hbWU6ICdAMjQweHUvZHNoLXBsdWdpbi1odWInCi0gaW5zZXJ0OgogICAgLSBpZDogeDI0MC13ZWJzZWFyY2gKICAgICAgbmFtZTogJ0AyNDB4dS9kc2gtcGx1Z2luLWh1Yi93ZWJzZWFyY2gnCiAgICAgIGNvbmZpZzoKICAgICAgICBwbHVnaW46ICdAMjQweHUvZHNoLXdlYnNlYXJjaCcKLSBpbnNlcnQ6CiAgICAtIGlkOiB4MjQwLW1lc3NhZ2Utb3BzCiAgICAgIG5hbWU6ICdAMjQweHUvZHNoLXBsdWdpbi1odWIvbWVzc2FnZS1vcHMnCiAgICAgIGNvbmZpZzoKICAgICAgICBwbHVnaW46ICdAMjQweHUvZHNoLW1lc3NhZ2Utb3BzJwotIGluc2VydDoKICAgIC0gaWQ6IHgyNDAtc2Vzc2lvbi1sYXp5LXZpZXcKICAgICAgbmFtZTogJ0AyNDB4dS9kc2gtcGx1Z2luLWh1Yi9zZXNzaW9uLWxhenktdmlldycKICAgICAgY29uZmlnOgogICAgICAgIHBsdWdpbjogJ0AyNDB4dS9kc2gtc2Vzc2lvbi1sYXp5LXZpZXcnCiAgICAtIGlkOiB4MjQwLXNlc3Npb24tc2VhcmNoCiAgICAgIG5hbWU6ICdAMjQweHUvZHNoLXBsdWdpbi1odWIvc2Vzc2lvbi1zZWFyY2gnCiAgICAgIGNvbmZpZzoKICAgICAgICBwbHVnaW46ICdAMjQweHUvZHNoLXNlc3Npb24tc2VhcmNoJwoKIyDlr7nnhafvvIjkuI3lkK/nlKjvvInvvJrml6Agc2hlbGwg55u05oyC5b2i5oCB77yM5Y2z5Lu75Yqh5LmmIDIpIOeahOWtl+mdouivu+azleKAlOKAlAojIC0gaW5zZXJ0OgojICAgICAtIGlkOiB4MjQwLXdlYnNlYXJjaAojICAgICAgIG5hbWU6ICdAMjQweHUvZHNoLXdlYnNlYXJjaCcKLSBpZDogd2ViCiAgbmFtZTogJ0BkZWVwc2Vlay1haS9kc2gtd2ViJwogIGNvbmZpZzoKICAgIHNlYXJjaFByb3ZpZGVyOiB1bmlmaWVkCg==
+# @240xu/dsh-plugin-hub bundle layer：一条裸锚行（本包根，提供 browser client
+# graph entry）+ 四条 family 行（x240-*，经本包 shell 子路径）+ 一条 web 接线行。
+# 挂载（会签方案 aggregation-weball.md §7 MVA：行 name → @240xu/dsh-plugin-hub/<family>
+# （永不失败的隔离壳），真实包名放 config.plugin，由 shell 动态 import——
+# 任一子包 import/start 失败只降级该行，不拖垮 bundle 事务组、不 abort dsh web。
+# 裸锚行的 host apply 只持有 /degraded + /rows 路由；它的 client bundle 折入
+# message-ops/websearch 的 UI，并按 /rows 的 active 行 gate 挂载。
+# id 统一 x240- 前缀：与各子包 standalone patch 的 id（dsh-websearch 等）不冲突，
+# suite 与 standalone 可共存（浏览器半 standalone 优先；宿主工具可能有一行
+# already registered 警告，见 README）。
+# 若验证期需要绕过 shell 直接挂子包，把 name 换成子包名并删掉 config 即可
+# （对照行保留在文件尾注释）。
+- insert:
+    - id: x240-suite
+      name: '@240xu/dsh-plugin-hub'
+- insert:
+    - id: x240-websearch
+      name: '@240xu/dsh-plugin-hub/websearch'
+      config:
+        plugin: '@240xu/dsh-websearch'
+- insert:
+    - id: x240-message-ops
+      name: '@240xu/dsh-plugin-hub/message-ops'
+      config:
+        plugin: '@240xu/dsh-message-ops'
+- insert:
+    - id: x240-session-lazy-view
+      name: '@240xu/dsh-plugin-hub/session-lazy-view'
+      config:
+        plugin: '@240xu/dsh-session-lazy-view'
+    - id: x240-session-search
+      name: '@240xu/dsh-plugin-hub/session-search'
+      config:
+        plugin: '@240xu/dsh-session-search'
+
+# 对照（不启用）：无 shell 直挂形态，即任务书 2) 的字面读法——
+# - insert:
+#     - id: x240-websearch
+#       name: '@240xu/dsh-websearch'
+- id: web
+  name: '@deepseek-ai/dsh-web'
+  config:
+    searchProvider: unified
