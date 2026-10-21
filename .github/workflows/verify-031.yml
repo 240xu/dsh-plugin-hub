@@ -1,0 +1,12 @@
+name: verify-031
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify
+        run: |
+          curl -fsSL https://registry.npmjs.org/@240xu%2Fdsh-plugin-hub | python3 -c "import json,sys;d=json.load(sys.stdin);v=d['dist-tags']['latest'];print('latest',v);print('deps',json.dumps(d['versions'][v]['dependencies'],indent=2))"
