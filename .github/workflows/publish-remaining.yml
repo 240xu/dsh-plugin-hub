@@ -1,0 +1,34 @@
+name: publish-remaining
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  websearch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {repository: 240xu/dsh-websearch, ref: main}
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, registry-url: 'https://registry.npmjs.org'}
+      - run: node --check lib/index.js
+      - name: Publish websearch
+        env: {NODE_AUTH_TOKEN: '${{ secrets.NPM_TOKEN }}'}
+        run: |
+          V=$(node -p "require('./package.json').version")
+          if npm view @240xu/dsh-websearch@$V version >/dev/null 2>&1; then echo "already $V"; exit 0; fi
+          npm publish --access public
+  message-ops:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {repository: 240xu/dsh-message-ops, ref: main}
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, registry-url: 'https://registry.npmjs.org'}
+      - run: npm test
+      - name: Publish message-ops
+        env: {NODE_AUTH_TOKEN: '${{ secrets.NPM_TOKEN }}'}
+        run: |
+          V=$(node -p "require('./package.json').version")
+          if npm view @240xu/dsh-message-ops@$V version >/dev/null 2>&1; then echo "already $V"; exit 0; fi
+          npm publish --access public
