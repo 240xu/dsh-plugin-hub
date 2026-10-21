@@ -23,8 +23,8 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          if npm view @240xu/dsh-plugin-hub@0.2.0 version >/dev/null 2>&1; then
-            echo "already published: @240xu/dsh-plugin-hub@0.2.0"
+          if npm view @240xu/dsh-plugin-hub@$(node -p "require('./package.json').version") version >/dev/null 2>&1; then
+            echo "already published: @240xu/dsh-plugin-hub@$(node -p "require('./package.json').version")"
             exit 0
           fi
           npm publish --access public
