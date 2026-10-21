@@ -1,0 +1,18 @@
+name: verify-deps
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify
+        run: |
+          curl -fsSL https://registry.npmjs.org/@240xu%2Fdsh-plugin-hub -o /tmp/p.json
+          python3 - <<'PYEOF' >> $GITHUB_STEP_SUMMARY
+          import json
+          d=json.load(open('/tmp/p.json')); v=d['dist-tags']['latest']
+          print("latest", v)
+          print(json.dumps(d['versions'][v]['dependencies'], indent=2))
+          PYEOF
