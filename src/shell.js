@@ -1,1 +1,215 @@
-Ly8gQDI0MHh1L2RzaC1wbHVnaW4taHViIOKAlCDmlYXpmpzpmpTnprvlo7PvvIh3ZWItYWxsIHNoZWxsIOaooeW8j+eahOacgOWwj+enu+akje+8ieOAggovLwovLyDmqKHlvI/mnaXmupDvvJpAbGlueGluNjY2L2RzaC13ZWItYWxs77yI6K+B5o2uIGFnZ3JlZ2F0aW9uLXdlYmFsbC5tZCDCpzXvvIwKLy8gbGliL2luZGV4LmpzOjE2Ni0yMjEgYXBwbHkkMSAvIDo0LTEyIGdsb2JhbFRoaXMg54q25oCBIC8gOjUyLTc2IGRlZ3JhZGVkIOi3r+eUse+8ieOAggovLyDmr4/kuKogZmFtaWx5IHBhdGNoIOihjOeahCBuYW1lIOaMh+WQkeacrOaWh+S7tu+8iOe7jyBwYWNrYWdlLmpzb24gZXhwb3J0cyDnmoTlkITlrZDot6/lvoTvvIwKLy8g5YWo6YOo6YeN5a+85Ye65ZCM5LiAIGFwcGx5L2luamVjdO+8ie+8jOecn+WunuaPkuS7tuWMheWQjeWcqCBjb25maWcucGx1Z2lu77yb5pys5aOz5Yqo5oCBIGltcG9ydAovLyDlroPvvIxpbXBvcnQvc3RhcnQg5aSx6LSl5Y+q6K6w5b2V6ZmN57qn44CB57ud5LiNIHJldGhyb3figJTigJTlrpjmlrkgbG9hZGVyIOaKiuS4gOS4qiBidW5kbGUg55qECi8vIOWFqOmDqCBwYXRjaCDooYzlvZPkuIDkuKrkuovliqHnu4TmjILovb3vvIzoo7jmjILml7blnY/mj5Lku7bkvJogYWJvcnQgZHNoIHdlYu+8jOWjs+aKiuWksei0pemdogovLyDmlLbnqoTliLDljZXooYzjgIIKLy8KLy8g5rWP6KeI5Zmo5Y2K77yIMC4yLjDvvInvvJrlrZDljIUgY2xpZW50IGJ1bmRsZSDnlLEgYnVpbGQtY2xpZW50Lm1qcyDmipjov5sgc3VpdGUg55qE5Y2V5LiqCi8vIGdyYXBoIGVudHJ577yIZXhwb3J0c1siLi9jbGllbnQiXe+8ie+8jOS4jeWGjeS+nei1luKAnOWtkOi3r+W+hOihjOiiqyBjbGllbnQgZ3JhcGgg5omr5o+P4oCdCi8vIOKAlOKAlGRzaC1jbGllbnQtbW9kdWxlcyDlj6rop6PmnpDoo7jljIXlkI3vvIzlrZDot6/lvoTooYzmsLjov5zmi7/kuI3liLAgZHNoLmNsaWVudOOAggovLyBhY3RpdmVSb3dzIOi0puacrCArIC9hcGkvZHNoLXBsdWdpbi1odWIvcm93cyDot6/nlLHnu5nmipjlj6DmjILovb3lgZogZ2F0Ze+8muiiqyBkaXNhYmxlIOeahOihjAovLyDmsqHmnIkgc2hlbGwgYXBwbHnvvIxVSSDkuI3mjILvvJtpbXBvcnQvc3RhcnQg6ZmN57qn55qE6KGM5LuN566XIGFjdGl2Ze+8iFVJIOS/neeVme+8jOmZjee6pwovLyDnirbmgIHorqnnlKjmiLfnnIvlvpfop4HvvInjgIJkZWdyYWRlZCDot6/nlLHku40gbG9vcGJhY2srSG9zdCDlj4zlm7TmoI/jgIIKLy8g5Lik5p2h5YGl5bq36Lev55Sx6YO96LWw5bWM5aWXIGluamVjdChbIndlYlNlcnZlciJdKSBmaWJlcuKAlOKAlOWjs+avlOWuv+S4uyB3ZWJTZXJ2ZXIg5YWI5r+A5rS777yMCi8vIOebtOaOpeivu+S8miBtaXNz77yId2ViLWFsbCDlkIzmrL7ml7bluo/lpITnkIbvvInjgIIKCmNvbnN0IEtFWSA9IFN5bWJvbC5mb3IoImRzaC1wbHVnaW4taHViLnNoZWxsLXN0YXRlIik7CgovKiog6L+b56iL57qn5YWx5Lqr5aOz54q25oCB77yaYnVuZGxlciDliIboo4LlpJrku73mqKHlnZflia/mnKzml7bkuZ/lj6rmnInkuIDku73vvIh3ZWItYWxsIOWQjOasvu+8ieOAgiAqLwpmdW5jdGlvbiBzaGVsbFN0YXRlKCkgewogIGNvbnN0IHN0YXRlID0gKGdsb2JhbFRoaXNbS0VZXSA/Pz0ge30pOwogIHN0YXRlLmRlZ3JhZGVkID8/PSBuZXcgTWFwKCk7CiAgLy8gcGx1Z2luIC0+IHJlZmNvdW5077ya5ZCM5LiA55yf5a6e5YyF5Y+v6IO96KKr5aSa6KGML3N0YW5kYWxvbmUg5ZCM5pe25oyC6L2977yM6K6h5pWw5b2S6Zu25omN5Yig44CCCiAgc3RhdGUuYWN0aXZlUm93cyA/Pz0gbmV3IE1hcCgpOwogIHN0YXRlLmhlYWx0aFJvdXRlcyA/Pz0geyBjb3VudDogMCB9OwogIHJldHVybiBzdGF0ZTsKfQoKLyoqIOWuieWFqCBKU09O77yaY2lyY3VsYXIvQmlnSW50L3RvSlNPTiDmipvlh7rml7bpmY3nuqfkuLrljaDkvY3kuLLvvIgwLjEuNCBQMiDmiqTmoI/vvInjgIIgKi8KZnVuY3Rpb24gc2FmZVN0cmluZ2lmeSh2YWx1ZSkgewogIHRyeSB7IHJldHVybiBKU09OLnN0cmluZ2lmeSh2YWx1ZSA/PyBudWxsKTsgfSBjYXRjaCB7IHJldHVybiAnIjx1bnNlcmlhbGl6YWJsZT4iJzsgfQp9CgovKiog6K6w5b2V77yI5oiW5Yi35paw77yJ5LiA6KGM6ZmN57qn44CC6ZSZ6K+v5Zyo5q2k5omT5LiA5qyh5pel5b+X44CCCiAqICAwLjEuNO+8iFAy77yJ77ya5pW05L2T6Ieq5oqk5qCP4oCU4oCU5pys5Ye95pWw6Iul6Ieq5bex5oqb77yIc3RhY2sgZ2V0dGVyL3RvU3RyaW5nIOaKm++8ie+8jAogKiAg5Lya6YCD5Ye6IGFwcGx5U2hlbGwg6K6p5aOz6KGM5LqL5Yqh5Zue5rua5pW0IGJ1bmRsZe+8jOaBsOaYr+Wjs+imgemYsueahOWksei0pemdouOAgiAqLwpmdW5jdGlvbiByZWNvcmREZWdyYWRlZChwbHVnaW4sIHN0YWdlLCBlcnJvcikgewogIHRyeSB7CiAgICBjb25zdCBtZXNzYWdlID0gZXJyb3IgaW5zdGFuY2VvZiBFcnJvciA/IChlcnJvci5zdGFjayA/PyBlcnJvci5tZXNzYWdlKSA6IFN0cmluZyhlcnJvcik7CiAgICBjb25zb2xlLmVycm9yKGBbZHNoLXBsdWdpbi1odWJdIHBsdWdpbiBkZWdyYWRlZCAoJHtzdGFnZX0pOiAke3BsdWdpbn1cbiR7bWVzc2FnZX1gKTsKICAgIHNoZWxsU3RhdGUoKS5kZWdyYWRlZC5zZXQocGx1Z2luLCB7IHBsdWdpbiwgc3RhZ2UsIG1lc3NhZ2UsIGF0OiBuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCkgfSk7CiAgfSBjYXRjaCAoZSkgewogICAgdHJ5IHsKICAgICAgc2hlbGxTdGF0ZSgpLmRlZ3JhZGVkLnNldChwbHVnaW4sIHsgcGx1Z2luLCBzdGFnZSwgbWVzc2FnZTogJzxkZWdyYWRlIGxlZGdlciB3cml0ZSBmYWlsZWQ+JywgYXQ6IG5ldyBEYXRlKCkudG9JU09TdHJpbmcoKSB9KTsKICAgIH0gY2F0Y2ggeyAvKiDmnIDlkI7pmLLnur/vvJrpnZnpu5jigJTigJTop4LmtYvlip/og73nu53kuI3lj43lmazkuLvmtYHnqIsgKi8gfQogIH0KfQoKZXhwb3J0IGZ1bmN0aW9uIGxpc3REZWdyYWRlZCgpIHsKICByZXR1cm4gWy4uLnNoZWxsU3RhdGUoKS5kZWdyYWRlZC52YWx1ZXMoKV07Cn0KCi8qKiDkuIDooYwgc2hlbGwgZW50cnkg5beyIGFwcGx577yI5Y2z5L2/55yf5a6e5o+S5Lu26ZqP5ZCOIGltcG9ydC9zdGFydCDpmY3nuqfvvInjgIIgKi8KZnVuY3Rpb24gcmVjb3JkQWN0aXZlUm93KHBsdWdpbikgewogIGNvbnN0IHJvd3MgPSBzaGVsbFN0YXRlKCkuYWN0aXZlUm93czsKICByb3dzLnNldChwbHVnaW4sIChyb3dzLmdldChwbHVnaW4pID8/IDApICsgMSk7Cn0KCi8qKiDkuIDooYwgc2hlbGwgZW50cnkg5beyIGRpc3Bvc2XvvJvlkIzljIXku43mnInliKvnmoTooYzmjILovb3ml7bkv53nlZnjgIIgKi8KZnVuY3Rpb24gcmVtb3ZlQWN0aXZlUm93KHBsdWdpbikgewogIGNvbnN0IHJvd3MgPSBzaGVsbFN0YXRlKCkuYWN0aXZlUm93czsKICBjb25zdCBuZXh0ID0gKHJvd3MuZ2V0KHBsdWdpbikgPz8gMCkgLSAxOwogIGlmIChuZXh0ID4gMCkgcm93cy5zZXQocGx1Z2luLCBuZXh0KTsKICBlbHNlIHJvd3MuZGVsZXRlKHBsdWdpbik7Cn0KCi8qKiBhY3RpdmUg6KGM5b+r54Wn77yI55yf5a6e5o+S5Lu25YyF5ZCN77yM5o+S5YWl6aG65bqP77yJ44CCYnJvd3NlciDljYrmja7mraQgZ2F0ZSDmipjlj6DmjILovb3jgIIgKi8KZXhwb3J0IGZ1bmN0aW9uIGxpc3RBY3RpdmVSb3dzKCkgewogIHJldHVybiBbLi4uc2hlbGxTdGF0ZSgpLmFjdGl2ZVJvd3Mua2V5cygpXTsKfQoKLyoqIOa1i+ivleS4k+eUqO+8mua4heepuumZjee6py9hY3RpdmUg6LSm5pys5LiO5YGl5bq36Lev55Sx6K6h5pWw44CCICovCmV4cG9ydCBmdW5jdGlvbiBfcmVzZXREZWdyYWRlZCgpIHsKICBzaGVsbFN0YXRlKCkuZGVncmFkZWQuY2xlYXIoKTsKICBzaGVsbFN0YXRlKCkuYWN0aXZlUm93cy5jbGVhcigpOwogIHNoZWxsU3RhdGUoKS5oZWFsdGhSb3V0ZXMuY291bnQgPSAwOwp9CgovKiogbG9vcGJhY2stb25seSDpmY3nuqfop4LmtYvot6/nlLHvvIjmr48gc2hlbGwg5LiK5LiL5paH5rOo5YaM5LiA5qyh77yJ44CCICovCmZ1bmN0aW9uIG1ha2VEZWdyYWRlZFJvdXRlKCkgewogIHJldHVybiB7CiAgICBraW5kOiAiZXhhY3QiLAogICAgcGF0aDogIi9hcGkvZHNoLXBsdWdpbi1odWIvZGVncmFkZWQiLAogICAgaGFuZGxlcjogYXN5bmMgKHJlcSwgcmVzKSA9PiB7CiAgICAgIGxldCByZW1vdGUgPSByZXEuc29ja2V0Py5yZW1vdGVBZGRyZXNzID8/ICIiOwogICAgICBpZiAocmVtb3RlLnN0YXJ0c1dpdGgoIjo6ZmZmZjoiKSkgcmVtb3RlID0gcmVtb3RlLnNsaWNlKDcpOwogICAgICAvLyAwLjEuNO+8iFAy77yJ77yacmVtb3RlQWRkcmVzcyDkuYvlpJblv4XpobvmoKHpqowgSG9zdOKAlOKAlGV2aWwuY29tIFRUTCDph43nu5HlrprliLAKICAgICAgLy8gMTI3LjAuMC4xIOWQjiByZW1vdGVBZGRyZXNzIOS7jeaYr+WbnueOr++8jOS7hemdoOWug+aUvuihjOS8muazhOmcsumZjee6p+a4heWNlQogICAgICAvLyDvvIjmj5Lku7blkI0gKyBlcnJvci5zdGFjayDnu53lr7not6/lvoTvvInjgIJIb3N0IOW/hemhu+aYr+acrOacuuWQje+8iOWvuem9kOS4ieWFhOW8n+eahAogICAgICAvLyBIb3N0IOWbtOagj+S4uiBhcmNoLXJldmlldyDkuIrnur/noazpl6jmp5vvvInjgIIKICAgICAgY29uc3QgaG9zdCA9IFN0cmluZyhyZXEuaGVhZGVycz8uaG9zdCA/PyAiIikudG9Mb3dlckNhc2UoKTsKICAgICAgY29uc3QgaG9zdE9rID0gL14obG9jYWxob3N0fDEyN1wuMFwuMFwuMXxcWzo6MVxdKSg6XGQrKT8kLy50ZXN0KGhvc3QpOwogICAgICBpZiAocmVtb3RlICE9PSAiMTI3LjAuMC4xIiAmJiByZW1vdGUgIT09ICI6OjEiIHx8ICFob3N0T2spIHsKICAgICAgICByZXMud3JpdGVIZWFkKDQwMywgeyAiY29udGVudC10eXBlIjogImFwcGxpY2F0aW9uL2pzb24iIH0pOwogICAgICAgIHJlcy5lbmQoSlNPTi5zdHJpbmdpZnkoeyBvazogZmFsc2UsIGVycm9yOiAiZm9yYmlkZGVuOiBsb29wYmFjay1vbmx5IiB9KSk7CiAgICAgICAgcmV0dXJuOwogICAgICB9CiAgICAgIHJlcy53cml0ZUhlYWQoMjAwLCB7ICJjb250ZW50LXR5cGUiOiAiYXBwbGljYXRpb24vanNvbiIsICJjYWNoZS1jb250cm9sIjogIm5vLXN0b3JlIiB9KTsKICAgICAgcmVzLmVuZChKU09OLnN0cmluZ2lmeSh7IG9rOiB0cnVlLCBkZWdyYWRlZDogbGlzdERlZ3JhZGVkKCkgfSkpOwogICAgfSwKICB9Owp9CgovKiogYWN0aXZlLXJvdyDot6/nlLHvvJrkuI3orr4gbG9vcGJhY2sg5Zu05qCP77yI6L+c56uv5rWP6KeI5Zmo5ZCM5rqQ6K+75Y+W77yb6L296I235Y+q5piv5YyF5ZCN77yJ44CCICovCmZ1bmN0aW9uIG1ha2VSb3dzUm91dGUoKSB7CiAgcmV0dXJuIHsKICAgIGtpbmQ6ICJleGFjdCIsCiAgICBwYXRoOiAiL2FwaS9kc2gtcGx1Z2luLWh1Yi9yb3dzIiwKICAgIGhhbmRsZXI6IGFzeW5jIChfcmVxLCByZXMpID0+IHsKICAgICAgcmVzLndyaXRlSGVhZCgyMDAsIHsgImNvbnRlbnQtdHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uIiwgImNhY2hlLWNvbnRyb2wiOiAibm8tc3RvcmUiIH0pOwogICAgICByZXMuZW5kKEpTT04uc3RyaW5naWZ5KHsgb2s6IHRydWUsIGNoaWxkcmVuOiBsaXN0QWN0aXZlUm93cygpIH0pKTsKICAgIH0sCiAgfTsKfQoKLyoqIOWBpeW6t+i3r+eUseazqOWGjO+8iHdlYlNlcnZlciDov5/liLDlronlhajvvInvvJrltYzlpZcgaW5qZWN0IGZpYmVy77yM6ZqP5pys6KGMIGRpc3Bvc2XjgIIKICogIGRlZ3JhZGVkICsgcm93cyDkvZzkuLrkuIDkuKrljp/lrZDnu4Tms6jlhowv5rOo6ZSA77ya5Lu75LiA5aSx6LSl5Zue5rua5Y+m5LiA5p2h44CCICovCmZ1bmN0aW9uIGhvbGRIZWFsdGhSb3V0ZShjdHgpIHsKICBjdHguaW5qZWN0Py4oWyJ3ZWJTZXJ2ZXIiXSwgKHNjb3BlZCkgPT4gewogICAgY29uc3Qgd2ViU2VydmVyID0gc2NvcGVkLndlYlNlcnZlcjsKICAgIGlmICh3ZWJTZXJ2ZXIgPT09IHVuZGVmaW5lZCB8fCB0eXBlb2Ygd2ViU2VydmVyLnJlZ2lzdGVyICE9PSAiZnVuY3Rpb24iKSByZXR1cm47CiAgICBjb25zdCByb3V0ZXMgPSBzaGVsbFN0YXRlKCkuaGVhbHRoUm91dGVzOwogICAgaWYgKHJvdXRlcy5jb3VudCA9PT0gMCkgewogICAgICBsZXQgdW5yZWdpc3RlckRlZ3JhZGVkOwogICAgICBsZXQgdW5yZWdpc3RlclJvd3M7CiAgICAgIHRyeSB7CiAgICAgICAgdW5yZWdpc3RlckRlZ3JhZGVkID0gd2ViU2VydmVyLnJlZ2lzdGVyKG1ha2VEZWdyYWRlZFJvdXRlKCkpOwogICAgICAgIHRyeSB7CiAgICAgICAgICB1bnJlZ2lzdGVyUm93cyA9IHdlYlNlcnZlci5yZWdpc3RlcihtYWtlUm93c1JvdXRlKCkpOwogICAgICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgICAgICB0cnkgeyB1bnJlZ2lzdGVyRGVncmFkZWQ/LigpOyB9IGNhdGNoIHsgLyogYWxyZWFkeSBnb25lICovIH0KICAgICAgICAgIHRocm93IGVycm9yOwogICAgICAgIH0KICAgICAgICByb3V0ZXMudW5yZWdpc3RlciA9ICgpID0+IHsKICAgICAgICAgIHRyeSB7IHVucmVnaXN0ZXJSb3dzPy4oKTsgfSBmaW5hbGx5IHsgdW5yZWdpc3RlckRlZ3JhZGVkPy4oKTsgfQogICAgICAgIH07CiAgICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgICAgY29uc29sZS53YXJuKCJbZHNoLXBsdWdpbi1odWJdIGZhaWxlZCB0byByZWdpc3RlciBoZWFsdGggcm91dGVzOiIsIGVycm9yKTsKICAgICAgICByZXR1cm47CiAgICAgIH0KICAgIH0KICAgIHJvdXRlcy5jb3VudCArPSAxOwogICAgY3R4LmVmZmVjdD8uKCgpID0+ICgpID0+IHsKICAgICAgcm91dGVzLmNvdW50IC09IDE7CiAgICAgIGlmIChyb3V0ZXMuY291bnQgPD0gMCkgewogICAgICAgIHJvdXRlcy5jb3VudCA9IDA7CiAgICAgICAgdHJ5IHsgcm91dGVzLnVucmVnaXN0ZXI/LigpOyB9IGNhdGNoIHsgLyogYWxyZWFkeSBnb25lICovIH0KICAgICAgICByb3V0ZXMudW5yZWdpc3RlciA9IHVuZGVmaW5lZDsKICAgICAgfQogICAgfSwgImRzaC1wbHVnaW4taHViOiBoZWFsdGggcm91dGVzIik7CiAgfSk7Cn0KCi8qKiDlt7Lnn6XpgIDlvbkv5Y2g5L2N5a2Q5YyF77ya6ICBIHByb2ZpbGUg5q6L55WZ6KGM5oyC5oiQ6Z2Z6buYIG5vLW9w77yId2ViLWFsbCBSRVRJUkVEX1BMVUdJTlMg5ZCM5qy+77yJ44CCICovCmNvbnN0IFJFVElSRURfUExVR0lOUyA9IG5ldyBTZXQoKTsKCi8qKgogKiDmjILovb3kuIDooYzvvJpjb25maWcucGx1Z2luIOaMh+WQkeeahOecn+WunuaPkuS7tuiiq+WMhei/m+acrOWjs+OAggogKiDlpLHotKXor63kuYnvvJppbXBvcnQg5aSx6LSlIC8g5qih5Z2X5peg5o+S5Lu25b2i54q2IC8gc3RhcnQg5oqb6ZSZ5oiWIHJlamVjdCDihpIKICogcmVjb3JkRGVncmFkZWQg5ZCOIHJldHVybu+8jOacrOihjOmZjee6p+OAgeWFtuS9meihjOeFp+W4uOOAggogKi8KYXN5bmMgZnVuY3Rpb24gYXBwbHlTaGVsbChjdHgsIGNvbmZpZykgewogIGhvbGRIZWFsdGhSb3V0ZShjdHgpOwogIGNvbnN0IHNwZWMgPSBjb25maWc/LnBsdWdpbjsKICBpZiAodHlwZW9mIHNwZWMgIT09ICJzdHJpbmciIHx8IHNwZWMgPT09ICIiKSB7CiAgICBpZiAoY29uZmlnID09PSB1bmRlZmluZWQgfHwgKHR5cGVvZiBjb25maWcgPT09ICJvYmplY3QiICYmIGNvbmZpZyAhPT0gbnVsbCAmJiBPYmplY3Qua2V5cyhjb25maWcpLmxlbmd0aCA9PT0gMCkpIHJldHVybjsKICAgIHJlY29yZERlZ3JhZGVkKCIobm8gcGx1Z2luKSIsICJzaGFwZSIsIG5ldyBFcnJvcihgc2hlbGwgcm93IGNvbmZpZyBpcyBtaXNzaW5nIHRoZSAicGx1Z2luIiBwYWNrYWdlIG5hbWUgKGNvbmZpZzogJHtzYWZlU3RyaW5naWZ5KGNvbmZpZyl9KWApKTsKICAgIHJldHVybjsKICB9CiAgaWYgKFJFVElSRURfUExVR0lOUy5oYXMoc3BlYykpIHJldHVybjsKICAvLyDlhYjorrDotKblho0gaW1wb3J077yaZGlzYWJsZWQg6KGM5rKh5pyJIHNoZWxsIGFwcGx577yM5pWF5LiN5Lya6L+b6LSm5pys77ybaW1wb3J0L3N0YXJ0CiAgLy8g6ZmN57qn55qE6KGM5LuN5Zyo6LSm5pys6YeM77yMYnJvd3NlciDljYrkv53nlZnlhbYgVUnvvIjpmY3nuqfnirbmgIHlj6/op4HvvIx3ZWItYWxsIOWQjOivreS5ie+8ieOAggogIHJlY29yZEFjdGl2ZVJvdyhzcGVjKTsKICB0cnkgewogICAgY3R4LmVmZmVjdD8uKCgpID0+ICgpID0+IHsKICAgICAgcmVtb3ZlQWN0aXZlUm93KHNwZWMpOwogICAgfSwgImRzaC1wbHVnaW4taHViOiBhY3RpdmUgcm93IGxlZGdlciIpOwogIH0gY2F0Y2ggKGVycm9yKSB7CiAgICBjb25zb2xlLndhcm4oIltkc2gtcGx1Z2luLWh1Yl0gZmFpbGVkIHRvIHJlZ2lzdGVyIGFjdGl2ZS1yb3cgY2xlYW51cDoiLCBlcnJvcik7CiAgfQogIGxldCBtb2Q7CiAgdHJ5IHsKICAgIG1vZCA9IGF3YWl0IGltcG9ydCgvKiBAdml0ZS1pZ25vcmUgKi8gc3BlYyk7CiAgfSBjYXRjaCAoZXJyb3IpIHsKICAgIHJlY29yZERlZ3JhZGVkKHNwZWMsICJpbXBvcnQiLCBlcnJvcik7CiAgICByZXR1cm47CiAgfQogIGNvbnN0IHBsdWdpbiA9IG1vZD8uZGVmYXVsdCA/PyBtb2Q7CiAgY29uc3QgdXNhYmxlID0KICAgIHR5cGVvZiBwbHVnaW4gPT09ICJmdW5jdGlvbiIgfHwKICAgICh0eXBlb2YgcGx1Z2luID09PSAib2JqZWN0IiAmJiBwbHVnaW4gIT09IG51bGwgJiYgdHlwZW9mIHBsdWdpbi5hcHBseSA9PT0gImZ1bmN0aW9uIik7CiAgaWYgKCF1c2FibGUpIHsKICAgIHJlY29yZERlZ3JhZGVkKHNwZWMsICJzaGFwZSIsIG5ldyBFcnJvcigibW9kdWxlIGhhcyBubyB1c2FibGUgcGx1Z2luIHNoYXBlIChleHBlY3RlZCBhIGZ1bmN0aW9uIG9yIHsgYXBwbHkgfSkiKSk7CiAgICByZXR1cm47CiAgfQogIHRyeSB7CiAgICBjb25zdCBmaWJlciA9IGN0eC5wbHVnaW4ocGx1Z2luLCBjb25maWc/LmNvbmZpZyk7CiAgICBQcm9taXNlLnJlc29sdmUoZmliZXIpLnRoZW4odW5kZWZpbmVkLCAoZXJyb3IpID0+IHsgdHJ5IHsgcmVjb3JkRGVncmFkZWQoc3BlYywgInN0YXJ0IiwgZXJyb3IpOyB9IGNhdGNoIHsgLyog6KeC5rWL5LiN5Y+N5ZmsICovIH0gfSk7CiAgfSBjYXRjaCAoZXJyb3IpIHsKICAgIHJlY29yZERlZ3JhZGVkKHNwZWMsICJzdGFydCIsIGVycm9yKTsKICB9Cn0KCi8qKiDlo7Plv4XpobvlhYjkuo7kuIDliIfmv4DmtLvvvJrkuI3kvp3otZbku7vkvZXmnI3liqHjgIIgKi8KZXhwb3J0IGNvbnN0IGluamVjdCA9IFtdOwoKLyoqIEhvc3Qg5L6n5o+S5Lu25L2T44CCICovCmV4cG9ydCBmdW5jdGlvbiBhcHBseShjdHgsIGNvbmZpZykgewogIHJldHVybiBhcHBseVNoZWxsKGN0eCwgY29uZmlnKTsKfQoKZXhwb3J0IGRlZmF1bHQgeyBuYW1lOiAiZHNoLXBsdWdpbi1odWItc2hlbGwiLCBpbmplY3QsIGFwcGx5IH07Cg==
+// @240xu/dsh-plugin-hub — 故障隔离壳（web-all shell 模式的最小移植）。
+//
+// 模式来源：@linxin666/dsh-web-all（证据 aggregation-weball.md §5，
+// lib/index.js:166-221 apply$1 / :4-12 globalThis 状态 / :52-76 degraded 路由）。
+// 每个 family patch 行的 name 指向本文件（经 package.json exports 的各子路径，
+// 全部重导出同一 apply/inject），真实插件包名在 config.plugin；本壳动态 import
+// 它，import/start 失败只记录降级、绝不 rethrow——官方 loader 把一个 bundle 的
+// 全部 patch 行当一个事务组挂载，裸挂时坏插件会 abort dsh web，壳把失败面
+// 收窄到单行。
+//
+// 浏览器半（0.2.0）：子包 client bundle 由 build-client.mjs 折进 suite 的单个
+// graph entry（exports["./client"]），不再依赖“子路径行被 client graph 扫描”
+// ——dsh-client-modules 只解析裸包名，子路径行永远拿不到 dsh.client。
+// activeRows 账本 + /api/dsh-plugin-hub/rows 路由给折叠挂载做 gate：被 disable 的行
+// 没有 shell apply，UI 不挂；import/start 降级的行仍算 active（UI 保留，降级
+// 状态让用户看得见）。degraded 路由仍 loopback+Host 双围栏。
+// 两条健康路由都走嵌套 inject(["webServer"]) fiber——壳比宿主 webServer 先激活，
+// 直接读会 miss（web-all 同款时序处理）。
+
+const KEY = Symbol.for("dsh-plugin-hub.shell-state");
+
+/** 进程级共享壳状态：bundler 分裂多份模块副本时也只有一份（web-all 同款）。 */
+function shellState() {
+  const state = (globalThis[KEY] ??= {});
+  state.degraded ??= new Map();
+  // plugin -> refcount：同一真实包可能被多行/standalone 同时挂载，计数归零才删。
+  state.activeRows ??= new Map();
+  state.healthRoutes ??= { count: 0 };
+  return state;
+}
+
+/** 安全 JSON：circular/BigInt/toJSON 抛出时降级为占位串（0.1.4 P2 护栏）。 */
+function safeStringify(value) {
+  try { return JSON.stringify(value ?? null); } catch { return '"<unserializable>"'; }
+}
+
+/** 记录（或刷新）一行降级。错误在此打一次日志。
+ *  0.1.4（P2）：整体自护栏——本函数若自己抛（stack getter/toString 抛），
+ *  会逃出 applyShell 让壳行事务回滚整 bundle，恰是壳要防的失败面。 */
+function recordDegraded(plugin, stage, error) {
+  try {
+    const message = error instanceof Error ? (error.stack ?? error.message) : String(error);
+    console.error(`[dsh-plugin-hub] plugin degraded (${stage}): ${plugin}\n${message}`);
+    shellState().degraded.set(plugin, { plugin, stage, message, at: new Date().toISOString() });
+  } catch (e) {
+    try {
+      shellState().degraded.set(plugin, { plugin, stage, message: '<degrade ledger write failed>', at: new Date().toISOString() });
+    } catch { /* 最后防线：静默——观测功能绝不反噬主流程 */ }
+  }
+}
+
+export function listDegraded() {
+  return [...shellState().degraded.values()];
+}
+
+/** 一行 shell entry 已 apply（即使真实插件随后 import/start 降级）。 */
+function recordActiveRow(plugin) {
+  const rows = shellState().activeRows;
+  rows.set(plugin, (rows.get(plugin) ?? 0) + 1);
+}
+
+/** 一行 shell entry 已 dispose；同包仍有别的行挂载时保留。 */
+function removeActiveRow(plugin) {
+  const rows = shellState().activeRows;
+  const next = (rows.get(plugin) ?? 0) - 1;
+  if (next > 0) rows.set(plugin, next);
+  else rows.delete(plugin);
+}
+
+/** active 行快照（真实插件包名，插入顺序）。browser 半据此 gate 折叠挂载。 */
+export function listActiveRows() {
+  return [...shellState().activeRows.keys()];
+}
+
+/** 测试专用：清空降级/active 账本与健康路由计数。 */
+export function _resetDegraded() {
+  shellState().degraded.clear();
+  shellState().activeRows.clear();
+  shellState().healthRoutes.count = 0;
+}
+
+/** loopback-only 降级观测路由（每 shell 上下文注册一次）。 */
+function makeDegradedRoute() {
+  return {
+    kind: "exact",
+    path: "/api/dsh-plugin-hub/degraded",
+    handler: async (req, res) => {
+      let remote = req.socket?.remoteAddress ?? "";
+      if (remote.startsWith("::ffff:")) remote = remote.slice(7);
+      // 0.1.4（P2）：remoteAddress 之外必须校验 Host——evil.com TTL 重绑定到
+      // 127.0.0.1 后 remoteAddress 仍是回环，仅靠它放行会泄露降级清单
+      // （插件名 + error.stack 绝对路径）。Host 必须是本机名（对齐三兄弟的
+      // Host 围栏为 arch-review 上线硬门槛）。
+      const host = String(req.headers?.host ?? "").toLowerCase();
+      const hostOk = /^(localhost|127\.0\.0\.1|\[::1\])(:\d+)?$/.test(host);
+      if (remote !== "127.0.0.1" && remote !== "::1" || !hostOk) {
+        res.writeHead(403, { "content-type": "application/json" });
+        res.end(JSON.stringify({ ok: false, error: "forbidden: loopback-only" }));
+        return;
+      }
+      res.writeHead(200, { "content-type": "application/json", "cache-control": "no-store" });
+      res.end(JSON.stringify({ ok: true, degraded: listDegraded() }));
+    },
+  };
+}
+
+/** active-row 路由：不设 loopback 围栏（远端浏览器同源读取；载荷只是包名）。 */
+function makeRowsRoute() {
+  return {
+    kind: "exact",
+    path: "/api/dsh-plugin-hub/rows",
+    handler: async (_req, res) => {
+      res.writeHead(200, { "content-type": "application/json", "cache-control": "no-store" });
+      res.end(JSON.stringify({ ok: true, children: listActiveRows() }));
+    },
+  };
+}
+
+/** 健康路由注册（webServer 迟到安全）：嵌套 inject fiber，随本行 dispose。
+ *  degraded + rows 作为一个原子组注册/注销：任一失败回滚另一条。 */
+function holdHealthRoute(ctx) {
+  ctx.inject?.(["webServer"], (scoped) => {
+    const webServer = scoped.webServer;
+    if (webServer === undefined || typeof webServer.register !== "function") return;
+    const routes = shellState().healthRoutes;
+    if (routes.count === 0) {
+      let unregisterDegraded;
+      let unregisterRows;
+      try {
+        unregisterDegraded = webServer.register(makeDegradedRoute());
+        try {
+          unregisterRows = webServer.register(makeRowsRoute());
+        } catch (error) {
+          try { unregisterDegraded?.(); } catch { /* already gone */ }
+          throw error;
+        }
+        routes.unregister = () => {
+          try { unregisterRows?.(); } finally { unregisterDegraded?.(); }
+        };
+      } catch (error) {
+        console.warn("[dsh-plugin-hub] failed to register health routes:", error);
+        return;
+      }
+    }
+    routes.count += 1;
+    ctx.effect?.(() => () => {
+      routes.count -= 1;
+      if (routes.count <= 0) {
+        routes.count = 0;
+        try { routes.unregister?.(); } catch { /* already gone */ }
+        routes.unregister = undefined;
+      }
+    }, "dsh-plugin-hub: health routes");
+  });
+}
+
+/** 已知退役/占位子包：老 profile 残留行挂成静默 no-op（web-all RETIRED_PLUGINS 同款）。 */
+const RETIRED_PLUGINS = new Set();
+
+/**
+ * 挂载一行：config.plugin 指向的真实插件被包进本壳。
+ * 失败语义：import 失败 / 模块无插件形状 / start 抛错或 reject →
+ * recordDegraded 后 return，本行降级、其余行照常。
+ */
+async function applyShell(ctx, config) {
+  holdHealthRoute(ctx);
+  const spec = config?.plugin;
+  if (typeof spec !== "string" || spec === "") {
+    if (config === undefined || (typeof config === "object" && config !== null && Object.keys(config).length === 0)) return;
+    recordDegraded("(no plugin)", "shape", new Error(`shell row config is missing the "plugin" package name (config: ${safeStringify(config)})`));
+    return;
+  }
+  if (RETIRED_PLUGINS.has(spec)) return;
+  // 先记账再 import：disabled 行没有 shell apply，故不会进账本；import/start
+  // 降级的行仍在账本里，browser 半保留其 UI（降级状态可见，web-all 同语义）。
+  recordActiveRow(spec);
+  try {
+    ctx.effect?.(() => () => {
+      removeActiveRow(spec);
+    }, "dsh-plugin-hub: active row ledger");
+  } catch (error) {
+    console.warn("[dsh-plugin-hub] failed to register active-row cleanup:", error);
+  }
+  let mod;
+  try {
+    mod = await import(/* @vite-ignore */ spec);
+  } catch (error) {
+    recordDegraded(spec, "import", error);
+    return;
+  }
+  const plugin = mod?.default ?? mod;
+  const usable =
+    typeof plugin === "function" ||
+    (typeof plugin === "object" && plugin !== null && typeof plugin.apply === "function");
+  if (!usable) {
+    recordDegraded(spec, "shape", new Error("module has no usable plugin shape (expected a function or { apply })"));
+    return;
+  }
+  try {
+    const fiber = ctx.plugin(plugin, config?.config);
+    Promise.resolve(fiber).then(undefined, (error) => { try { recordDegraded(spec, "start", error); } catch { /* 观测不反噬 */ } });
+  } catch (error) {
+    recordDegraded(spec, "start", error);
+  }
+}
+
+/** 壳必须先于一切激活：不依赖任何服务。 */
+export const inject = [];
+
+/** Host 侧插件体。 */
+export function apply(ctx, config) {
+  return applyShell(ctx, config);
+}
+
+export default { name: "dsh-plugin-hub-shell", inject, apply };
