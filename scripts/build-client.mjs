@@ -1,1 +1,124 @@
-aW1wb3J0IHsgY3JlYXRlSGFzaCB9IGZyb20gIm5vZGU6Y3J5cHRvIjsKaW1wb3J0IHsgZXhpc3RzU3luYywgbWtkaXJTeW5jLCByZWFkRmlsZVN5bmMsIHJlbmFtZVN5bmMsIHdyaXRlRmlsZVN5bmMgfSBmcm9tICJub2RlOmZzIjsKaW1wb3J0IHsgY3JlYXRlUmVxdWlyZSB9IGZyb20gIm5vZGU6bW9kdWxlIjsKaW1wb3J0IHsgZGlybmFtZSwgam9pbiB9IGZyb20gIm5vZGU6cGF0aCI7CmltcG9ydCB7IGZpbGVVUkxUb1BhdGggfSBmcm9tICJub2RlOnVybCI7Cgpjb25zdCBST09UID0gZGlybmFtZShkaXJuYW1lKGZpbGVVUkxUb1BhdGgoaW1wb3J0Lm1ldGEudXJsKSkpOwpjb25zdCBPVVQgPSBqb2luKFJPT1QsICJjbGllbnQiLCAiaW5kZXguanMiKTsKY29uc3QgVEVNUExBVEUgPSBqb2luKFJPT1QsICJzY3JpcHRzIiwgImNsaWVudC1ydW50aW1lLnRlbXBsYXRlLmpzIik7CgovLyBLZWVwIHRoaXMgbGlzdCBleHBsaWNpdDogaXQgaXMgdGhlIHB1Ymxpc2hlZCBicm93c2VyIHN1cmZhY2Ugb2YgdGhlIHN1aXRlLgovLyBFYWNoIGVudHJ5J3MgY2xpZW50IGhhbGYgaXMgaW5saW5lZCBpbnRvIHRoZSBzdWl0ZSdzIHNpbmdsZSBncmFwaCBlbnRyeSBzbyBhCi8vIHN1YnBhdGggc2hlbGwgcm93IGNhbiBuZXZlciBiZSBtaXN0YWtlbiBmb3IgYSBjbGllbnQgZ3JhcGggcm93Lgpjb25zdCBDSElMRFJFTiA9IFsKICB7CiAgICBuYW1lOiAiQDI0MHh1L2RzaC1tZXNzYWdlLW9wcyIsCiAgICBtb2R1bGVJZDogIkAyNDB4dS9kc2gtcGx1Z2luLWh1Yi9jbGllbnQvbWVzc2FnZS1vcHMiLAogIH0sCiAgewogICAgbmFtZTogIkAyNDB4dS9kc2gtd2Vic2VhcmNoIiwKICAgIG1vZHVsZUlkOiAiQDI0MHh1L2RzaC1wbHVnaW4taHViL2NsaWVudC93ZWJzZWFyY2giLAogIH0sCl07Cgpjb25zdCByZXF1aXJlRnJvbVJvb3QgPSBjcmVhdGVSZXF1aXJlKGpvaW4oUk9PVCwgInBhY2thZ2UuanNvbiIpKTsKCmZ1bmN0aW9uIHJlc29sdmVDaGlsZChjaGlsZCkgewogIGNvbnN0IHBrZ1BhdGggPSByZXF1aXJlRnJvbVJvb3QucmVzb2x2ZShgJHtjaGlsZC5uYW1lfS9wYWNrYWdlLmpzb25gKTsKICBjb25zdCBwa2cgPSBKU09OLnBhcnNlKHJlYWRGaWxlU3luYyhwa2dQYXRoLCAidXRmOCIpKTsKICBjb25zdCBleHBvcnRlZCA9IHBrZy5leHBvcnRzPy5bIi4vY2xpZW50Il07CiAgY29uc3QgY2xpZW50UmVsYXRpdmUgPSB0eXBlb2YgZXhwb3J0ZWQgPT09ICJzdHJpbmciID8gZXhwb3J0ZWQgOiBleHBvcnRlZD8uZGVmYXVsdDsKICBpZiAodHlwZW9mIGNsaWVudFJlbGF0aXZlICE9PSAic3RyaW5nIiB8fCBjbGllbnRSZWxhdGl2ZSA9PT0gIiIpIHsKICAgIHRocm93IG5ldyBFcnJvcihgJHtjaGlsZC5uYW1lfSBkb2VzIG5vdCBleHBvcnQgYSAuL2NsaWVudCBidW5kbGVgKTsKICB9CiAgY29uc3Qgc291cmNlUGF0aCA9IGpvaW4oZGlybmFtZShwa2dQYXRoKSwgY2xpZW50UmVsYXRpdmUpOwogIGlmICghZXhpc3RzU3luYyhzb3VyY2VQYXRoKSkgdGhyb3cgbmV3IEVycm9yKGAke2NoaWxkLm5hbWV9IC4vY2xpZW50IHBvaW50cyBhdCBhIG1pc3NpbmcgZmlsZTogJHtzb3VyY2VQYXRofWApOwogIGNvbnN0IHNvdXJjZSA9IHJlYWRGaWxlU3luYyhzb3VyY2VQYXRoLCAidXRmOCIpCiAgICAucmVwbGFjZSgvXlxzKlwvXC9bI0BdXHMqc291cmNlTWFwcGluZ1VSTD0uKiQvZ20sICIiKQogICAgLnJlcGxhY2UoL15ccypcL1wvWyNAXVxzKnNvdXJjZVVSTD0uKiQvZ20sICIiKQogICAgLnJlcGxhY2UoL1xyXG4vZywgIlxuIik7CiAgaWYgKCFzb3VyY2UuaW5jbHVkZXMoIndpbmRvdy5fX01vZHVsZUxvYWRlcl9fLmxvYWQiKSkgewogICAgdGhyb3cgbmV3IEVycm9yKGAke2NoaWxkLm5hbWV9ICR7Y2xpZW50UmVsYXRpdmV9IGlzIG5vdCBhIF9fTW9kdWxlTG9hZGVyX18gYnVuZGxlYCk7CiAgfQogIGNvbnN0IGRpZ2VzdCA9IGNyZWF0ZUhhc2goInNoYTI1NiIpLnVwZGF0ZShzb3VyY2UpLmRpZ2VzdCgiaGV4Iik7CiAgcmV0dXJuIHsKICAgIC4uLmNoaWxkLAogICAgdmVyc2lvbjogcGtnLnZlcnNpb24sCiAgICByZWxhdGl2ZTogY2xpZW50UmVsYXRpdmUsCiAgICBzb3VyY2UsCiAgICBkaWdlc3QsCiAgfTsKfQoKZnVuY3Rpb24gcmVuZGVyQ2hpbGQoY2hpbGQpIHsKICBjb25zdCBtaXNzaW5nID0gYFtkc2gtcGx1Z2luLWh1Yl0gJHtjaGlsZC5uYW1lfSBjbGllbnQgYnVuZGxlIGRpZCBub3QgcmVnaXN0ZXIgYSBmYWN0b3J5YDsKICByZXR1cm4gYCAgICAgIHsKICAgICAgICBuYW1lOiAke0pTT04uc3RyaW5naWZ5KGNoaWxkLm5hbWUpfSwKICAgICAgICBtb2R1bGVJZDogJHtKU09OLnN0cmluZ2lmeShjaGlsZC5tb2R1bGVJZCl9LAogICAgICAgIGNhcHR1cmUoKSB7CiAgICAgICAgICBsZXQgZmFjdG9yeTsKICAgICAgICAgIGNvbnN0IGxvYWRlciA9IHdpbmRvdy5fX01vZHVsZUxvYWRlcl9fOwogICAgICAgICAgY29uc3Qgb3JpZ2luYWwgPSBsb2FkZXIubG9hZDsKICAgICAgICAgIGxvYWRlci5sb2FkID0gKHJlZ2lzdHJhdGlvbikgPT4geyBmYWN0b3J5ID0gcmVnaXN0cmF0aW9uLmZhY3Rvcnk7IH07CiAgICAgICAgICB0cnkgewoke2NoaWxkLnNvdXJjZX0KICAgICAgICAgIH0gZmluYWxseSB7CiAgICAgICAgICAgIGxvYWRlci5sb2FkID0gb3JpZ2luYWw7CiAgICAgICAgICB9CiAgICAgICAgICBpZiAodHlwZW9mIGZhY3RvcnkgIT09ICJmdW5jdGlvbiIpIHRocm93IG5ldyBFcnJvcigke0pTT04uc3RyaW5naWZ5KG1pc3NpbmcpfSk7CiAgICAgICAgICByZXR1cm4gZmFjdG9yeTsKICAgICAgICB9LAogICAgICAgIGNyZWF0ZShyZXF1aXJlKSB7CiAgICAgICAgICBjb25zdCBmYWN0b3J5ID0gdGhpcy5jYXB0dXJlKCk7CiAgICAgICAgICByZXR1cm4gZmFjdG9yeShyZXF1aXJlKTsKICAgICAgICB9LAogICAgICB9YDsKfQoKZnVuY3Rpb24gcmVuZGVyKGNoaWxkcmVuKSB7CiAgY29uc3QgdGVtcGxhdGUgPSByZWFkRmlsZVN5bmMoVEVNUExBVEUsICJ1dGY4Iik7CiAgaWYgKCF0ZW1wbGF0ZS5pbmNsdWRlcygiX19DSElMRFJFTl9fIikpIHRocm93IG5ldyBFcnJvcigiY2xpZW50IHJ1bnRpbWUgdGVtcGxhdGUgaXMgbWlzc2luZyBfX0NISUxEUkVOX18iKTsKICBjb25zdCBoZWFkZXIgPSBgLyogQDI0MHh1L2RzaC1wbHVnaW4taHViIOKAlCBnZW5lcmF0ZWQgYnJvd3NlciBidW5kbGUuIERPIE5PVCBFRElULgogKiBSZWdlbmVyYXRlOiBub2RlIHNjcmlwdHMvYnVpbGQtY2xpZW50Lm1qcwogKiBJbnB1dHM6CiR7Y2hpbGRyZW4ubWFwKChjaGlsZCkgPT4gYCAqICAgJHtjaGlsZC5uYW1lfUAke2NoaWxkLnZlcnNpb259ICR7Y2hpbGQucmVsYXRpdmV9IHNoYTI1Njoke2NoaWxkLmRpZ2VzdH1gKS5qb2luKCJcbiIpfQogKi9gOwogIGNvbnN0IGVudHJpZXMgPSBjaGlsZHJlbi5tYXAocmVuZGVyQ2hpbGQpLmpvaW4oIixcbiIpOwogIHJldHVybiBgJHtoZWFkZXJ9XG4ke3RlbXBsYXRlLnJlcGxhY2UoIl9fQ0hJTERSRU5fXyIsIGBbXG4ke2VudHJpZXN9LFxuICAgIF1gKX1gOwp9Cgpjb25zdCBjaGlsZHJlbiA9IENISUxEUkVOLm1hcChyZXNvbHZlQ2hpbGQpOwpjb25zdCBvdXRwdXQgPSByZW5kZXIoY2hpbGRyZW4pOwpjb25zdCBjaGVjayA9IHByb2Nlc3MuYXJndi5pbmNsdWRlcygiLS1jaGVjayIpOwpjb25zdCB1bmtub3duID0gcHJvY2Vzcy5hcmd2LnNsaWNlKDIpLmZpbHRlcigoYXJnKSA9PiBhcmcgIT09ICItLWNoZWNrIik7CmlmICh1bmtub3duLmxlbmd0aCA+IDApIHsKICBjb25zb2xlLmVycm9yKGBidWlsZC1jbGllbnQ6IHVua25vd24gYXJndW1lbnQocyk6ICR7dW5rbm93bi5qb2luKCIgIil9YCk7CiAgcHJvY2Vzcy5leGl0KDIpOwp9CgppZiAoY2hlY2spIHsKICBpZiAoIWV4aXN0c1N5bmMoT1VUKSkgewogICAgY29uc29sZS5lcnJvcigiY2xpZW50IGJ1bmRsZSBzdGFsZTogY2xpZW50L2luZGV4LmpzIGlzIG1pc3Npbmc7IHJ1bjogbm9kZSBzY3JpcHRzL2J1aWxkLWNsaWVudC5tanMiKTsKICAgIHByb2Nlc3MuZXhpdCgxKTsKICB9CiAgY29uc3QgY3VycmVudCA9IHJlYWRGaWxlU3luYyhPVVQsICJ1dGY4Iik7CiAgaWYgKGN1cnJlbnQgPT09IG91dHB1dCkgewogICAgY29uc29sZS5sb2coYGNsaWVudCBidW5kbGUgdXAgdG8gZGF0ZSAoJHtCdWZmZXIuYnl0ZUxlbmd0aChvdXRwdXQpfSBieXRlcywgJHtjaGlsZHJlbi5sZW5ndGh9IGZvbGRlZCBjaGlsZHJlbilgKTsKICAgIHByb2Nlc3MuZXhpdCgwKTsKICB9CiAgY29uc3QgY3VycmVudExpbmVzID0gY3VycmVudC5zcGxpdCgiXG4iKTsKICBjb25zdCBvdXRwdXRMaW5lcyA9IG91dHB1dC5zcGxpdCgiXG4iKTsKICBsZXQgbGluZSA9IDA7CiAgd2hpbGUgKGxpbmUgPCBjdXJyZW50TGluZXMubGVuZ3RoICYmIGxpbmUgPCBvdXRwdXRMaW5lcy5sZW5ndGggJiYgY3VycmVudExpbmVzW2xpbmVdID09PSBvdXRwdXRMaW5lc1tsaW5lXSkgbGluZSArPSAxOwogIGNvbnNvbGUuZXJyb3IoCiAgICBgY2xpZW50IGJ1bmRsZSBzdGFsZTogY2xpZW50L2luZGV4LmpzICgke0J1ZmZlci5ieXRlTGVuZ3RoKGN1cnJlbnQpfSBieXRlcykgIT0gZXhwZWN0ZWQgKCR7QnVmZmVyLmJ5dGVMZW5ndGgob3V0cHV0KX0gYnl0ZXMpOyBmaXJzdCBkaWZmZXJlbmNlIGF0IGxpbmUgJHtsaW5lICsgMX1cbnJ1bjogbm9kZSBzY3JpcHRzL2J1aWxkLWNsaWVudC5tanNgLAogICk7CiAgcHJvY2Vzcy5leGl0KDEpOwp9Cgpta2RpclN5bmMoZGlybmFtZShPVVQpLCB7IHJlY3Vyc2l2ZTogdHJ1ZSB9KTsKY29uc3QgdGVtcG9yYXJ5ID0gYCR7T1VUfS50bXAtJHtwcm9jZXNzLnBpZH1gOwp3cml0ZUZpbGVTeW5jKHRlbXBvcmFyeSwgb3V0cHV0LCB7IG1vZGU6IDBvNjQ0IH0pOwpyZW5hbWVTeW5jKHRlbXBvcmFyeSwgT1VUKTsKY29uc29sZS5sb2coYHdyb3RlIGNsaWVudC9pbmRleC5qcyAoJHtCdWZmZXIuYnl0ZUxlbmd0aChvdXRwdXQpfSBieXRlcywgJHtjaGlsZHJlbi5sZW5ndGh9IGZvbGRlZCBjaGlsZHJlbilgKTsK
+import { createHash } from "node:crypto";
+import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
+import { createRequire } from "node:module";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
+const OUT = join(ROOT, "client", "index.js");
+const TEMPLATE = join(ROOT, "scripts", "client-runtime.template.js");
+
+// Keep this list explicit: it is the published browser surface of the suite.
+// Each entry's client half is inlined into the suite's single graph entry so a
+// subpath shell row can never be mistaken for a client graph row.
+const CHILDREN = [
+  {
+    name: "@240xu/dsh-message-ops",
+    moduleId: "@240xu/dsh-plugin-hub/client/message-ops",
+  },
+  {
+    name: "@240xu/dsh-websearch",
+    moduleId: "@240xu/dsh-plugin-hub/client/websearch",
+  },
+];
+
+const requireFromRoot = createRequire(join(ROOT, "package.json"));
+
+function resolveChild(child) {
+  const pkgPath = requireFromRoot.resolve(`${child.name}/package.json`);
+  const pkg = JSON.parse(readFileSync(pkgPath, "utf8"));
+  const exported = pkg.exports?.["./client"];
+  const clientRelative = typeof exported === "string" ? exported : exported?.default;
+  if (typeof clientRelative !== "string" || clientRelative === "") {
+    throw new Error(`${child.name} does not export a ./client bundle`);
+  }
+  const sourcePath = join(dirname(pkgPath), clientRelative);
+  if (!existsSync(sourcePath)) throw new Error(`${child.name} ./client points at a missing file: ${sourcePath}`);
+  const source = readFileSync(sourcePath, "utf8")
+    .replace(/^\s*\/\/[#@]\s*sourceMappingURL=.*$/gm, "")
+    .replace(/^\s*\/\/[#@]\s*sourceURL=.*$/gm, "")
+    .replace(/\r\n/g, "\n");
+  if (!source.includes("window.__ModuleLoader__.load")) {
+    throw new Error(`${child.name} ${clientRelative} is not a __ModuleLoader__ bundle`);
+  }
+  const digest = createHash("sha256").update(source).digest("hex");
+  return {
+    ...child,
+    version: pkg.version,
+    relative: clientRelative,
+    source,
+    digest,
+  };
+}
+
+function renderChild(child) {
+  const missing = `[dsh-plugin-hub] ${child.name} client bundle did not register a factory`;
+  return `      {
+        name: ${JSON.stringify(child.name)},
+        moduleId: ${JSON.stringify(child.moduleId)},
+        capture() {
+          let factory;
+          const loader = window.__ModuleLoader__;
+          const original = loader.load;
+          loader.load = (registration) => { factory = registration.factory; };
+          try {
+${child.source}
+          } finally {
+            loader.load = original;
+          }
+          if (typeof factory !== "function") throw new Error(${JSON.stringify(missing)});
+          return factory;
+        },
+        create(require) {
+          const factory = this.capture();
+          return factory(require);
+        },
+      }`;
+}
+
+function render(children) {
+  const template = readFileSync(TEMPLATE, "utf8");
+  if (!template.includes("__CHILDREN__")) throw new Error("client runtime template is missing __CHILDREN__");
+  const header = `/* @240xu/dsh-plugin-hub — generated browser bundle. DO NOT EDIT.
+ * Regenerate: node scripts/build-client.mjs
+ * Inputs:
+${children.map((child) => ` *   ${child.name}@${child.version} ${child.relative} sha256:${child.digest}`).join("\n")}
+ */`;
+  const entries = children.map(renderChild).join(",\n");
+  return `${header}\n${template.replace("__CHILDREN__", `[\n${entries},\n    ]`)}`;
+}
+
+const children = CHILDREN.map(resolveChild);
+const output = render(children);
+const check = process.argv.includes("--check");
+const unknown = process.argv.slice(2).filter((arg) => arg !== "--check");
+if (unknown.length > 0) {
+  console.error(`build-client: unknown argument(s): ${unknown.join(" ")}`);
+  process.exit(2);
+}
+
+if (check) {
+  if (!existsSync(OUT)) {
+    console.error("client bundle stale: client/index.js is missing; run: node scripts/build-client.mjs");
+    process.exit(1);
+  }
+  const current = readFileSync(OUT, "utf8");
+  if (current === output) {
+    console.log(`client bundle up to date (${Buffer.byteLength(output)} bytes, ${children.length} folded children)`);
+    process.exit(0);
+  }
+  const currentLines = current.split("\n");
+  const outputLines = output.split("\n");
+  let line = 0;
+  while (line < currentLines.length && line < outputLines.length && currentLines[line] === outputLines[line]) line += 1;
+  console.error(
+    `client bundle stale: client/index.js (${Buffer.byteLength(current)} bytes) != expected (${Buffer.byteLength(output)} bytes); first difference at line ${line + 1}\nrun: node scripts/build-client.mjs`,
+  );
+  process.exit(1);
+}
+
+mkdirSync(dirname(OUT), { recursive: true });
+const temporary = `${OUT}.tmp-${process.pid}`;
+writeFileSync(temporary, output, { mode: 0o644 });
+renameSync(temporary, OUT);
+console.log(`wrote client/index.js (${Buffer.byteLength(output)} bytes, ${children.length} folded children)`);
