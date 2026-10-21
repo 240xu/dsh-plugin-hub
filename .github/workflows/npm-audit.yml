@@ -1,0 +1,16 @@
+name: npm-audit
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query
+        run: |
+          set -u
+          for p in @240xu/dsh-websearch @240xu/dsh-message-ops @240xu/dsh-session-lazy-view @240xu/dsh-session-search @240xu/dsh-plugin-hub @deepseek-ai/dsh-experimental-inspector-profile; do
+            echo "=== $p"
+            npm view "$p" name version dist-tags repository.url deprecated --registry=https://registry.npmjs.org/ 2>&1 | sed 's/^/  /'
+          done
