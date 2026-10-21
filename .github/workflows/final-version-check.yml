@@ -1,0 +1,16 @@
+name: final-version-check
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query
+        run: |
+          set -e
+          for p in @240xu/dsh-websearch @240xu/dsh-message-ops @240xu/dsh-session-lazy-view @240xu/dsh-session-search @240xu/dsh-plugin-hub; do
+            V=$(curl -fsSL "https://registry.npmjs.org/${p/@/%40}" | python3 -c "import json,sys;print(json.load(sys.stdin)['dist-tags']['latest'])")
+            echo "$p = $V"
+          done
