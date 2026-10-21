@@ -1,6 +1,6 @@
 {
   "name": "@240xu/dsh-plugin-hub",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "One-line DSH plugin bundle: aggregates websearch, message-ops, session-lazy-view and session-search with per-row failure isolation. 一键安装的 DSH 插件聚合包。",
   "type": "module",
   "license": "MIT",
