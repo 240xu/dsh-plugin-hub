@@ -1,0 +1,14 @@
+name: inspect-030b
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect
+        run: |
+          set -e
+          curl -fsSL "https://registry.npmjs.org/@240xu%2Fdsh-plugin-hub?write=true" -o /tmp/p.json
+          python3 -c "import json;d=json.load(open('/tmp/p.json'));print('tags',d['dist-tags']);print('versions',sorted(d['versions'])[-5:]);v=d['versions'].get('0.3.0');print('deps',v.get('dependencies') if v else None)"
