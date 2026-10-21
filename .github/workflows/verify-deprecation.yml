@@ -1,0 +1,12 @@
+name: verify-deprecation
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read registry metadata
+        run: |
+          curl -fsSL https://registry.npmjs.org/@240xu%2Fdsh-suite | python3 -c "import json,sys; d=json.load(sys.stdin); print('latest',d['dist-tags']['latest']); print('deprecated',d['versions'][d['dist-tags']['latest']].get('deprecated'))"
