@@ -1,0 +1,24 @@
+name: msgops-inspect-summary
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inspect npm 0.11.0
+        run: |
+          set -e
+          V=0.11.0
+          URL=$(curl -fsSL "https://registry.npmjs.org/@240xu%2Fdsh-message-ops/$V" | python3 -c "import json,sys;print(json.load(sys.stdin)['dist']['tarball'])")
+          curl -fsSL "$URL" -o /tmp/m.tgz
+          mkdir -p /tmp/m && tar -xzf /tmp/m.tgz -C /tmp/m
+          {
+            echo '## package'
+            python3 -c "import json;d=json.load(open('/tmp/m/package/package.json'));print('version',d['version']);print('dsh',d.get('dsh'))"
+            echo '## endpoints'
+            grep -RIn "api/message-ops" /tmp/m/package --include='*.js' | head -40 || true
+            echo '## readme'
+            sed -n '1,90p' /tmp/m/package/README.md
+          } >> $GITHUB_STEP_SUMMARY
