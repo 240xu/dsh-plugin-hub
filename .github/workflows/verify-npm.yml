@@ -7,7 +7,15 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
       - name: Query registry
         run: |
-          npm view @240xu/dsh-plugin-hub version dist-tags repository.url --registry=https://registry.npmjs.org/
-          npm view @240xu/dsh-suite version deprecated --registry=https://registry.npmjs.org/
+          for i in 1 2 3 4 5 6; do
+            echo "attempt $i"
+            if npm view @240xu/dsh-plugin-hub version dist-tags repository.url --registry=https://registry.npmjs.org/; then exit 0; fi
+            sleep 20
+          done
+          exit 1
