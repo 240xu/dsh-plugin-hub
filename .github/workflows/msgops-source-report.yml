@@ -1,0 +1,31 @@
+name: msgops-source-report
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract npm tarball source snippets
+        run: |
+          set -e
+          mkdir -p audit
+          URL=$(curl -fsSL "https://registry.npmjs.org/@240xu%2Fdsh-message-ops/0.11.0" | python3 -c "import json,sys;print(json.load(sys.stdin)['dist']['tarball'])")
+          curl -fsSL "$URL" -o /tmp/m.tgz
+          rm -rf /tmp/m && mkdir -p /tmp/m && tar -xzf /tmp/m.tgz -C /tmp/m
+          {
+            echo '## route declarations'
+            grep -n 'path: "/api/message-ops' /tmp/m/package/src/index.js
+            echo '## panel labels'
+            grep -n "op\.branch\|op\.revert\|op\.delete\|panel\.\|tab\." /tmp/m/package/src/client.js | head -80
+            echo '## branch refs'
+            grep -n "branch" /tmp/m/package/src/client.js | head -40
+          } > audit/msgops-source-011.md
+      - run: |
+          git config user.name 240xu
+          git config user.email 240xu@users.noreply.github.com
+          git add audit/msgops-source-011.md
+          git commit -m 'audit: message-ops 0.11.0 source route map' || true
+          git push
