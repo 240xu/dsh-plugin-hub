@@ -1,0 +1,30 @@
+name: publish
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+      - name: Install
+        run: npm install --legacy-peer-deps --no-audit --no-fund
+      - name: Test
+        run: npm test
+      - name: Publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          if npm view @240xu/dsh-plugin-hub@0.2.0 version >/dev/null 2>&1; then
+            echo "already published: @240xu/dsh-plugin-hub@0.2.0"
+            exit 0
+          fi
+          npm publish --access public
