@@ -1,0 +1,33 @@
+name: msgops-report
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect npm 0.11.0
+        run: |
+          set -e
+          V=0.11.0
+          URL=$(curl -fsSL "https://registry.npmjs.org/@240xu%2Fdsh-message-ops/$V" | python3 -c "import json,sys;print(json.load(sys.stdin)['dist']['tarball'])")
+          curl -fsSL "$URL" -o /tmp/m.tgz
+          mkdir -p /tmp/m && tar -xzf /tmp/m.tgz -C /tmp/m
+          {
+            echo '## package'
+            python3 -c "import json;d=json.load(open('/tmp/m/package/package.json'));print('version',d['version']);print('dsh',d.get('dsh'))"
+            echo '## endpoints'
+            grep -RIn "api/message-ops" /tmp/m/package --include='*.js' | head -60 || true
+            echo '## readme'
+            sed -n '1,120p' /tmp/m/package/README.md
+          } > audit/msgops-011.md
+      - name: Commit report
+        run: |
+          mkdir -p audit
+          git config user.name 240xu
+          git config user.email 240xu@users.noreply.github.com
+          git add audit/msgops-011.md
+          git commit -m 'audit: message-ops 0.11.0 npm tarball'
+          git push
