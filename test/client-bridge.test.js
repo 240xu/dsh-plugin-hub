@@ -1,1 +1,195 @@
-aW1wb3J0IHRlc3QgZnJvbSAibm9kZTp0ZXN0IjsKaW1wb3J0IGFzc2VydCBmcm9tICJub2RlOmFzc2VydC9zdHJpY3QiOwppbXBvcnQgeyByZWFkRmlsZVN5bmMgfSBmcm9tICJub2RlOmZzIjsKaW1wb3J0IHsgam9pbiB9IGZyb20gIm5vZGU6cGF0aCI7CmltcG9ydCB2bSBmcm9tICJub2RlOnZtIjsKCmNvbnN0IEJVTkRMRSA9IGpvaW4oaW1wb3J0Lm1ldGEuZGlybmFtZSwgIi4uIiwgImNsaWVudCIsICJpbmRleC5qcyIpOwpjb25zdCBTVUlURSA9ICJAMjQweHUvZHNoLXBsdWdpbi1odWIiOwpjb25zdCBDSElMRCA9IHsKICBtZXNzYWdlT3BzOiB7IG5hbWU6ICJAMjQweHUvZHNoLW1lc3NhZ2Utb3BzIiwgbW9kdWxlSWQ6ICJAMjQweHUvZHNoLXBsdWdpbi1odWIvY2xpZW50L21lc3NhZ2Utb3BzIiB9LAogIHdlYnNlYXJjaDogeyBuYW1lOiAiQDI0MHh1L2RzaC13ZWJzZWFyY2giLCBtb2R1bGVJZDogIkAyNDB4dS9kc2gtcGx1Z2luLWh1Yi9jbGllbnQvd2Vic2VhcmNoIiB9LAp9OwoKZnVuY3Rpb24gbG9hZEJ1bmRsZSh7IGVudHJpZXMgPSBbXSwgZmV0Y2hJbXBsIH0gPSB7fSkgewogIGNvbnN0IHJlZ2lzdHJhdGlvbnMgPSBuZXcgTWFwKCk7CiAgY29uc3QgYm9vdCA9IHsgZW50cmllcyB9OwogIGNvbnN0IHNhbmRib3ggPSB7CiAgICBjb25zb2xlOiB7IGxvZygpIHt9LCB3YXJuKCkge30sIGVycm9yKCkge30gfSwKICAgIHNldFRpbWVvdXQsCiAgICBjbGVhclRpbWVvdXQsCiAgICBBYm9ydENvbnRyb2xsZXIsCiAgICBVUkwsCiAgICBQcm9taXNlLAogICAgZmV0Y2g6IGZldGNoSW1wbCA/PyAoYXN5bmMgKCkgPT4gewogICAgICB0aHJvdyBuZXcgRXJyb3IoIm9mZmxpbmUiKTsKICAgIH0pLAogICAgX19EU0hfQk9PVF9fOiBib290LAogIH07CiAgc2FuZGJveC53aW5kb3cgPSB7CiAgICBfX0RTSF9CT09UX186IGJvb3QsCiAgICBfX01vZHVsZUxvYWRlcl9fOiB7CiAgICAgIGxvYWQocmVnaXN0cmF0aW9uKSB7CiAgICAgICAgcmVnaXN0cmF0aW9ucy5zZXQocmVnaXN0cmF0aW9uLmlkLCByZWdpc3RyYXRpb24pOwogICAgICB9LAogICAgfSwKICB9OwogIHZtLmNyZWF0ZUNvbnRleHQoc2FuZGJveCk7CiAgdm0ucnVuSW5Db250ZXh0KHJlYWRGaWxlU3luYyhCVU5ETEUsICJ1dGY4IiksIHNhbmRib3gsIHsgZmlsZW5hbWU6IEJVTkRMRSB9KTsKICByZXR1cm4geyByZWdpc3RyYXRpb25zIH07Cn0KCmZ1bmN0aW9uIHN1aXRlRmFjZShyZWdpc3RyYXRpb25zKSB7CiAgY29uc3QgcmVnaXN0cmF0aW9uID0gcmVnaXN0cmF0aW9ucy5nZXQoU1VJVEUpOwogIGFzc2VydC5vayhyZWdpc3RyYXRpb24sICJzdWl0ZSBncmFwaCByZWdpc3RyYXRpb24gbWlzc2luZyIpOwogIGNvbnN0IGZhY2UgPSByZWdpc3RyYXRpb24uZmFjdG9yeSgoaWQpID0+IHsKICAgIHRocm93IG5ldyBFcnJvcihgZmFjdG9yeSBtdXN0IG5vdCByZXF1aXJlICR7aWR9YCk7CiAgfSk7CiAgYXNzZXJ0LmVxdWFsKHR5cGVvZiBmYWNlLmFwcGx5LCAiZnVuY3Rpb24iKTsKICBhc3NlcnQuZXF1YWwoZmFjZS5pbmplY3Q/Lmxlbmd0aCA/PyAwLCAwKTsKICByZXR1cm4gZmFjZTsKfQoKZnVuY3Rpb24gYWN0aXZlUm93cyhjaGlsZHJlbikgewogIHJldHVybiBhc3luYyAoKSA9PiAoewogICAgb2s6IHRydWUsCiAgICBhc3luYyBqc29uKCkgewogICAgICByZXR1cm4geyBvazogdHJ1ZSwgY2hpbGRyZW4gfTsKICAgIH0sCiAgfSk7Cn0KCmZ1bmN0aW9uIG1ha2VDdHgoeyB0aHJvd0ZvciwgcmVqZWN0Rm9yIH0gPSB7fSkgewogIGNvbnN0IG1vdW50ZWQgPSBbXTsKICByZXR1cm4gewogICAgbW91bnRlZCwKICAgIHBsdWdpbihkZWZpbml0aW9uKSB7CiAgICAgIGlmIChkZWZpbml0aW9uLm5hbWUgPT09IHRocm93Rm9yKSB0aHJvdyBuZXcgRXJyb3IoYGJvb20gJHtkZWZpbml0aW9uLm5hbWV9YCk7CiAgICAgIGlmIChkZWZpbml0aW9uLm5hbWUgPT09IHJlamVjdEZvcikgcmV0dXJuIFByb21pc2UucmVqZWN0KG5ldyBFcnJvcihgcmVqZWN0ICR7ZGVmaW5pdGlvbi5uYW1lfWApKTsKICAgICAgbW91bnRlZC5wdXNoKGRlZmluaXRpb24pOwogICAgICByZXR1cm4gUHJvbWlzZS5yZXNvbHZlKCk7CiAgICB9LAogICAgZWZmZWN0KCkge30sCiAgfTsKfQoKZnVuY3Rpb24gZmFrZUNyZWF0ZShjaGlsZCkgewogIHJldHVybiB7CiAgICBkZWZhdWx0OiB7CiAgICAgIGFwcGx5KCkge30sCiAgICAgIGluamVjdDogY2hpbGQubmFtZSA9PT0gQ0hJTEQud2Vic2VhcmNoLm5hbWUgPyBbInNsb3RzIiwgImxvY2FsZSJdIDogWyJzbG90cyJdLAogICAgfSwKICB9Owp9Cgp0ZXN0KCJjb21wb3NlZCBidW5kbGUgcmVnaXN0ZXJzIGV4YWN0bHkgb25lIHN1aXRlIGdyYXBoIGVudHJ5IiwgKCkgPT4gewogIGNvbnN0IHsgcmVnaXN0cmF0aW9ucyB9ID0gbG9hZEJ1bmRsZSgpOwogIGFzc2VydC5kZWVwRXF1YWwoWy4uLnJlZ2lzdHJhdGlvbnMua2V5cygpXSwgW1NVSVRFXSk7Cn0pOwoKdGVzdCgiZm9sZGVkIGNoaWxkIGJ1bmRsZXMgY2FwdHVyZSBhIGZhY3Rvcnkgd2l0aG91dCBtYXRlcmlhbGl6aW5nIGl0IiwgKCkgPT4gewogIGNvbnN0IHsgcmVnaXN0cmF0aW9ucyB9ID0gbG9hZEJ1bmRsZSgpOwogIGNvbnN0IGZhY2UgPSBzdWl0ZUZhY2UocmVnaXN0cmF0aW9ucyk7CiAgYXNzZXJ0LmRlZXBFcXVhbCgKICAgIFsuLi5mYWNlLl9fdGVzdC5DSElMRFJFTl0ubWFwKChjaGlsZCkgPT4gW2NoaWxkLm5hbWUsIGNoaWxkLm1vZHVsZUlkXSksCiAgICBbCiAgICAgIFtDSElMRC5tZXNzYWdlT3BzLm5hbWUsIENISUxELm1lc3NhZ2VPcHMubW9kdWxlSWRdLAogICAgICBbQ0hJTEQud2Vic2VhcmNoLm5hbWUsIENISUxELndlYnNlYXJjaC5tb2R1bGVJZF0sCiAgICBdLAogICk7CiAgZm9yIChjb25zdCBjaGlsZCBvZiBmYWNlLl9fdGVzdC5DSElMRFJFTikgewogICAgYXNzZXJ0LmVxdWFsKHR5cGVvZiBjaGlsZC5jYXB0dXJlKCksICJmdW5jdGlvbiIsIGAke2NoaWxkLm5hbWV9IGRpZCBub3QgcmVnaXN0ZXIgYSBmYWN0b3J5YCk7CiAgfQp9KTsKCnRlc3QoInN1aXRlIGJyaWRnZSBtb3VudHMgb25seSByb3dzIHJlcG9ydGVkIGFjdGl2ZSBieSB0aGUgaG9zdCBsZWRnZXIiLCBhc3luYyAoKSA9PiB7CiAgY29uc3QgeyByZWdpc3RyYXRpb25zIH0gPSBsb2FkQnVuZGxlKHsgZmV0Y2hJbXBsOiBhY3RpdmVSb3dzKFtDSElMRC5tZXNzYWdlT3BzLm5hbWVdKSB9KTsKICBjb25zdCBmYWNlID0gc3VpdGVGYWNlKHJlZ2lzdHJhdGlvbnMpOwogIGNvbnN0IGN0eCA9IG1ha2VDdHgoKTsKICBhd2FpdCBmYWNlLl9fdGVzdC5tb3VudENoaWxkcmVuKGN0eCwgeyBjcmVhdGU6IGZha2VDcmVhdGUgfSk7CiAgYXNzZXJ0LmRlZXBFcXVhbChjdHgubW91bnRlZC5tYXAoKGVudHJ5KSA9PiBlbnRyeS5uYW1lKSwgW0NISUxELm1lc3NhZ2VPcHMubmFtZV0pOwogIGFzc2VydC5kZWVwRXF1YWwoWy4uLmN0eC5tb3VudGVkWzBdLmluamVjdF0sIFsic2xvdHMiXSk7Cn0pOwoKdGVzdCgicm93cy1yb3V0ZSBmYWlsdXJlIGZhaWxzIG9wZW4gYW5kIG1vdW50cyBldmVyeSBmb2xkZWQgY2hpbGQiLCBhc3luYyAoKSA9PiB7CiAgY29uc3QgeyByZWdpc3RyYXRpb25zIH0gPSBsb2FkQnVuZGxlKHsKICAgIGZldGNoSW1wbDogYXN5bmMgKCkgPT4gewogICAgICB0aHJvdyBuZXcgRXJyb3IoIm9mZmxpbmUiKTsKICAgIH0sCiAgfSk7CiAgY29uc3QgZmFjZSA9IHN1aXRlRmFjZShyZWdpc3RyYXRpb25zKTsKICBjb25zdCBjdHggPSBtYWtlQ3R4KCk7CiAgYXdhaXQgZmFjZS5fX3Rlc3QubW91bnRDaGlsZHJlbihjdHgsIHsgY3JlYXRlOiBmYWtlQ3JlYXRlIH0pOwogIGFzc2VydC5kZWVwRXF1YWwoCiAgICBjdHgubW91bnRlZC5tYXAoKGVudHJ5KSA9PiBlbnRyeS5uYW1lKS5zb3J0KCksCiAgICBbQ0hJTEQubWVzc2FnZU9wcy5uYW1lLCBDSElMRC53ZWJzZWFyY2gubmFtZV0uc29ydCgpLAogICk7Cn0pOwoKdGVzdCgiYSBjaGlsZCB0aGF0IGFscmVhZHkgb3ducyBhIHN0YW5kYWxvbmUgZ3JhcGggZW50cnkgaXMgbm90IGRvdWJsZS1tb3VudGVkIiwgYXN5bmMgKCkgPT4gewogIGNvbnN0IHsgcmVnaXN0cmF0aW9ucyB9ID0gbG9hZEJ1bmRsZSh7CiAgICBlbnRyaWVzOiBbQ0hJTEQud2Vic2VhcmNoLm5hbWVdLAogICAgZmV0Y2hJbXBsOiBhY3RpdmVSb3dzKFtDSElMRC5tZXNzYWdlT3BzLm5hbWUsIENISUxELndlYnNlYXJjaC5uYW1lXSksCiAgfSk7CiAgY29uc3QgZmFjZSA9IHN1aXRlRmFjZShyZWdpc3RyYXRpb25zKTsKICBjb25zdCBjdHggPSBtYWtlQ3R4KCk7CiAgYXdhaXQgZmFjZS5fX3Rlc3QubW91bnRDaGlsZHJlbihjdHgsIHsgY3JlYXRlOiBmYWtlQ3JlYXRlIH0pOwogIGFzc2VydC5kZWVwRXF1YWwoY3R4Lm1vdW50ZWQubWFwKChlbnRyeSkgPT4gZW50cnkubmFtZSksIFtDSElMRC5tZXNzYWdlT3BzLm5hbWVdKTsKfSk7Cgp0ZXN0KCJvbmUgZm9sZGVkIGNoaWxkIHRocm93aW5nIGRvZXMgbm90IHN0b3AgaXRzIHNpYmxpbmciLCBhc3luYyAoKSA9PiB7CiAgY29uc3QgeyByZWdpc3RyYXRpb25zIH0gPSBsb2FkQnVuZGxlKHsKICAgIGZldGNoSW1wbDogYWN0aXZlUm93cyhbQ0hJTEQubWVzc2FnZU9wcy5uYW1lLCBDSElMRC53ZWJzZWFyY2gubmFtZV0pLAogIH0pOwogIGNvbnN0IGZhY2UgPSBzdWl0ZUZhY2UocmVnaXN0cmF0aW9ucyk7CiAgY29uc3QgY3R4ID0gbWFrZUN0eCh7IHRocm93Rm9yOiBDSElMRC5tZXNzYWdlT3BzLm5hbWUgfSk7CiAgYXdhaXQgZmFjZS5fX3Rlc3QubW91bnRDaGlsZHJlbihjdHgsIHsgY3JlYXRlOiBmYWtlQ3JlYXRlIH0pOwogIGFzc2VydC5kZWVwRXF1YWwoY3R4Lm1vdW50ZWQubWFwKChlbnRyeSkgPT4gZW50cnkubmFtZSksIFtDSElMRC53ZWJzZWFyY2gubmFtZV0pOwp9KTsKCnRlc3QoImEgY2hpbGQgd2hvc2UgZmliZXIgcmVqZWN0cyBpcyByZWxlYXNlZCBmb3IgYSBsYXRlciBicmlkZ2UgcGFzcyIsIGFzeW5jICgpID0+IHsKICBjb25zdCB7IHJlZ2lzdHJhdGlvbnMgfSA9IGxvYWRCdW5kbGUoewogICAgZmV0Y2hJbXBsOiBhY3RpdmVSb3dzKFtDSElMRC5tZXNzYWdlT3BzLm5hbWUsIENISUxELndlYnNlYXJjaC5uYW1lXSksCiAgfSk7CiAgY29uc3QgZmFjZSA9IHN1aXRlRmFjZShyZWdpc3RyYXRpb25zKTsKICBjb25zdCBmaXJzdCA9IG1ha2VDdHgoeyByZWplY3RGb3I6IENISUxELm1lc3NhZ2VPcHMubmFtZSB9KTsKICBhd2FpdCBmYWNlLl9fdGVzdC5tb3VudENoaWxkcmVuKGZpcnN0LCB7IGNyZWF0ZTogZmFrZUNyZWF0ZSB9KTsKICBhd2FpdCBuZXcgUHJvbWlzZSgocmVzb2x2ZSkgPT4gc2V0VGltZW91dChyZXNvbHZlLCAwKSk7CiAgY29uc3Qgc2Vjb25kID0gbWFrZUN0eCgpOwogIGF3YWl0IGZhY2UuX190ZXN0Lm1vdW50Q2hpbGRyZW4oc2Vjb25kLCB7IGNyZWF0ZTogZmFrZUNyZWF0ZSB9KTsKICBhc3NlcnQuZGVlcEVxdWFsKHNlY29uZC5tb3VudGVkLm1hcCgoZW50cnkpID0+IGVudHJ5Lm5hbWUpLCBbQ0hJTEQubWVzc2FnZU9wcy5uYW1lXSk7Cn0pOwoKdGVzdCgiZGlzcG9zaW5nIHRoZSBzdWl0ZSByZWxlYXNlcyBpdHMgbW91bnQgY2xhaW1zIGZvciB0aGUgbmV4dCBhcHBseSIsIGFzeW5jICgpID0+IHsKICBjb25zdCB7IHJlZ2lzdHJhdGlvbnMgfSA9IGxvYWRCdW5kbGUoeyBmZXRjaEltcGw6IGFjdGl2ZVJvd3MoW0NISUxELm1lc3NhZ2VPcHMubmFtZV0pIH0pOwogIGNvbnN0IGZhY2UgPSBzdWl0ZUZhY2UocmVnaXN0cmF0aW9ucyk7CiAgbGV0IGRpc3Bvc2U7CiAgY29uc3QgY3R4ID0gewogICAgbW91bnRlZDogW10sCiAgICBlZmZlY3QoZm4pIHsgZGlzcG9zZSA9IGZuKCk7IH0sCiAgICBwbHVnaW4oZGVmaW5pdGlvbikgeyB0aGlzLm1vdW50ZWQucHVzaChkZWZpbml0aW9uKTsgcmV0dXJuIFByb21pc2UucmVzb2x2ZSgpOyB9LAogIH07CiAgZmFjZS5hcHBseShjdHgsIHsgY3JlYXRlOiBmYWtlQ3JlYXRlIH0pOwogIGF3YWl0IG5ldyBQcm9taXNlKChyZXNvbHZlKSA9PiBzZXRUaW1lb3V0KHJlc29sdmUsIDIwKSk7CiAgYXNzZXJ0LmRlZXBFcXVhbChjdHgubW91bnRlZC5tYXAoKGVudHJ5KSA9PiBlbnRyeS5uYW1lKSwgW0NISUxELm1lc3NhZ2VPcHMubmFtZV0pOwogIGFzc2VydC5lcXVhbChmYWNlLl9fdGVzdC5tb3VudGVkUmVnaXN0cnkoKS5oYXMoQ0hJTEQubWVzc2FnZU9wcy5uYW1lKSwgdHJ1ZSk7CiAgZGlzcG9zZSgpOwogIGFzc2VydC5lcXVhbChmYWNlLl9fdGVzdC5tb3VudGVkUmVnaXN0cnkoKS5oYXMoQ0hJTEQubWVzc2FnZU9wcy5uYW1lKSwgZmFsc2UpOwogIGNvbnN0IHNlY29uZCA9IG1ha2VDdHgoKTsKICBhd2FpdCBmYWNlLl9fdGVzdC5tb3VudENoaWxkcmVuKHNlY29uZCwgeyBjcmVhdGU6IGZha2VDcmVhdGUgfSk7CiAgYXNzZXJ0LmRlZXBFcXVhbChzZWNvbmQubW91bnRlZC5tYXAoKGVudHJ5KSA9PiBlbnRyeS5uYW1lKSwgW0NISUxELm1lc3NhZ2VPcHMubmFtZV0pOwp9KTsKCnRlc3QoImEgc2Vjb25kIGJyaWRnZSBwYXNzIGRvZXMgbm90IGRvdWJsZS1tb3VudCBjbGFpbWVkIGNoaWxkcmVuIiwgYXN5bmMgKCkgPT4gewogIGNvbnN0IHsgcmVnaXN0cmF0aW9ucyB9ID0gbG9hZEJ1bmRsZSh7CiAgICBmZXRjaEltcGw6IGFjdGl2ZVJvd3MoW0NISUxELm1lc3NhZ2VPcHMubmFtZSwgQ0hJTEQud2Vic2VhcmNoLm5hbWVdKSwKICB9KTsKICBjb25zdCBmYWNlID0gc3VpdGVGYWNlKHJlZ2lzdHJhdGlvbnMpOwogIGNvbnN0IGN0eCA9IG1ha2VDdHgoKTsKICBhd2FpdCBmYWNlLl9fdGVzdC5tb3VudENoaWxkcmVuKGN0eCwgeyBjcmVhdGU6IGZha2VDcmVhdGUgfSk7CiAgYXdhaXQgZmFjZS5fX3Rlc3QubW91bnRDaGlsZHJlbihjdHgsIHsgY3JlYXRlOiBmYWtlQ3JlYXRlIH0pOwogIGFzc2VydC5kZWVwRXF1YWwoCiAgICBjdHgubW91bnRlZC5tYXAoKGVudHJ5KSA9PiBlbnRyeS5uYW1lKS5zb3J0KCksCiAgICBbQ0hJTEQubWVzc2FnZU9wcy5uYW1lLCBDSElMRC53ZWJzZWFyY2gubmFtZV0uc29ydCgpLAogICk7Cn0pOwo=
+import test from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import vm from "node:vm";
+
+const BUNDLE = join(import.meta.dirname, "..", "client", "index.js");
+const SUITE = "@240xu/dsh-plugin-hub";
+const CHILD = {
+  messageOps: { name: "@240xu/dsh-message-ops", moduleId: "@240xu/dsh-plugin-hub/client/message-ops" },
+  websearch: { name: "@240xu/dsh-websearch", moduleId: "@240xu/dsh-plugin-hub/client/websearch" },
+};
+
+function loadBundle({ entries = [], fetchImpl } = {}) {
+  const registrations = new Map();
+  const boot = { entries };
+  const sandbox = {
+    console: { log() {}, warn() {}, error() {} },
+    setTimeout,
+    clearTimeout,
+    AbortController,
+    URL,
+    Promise,
+    fetch: fetchImpl ?? (async () => {
+      throw new Error("offline");
+    }),
+    __DSH_BOOT__: boot,
+  };
+  sandbox.window = {
+    __DSH_BOOT__: boot,
+    __ModuleLoader__: {
+      load(registration) {
+        registrations.set(registration.id, registration);
+      },
+    },
+  };
+  vm.createContext(sandbox);
+  vm.runInContext(readFileSync(BUNDLE, "utf8"), sandbox, { filename: BUNDLE });
+  return { registrations };
+}
+
+function suiteFace(registrations) {
+  const registration = registrations.get(SUITE);
+  assert.ok(registration, "suite graph registration missing");
+  const face = registration.factory((id) => {
+    throw new Error(`factory must not require ${id}`);
+  });
+  assert.equal(typeof face.apply, "function");
+  assert.equal(face.inject?.length ?? 0, 0);
+  return face;
+}
+
+function activeRows(children) {
+  return async () => ({
+    ok: true,
+    async json() {
+      return { ok: true, children };
+    },
+  });
+}
+
+function makeCtx({ throwFor, rejectFor } = {}) {
+  const mounted = [];
+  return {
+    mounted,
+    plugin(definition) {
+      if (definition.name === throwFor) throw new Error(`boom ${definition.name}`);
+      if (definition.name === rejectFor) return Promise.reject(new Error(`reject ${definition.name}`));
+      mounted.push(definition);
+      return Promise.resolve();
+    },
+    effect() {},
+  };
+}
+
+function fakeCreate(child) {
+  return {
+    default: {
+      apply() {},
+      inject: child.name === CHILD.websearch.name ? ["slots", "locale"] : ["slots"],
+    },
+  };
+}
+
+test("composed bundle registers exactly one suite graph entry", () => {
+  const { registrations } = loadBundle();
+  assert.deepEqual([...registrations.keys()], [SUITE]);
+});
+
+test("folded child bundles capture a factory without materializing it", () => {
+  const { registrations } = loadBundle();
+  const face = suiteFace(registrations);
+  assert.deepEqual(
+    [...face.__test.CHILDREN].map((child) => [child.name, child.moduleId]),
+    [
+      [CHILD.messageOps.name, CHILD.messageOps.moduleId],
+      [CHILD.websearch.name, CHILD.websearch.moduleId],
+    ],
+  );
+  for (const child of face.__test.CHILDREN) {
+    assert.equal(typeof child.capture(), "function", `${child.name} did not register a factory`);
+  }
+});
+
+test("suite bridge mounts only rows reported active by the host ledger", async () => {
+  const { registrations } = loadBundle({ fetchImpl: activeRows([CHILD.messageOps.name]) });
+  const face = suiteFace(registrations);
+  const ctx = makeCtx();
+  await face.__test.mountChildren(ctx, { create: fakeCreate });
+  assert.deepEqual(ctx.mounted.map((entry) => entry.name), [CHILD.messageOps.name]);
+  assert.deepEqual([...ctx.mounted[0].inject], ["slots"]);
+});
+
+test("rows-route failure fails open and mounts every folded child", async () => {
+  const { registrations } = loadBundle({
+    fetchImpl: async () => {
+      throw new Error("offline");
+    },
+  });
+  const face = suiteFace(registrations);
+  const ctx = makeCtx();
+  await face.__test.mountChildren(ctx, { create: fakeCreate });
+  assert.deepEqual(
+    ctx.mounted.map((entry) => entry.name).sort(),
+    [CHILD.messageOps.name, CHILD.websearch.name].sort(),
+  );
+});
+
+test("a child that already owns a standalone graph entry is not double-mounted", async () => {
+  const { registrations } = loadBundle({
+    entries: [CHILD.websearch.name],
+    fetchImpl: activeRows([CHILD.messageOps.name, CHILD.websearch.name]),
+  });
+  const face = suiteFace(registrations);
+  const ctx = makeCtx();
+  await face.__test.mountChildren(ctx, { create: fakeCreate });
+  assert.deepEqual(ctx.mounted.map((entry) => entry.name), [CHILD.messageOps.name]);
+});
+
+test("one folded child throwing does not stop its sibling", async () => {
+  const { registrations } = loadBundle({
+    fetchImpl: activeRows([CHILD.messageOps.name, CHILD.websearch.name]),
+  });
+  const face = suiteFace(registrations);
+  const ctx = makeCtx({ throwFor: CHILD.messageOps.name });
+  await face.__test.mountChildren(ctx, { create: fakeCreate });
+  assert.deepEqual(ctx.mounted.map((entry) => entry.name), [CHILD.websearch.name]);
+});
+
+test("a child whose fiber rejects is released for a later bridge pass", async () => {
+  const { registrations } = loadBundle({
+    fetchImpl: activeRows([CHILD.messageOps.name, CHILD.websearch.name]),
+  });
+  const face = suiteFace(registrations);
+  const first = makeCtx({ rejectFor: CHILD.messageOps.name });
+  await face.__test.mountChildren(first, { create: fakeCreate });
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  const second = makeCtx();
+  await face.__test.mountChildren(second, { create: fakeCreate });
+  assert.deepEqual(second.mounted.map((entry) => entry.name), [CHILD.messageOps.name]);
+});
+
+test("disposing the suite releases its mount claims for the next apply", async () => {
+  const { registrations } = loadBundle({ fetchImpl: activeRows([CHILD.messageOps.name]) });
+  const face = suiteFace(registrations);
+  let dispose;
+  const ctx = {
+    mounted: [],
+    effect(fn) { dispose = fn(); },
+    plugin(definition) { this.mounted.push(definition); return Promise.resolve(); },
+  };
+  face.apply(ctx, { create: fakeCreate });
+  await new Promise((resolve) => setTimeout(resolve, 20));
+  assert.deepEqual(ctx.mounted.map((entry) => entry.name), [CHILD.messageOps.name]);
+  assert.equal(face.__test.mountedRegistry().has(CHILD.messageOps.name), true);
+  dispose();
+  assert.equal(face.__test.mountedRegistry().has(CHILD.messageOps.name), false);
+  const second = makeCtx();
+  await face.__test.mountChildren(second, { create: fakeCreate });
+  assert.deepEqual(second.mounted.map((entry) => entry.name), [CHILD.messageOps.name]);
+});
+
+test("a second bridge pass does not double-mount claimed children", async () => {
+  const { registrations } = loadBundle({
+    fetchImpl: activeRows([CHILD.messageOps.name, CHILD.websearch.name]),
+  });
+  const face = suiteFace(registrations);
+  const ctx = makeCtx();
+  await face.__test.mountChildren(ctx, { create: fakeCreate });
+  await face.__test.mountChildren(ctx, { create: fakeCreate });
+  assert.deepEqual(
+    ctx.mounted.map((entry) => entry.name).sort(),
+    [CHILD.messageOps.name, CHILD.websearch.name].sort(),
+  );
+});
