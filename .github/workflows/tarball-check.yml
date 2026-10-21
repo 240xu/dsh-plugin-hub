@@ -1,0 +1,18 @@
+name: tarball-check
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check
+        run: |
+          V=$(curl -fsSL https://registry.npmjs.org/@240xu%2Fdsh-plugin-hub | python3 -c "import json,sys;print(json.load(sys.stdin)['dist-tags']['latest'])")
+          echo "LATEST=$V"
+          URL=$(curl -fsSL https://registry.npmjs.org/@240xu%2Fdsh-plugin-hub/$V | python3 -c "import json,sys;print(json.load(sys.stdin)['dist']['tarball'])")
+          curl -fsSL "$URL" -o /tmp/p.tgz
+          tar -xOf /tmp/p.tgz package/package.json > /tmp/pkg.json
+          python3 -c "import json;d=json.load(open('/tmp/pkg.json'));print('DEPS',sorted(d.get('dependencies',{})));print('HAS_INSPECTOR',any('inspector' in k for k in d.get('dependencies',{})))"
+          tar -xOf /tmp/p.tgz package/cordis.patch.yml | grep -E "experimental-inspector|session-inspector" | head -4
