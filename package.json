@@ -1,1 +1,64 @@
-ewogICJuYW1lIjogIkAyNDB4dS9kc2gtcGx1Z2luLWh1YiIsCiAgInZlcnNpb24iOiAiMC4yLjAiLAogICJkZXNjcmlwdGlvbiI6ICJPbmUtbGluZSBEU0ggcGx1Z2luIGJ1bmRsZTogYWdncmVnYXRlcyB3ZWJzZWFyY2gsIG1lc3NhZ2Utb3BzLCBzZXNzaW9uLWxhenktdmlldyBhbmQgc2Vzc2lvbi1zZWFyY2ggd2l0aCBwZXItcm93IGZhaWx1cmUgaXNvbGF0aW9uLiDkuIDplK7lronoo4XnmoQgRFNIIOaPkuS7tuiBmuWQiOWMheOAgiIsCiAgInR5cGUiOiAibW9kdWxlIiwKICAibGljZW5zZSI6ICJNSVQiLAogICJhdXRob3IiOiAiMjQweHUiLAogICJrZXl3b3JkcyI6IFsKICAgICJkc2gtcGx1Z2luIgogIF0sCiAgIm1haW4iOiAic3JjL2luZGV4LmpzIiwKICAiZXhwb3J0cyI6IHsKICAgICIuIjogIi4vc3JjL2luZGV4LmpzIiwKICAgICIuL2NsaWVudCI6ICIuL2NsaWVudC9pbmRleC5qcyIsCiAgICAiLi9zaGVsbCI6ICIuL3NyYy9zaGVsbC5qcyIsCiAgICAiLi93ZWJzZWFyY2giOiAiLi9zcmMvc2hlbGwuanMiLAogICAgIi4vbWVzc2FnZS1vcHMiOiAiLi9zcmMvc2hlbGwuanMiLAogICAgIi4vc2Vzc2lvbi1sYXp5LXZpZXciOiAiLi9zcmMvc2hlbGwuanMiLAogICAgIi4vZGV2a2l0IjogIi4vc3JjL3NoZWxsLmpzIiwKICAgICIuL3Nlc3Npb24tc2VhcmNoIjogIi4vc3JjL3NoZWxsLmpzIiwKICAgICIuL2RlZ3JhZGVkIjogIi4vc3JjL3NoZWxsLmpzIiwKICAgICIuL3BhY2thZ2UuanNvbiI6ICIuL3BhY2thZ2UuanNvbiIKICB9LAogICJmaWxlcyI6IFsKICAgICJzcmMiLAogICAgImNsaWVudCIsCiAgICAic2NyaXB0cyIsCiAgICAiY29yZGlzLnBhdGNoLnltbCIsCiAgICAiUkVBRE1FLm1kIiwKICAgICJMSUNFTlNFIgogIF0sCiAgImRzaCI6IHsKICAgICJidW5kbGUiOiB7CiAgICAgICJwYXRjaCI6ICIuL2NvcmRpcy5wYXRjaC55bWwiCiAgICB9LAogICAgImNsaWVudCI6IHsKICAgICAgImluamVjdCI6IFtdLAogICAgICAicGxhdGZvcm0iOiAid2ViIgogICAgfQogIH0sCiAgImRlcGVuZGVuY2llcyI6IHsKICAgICJAMjQweHUvZHNoLXdlYnNlYXJjaCI6ICJeMi44LjMiLAogICAgIkAyNDB4dS9kc2gtbWVzc2FnZS1vcHMiOiAiXjAuMTEuMCIsCiAgICAiQDI0MHh1L2RzaC1zZXNzaW9uLWxhenktdmlldyI6ICJeMC4zLjUiLAogICAgIkAyNDB4dS9kc2gtc2Vzc2lvbi1zZWFyY2giOiAiXjAuMS4xMCIKICB9LAogICJzY3JpcHRzIjogewogICAgImJ1aWxkOmNsaWVudCI6ICJub2RlIHNjcmlwdHMvYnVpbGQtY2xpZW50Lm1qcyIsCiAgICAiY2hlY2s6Y2xpZW50IjogIm5vZGUgc2NyaXB0cy9idWlsZC1jbGllbnQubWpzIC0tY2hlY2siLAogICAgInByZXBhY2siOiAibm9kZSBzY3JpcHRzL2J1aWxkLWNsaWVudC5tanMgLS1jaGVjayIsCiAgICAidGVzdCI6ICJub2RlIC0tdGVzdCB0ZXN0LyoudGVzdC5qcyIKICB9LAogICJlbmdpbmVzIjogewogICAgIm5vZGUiOiAiPj0yMCIKICB9LAogICJyZXBvc2l0b3J5IjogewogICAgInR5cGUiOiAiZ2l0IiwKICAgICJ1cmwiOiAiZ2l0K2h0dHBzOi8vZ2l0aHViLmNvbS8yNDB4dS9kc2gtcGx1Z2luLWh1Yi5naXQiCiAgfSwKICAiaG9tZXBhZ2UiOiAiaHR0cHM6Ly9naXRodWIuY29tLzI0MHh1L2RzaC1wbHVnaW4taHViI3JlYWRtZSIsCiAgImJ1Z3MiOiB7CiAgICAidXJsIjogImh0dHBzOi8vZ2l0aHViLmNvbS8yNDB4dS9kc2gtcGx1Z2luLWh1Yi9pc3N1ZXMiCiAgfQp9Cg==
+{
+  "name": "@240xu/dsh-plugin-hub",
+  "version": "0.2.0",
+  "description": "One-line DSH plugin bundle: aggregates websearch, message-ops, session-lazy-view and session-search with per-row failure isolation. 一键安装的 DSH 插件聚合包。",
+  "type": "module",
+  "license": "MIT",
+  "author": "240xu",
+  "keywords": [
+    "dsh-plugin"
+  ],
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./client/index.js",
+    "./shell": "./src/shell.js",
+    "./websearch": "./src/shell.js",
+    "./message-ops": "./src/shell.js",
+    "./session-lazy-view": "./src/shell.js",
+    "./devkit": "./src/shell.js",
+    "./session-search": "./src/shell.js",
+    "./degraded": "./src/shell.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "client",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "dependencies": {
+    "@240xu/dsh-websearch": "^2.8.3",
+    "@240xu/dsh-message-ops": "^0.11.0",
+    "@240xu/dsh-session-lazy-view": "^0.3.5",
+    "@240xu/dsh-session-search": "^0.1.10"
+  },
+  "scripts": {
+    "build:client": "node scripts/build-client.mjs",
+    "check:client": "node scripts/build-client.mjs --check",
+    "prepack": "node scripts/build-client.mjs --check",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/240xu/dsh-plugin-hub.git"
+  },
+  "homepage": "https://github.com/240xu/dsh-plugin-hub#readme",
+  "bugs": {
+    "url": "https://github.com/240xu/dsh-plugin-hub/issues"
+  }
+}
