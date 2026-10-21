@@ -1,6 +1,6 @@
 {
   "name": "@240xu/dsh-plugin-hub",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "One-line DSH plugin bundle: aggregates websearch, message-ops, session-lazy-view and session-search with per-row failure isolation. 一键安装的 DSH 插件聚合包。",
   "type": "module",
   "license": "MIT",
@@ -42,7 +42,8 @@
     "@240xu/dsh-websearch": "^2.8.3",
     "@240xu/dsh-message-ops": "^0.11.0",
     "@240xu/dsh-session-lazy-view": "^0.3.5",
-    "@240xu/dsh-session-search": "^0.1.10"
+    "@240xu/dsh-session-search": "^0.1.10",
+    "@deepseek-ai/dsh-experimental-inspector-profile": "0.2.1-rc.2"
   },
   "scripts": {
     "build:client": "node scripts/build-client.mjs",
