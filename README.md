@@ -11,7 +11,7 @@ dsh plugin --profile web add @240xu/dsh-plugin-hub@latest
 dsh web
 ```
 
-安装即引入四个子包（dependencies caret 区间）并挂载四条 family 行 + 一条裸锚行 +
+安装即引入四个社区子包 + 官方 Inspector bundle（dependencies caret 区间）并挂载四条 family 行 + 一条裸锚行 +
 一条 web 接线行：
 
 | 行 id | 子路径 / 入口 | 真实插件 |
@@ -21,6 +21,8 @@ dsh web
 | x240-message-ops | @240xu/dsh-plugin-hub/message-ops | @240xu/dsh-message-ops ^0.11.0 |
 | x240-session-lazy-view | @240xu/dsh-plugin-hub/session-lazy-view | @240xu/dsh-session-lazy-view ^0.3.5 |
 | x240-session-search | @240xu/dsh-plugin-hub/session-search | @240xu/dsh-session-search ^0.1.10 |
+| experimental-inspector | `@deepseek-ai/dsh-experimental-inspector` | 官方 Inspector（DevTools / 请求抓取 / session 日志） |
+| session-inspector | `@deepseek-ai/dsh-experimental-session-inspector` | 官方 Session 检查器 |
 
 `x240-suite` 只承载 client graph entry 与观测路由；禁用它会关闭浏览器 UI
 （四条 host 行仍继续工作）。只想关某个 UI 时，disable 对应的 family 行即可。
