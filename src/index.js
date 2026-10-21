@@ -1,1 +1,7 @@
-aW1wb3J0IHNoZWxsLCB7IGFwcGx5LCBpbmplY3QsIGxpc3RBY3RpdmVSb3dzLCBsaXN0RGVncmFkZWQgfSBmcm9tICIuL3NoZWxsLmpzIjsKCmV4cG9ydCB7IGFwcGx5LCBpbmplY3QsIGxpc3RBY3RpdmVSb3dzLCBsaXN0RGVncmFkZWQgfTsKCmV4cG9ydCBjb25zdCBuYW1lID0gIkAyNDB4dS9kc2gtcGx1Z2luLWh1YiI7CgpleHBvcnQgZGVmYXVsdCB7IC4uLnNoZWxsLCBuYW1lLCBpbmplY3QsIGFwcGx5IH07Cg==
+import shell, { apply, inject, listActiveRows, listDegraded } from "./shell.js";
+
+export { apply, inject, listActiveRows, listDegraded };
+
+export const name = "@240xu/dsh-plugin-hub";
+
+export default { ...shell, name, inject, apply };
