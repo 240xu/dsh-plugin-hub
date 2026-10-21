@@ -1,0 +1,17 @@
+name: npm-debug
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug
+        run: |
+          set -x
+          curl -sS -o /tmp/p.json -w "%{http_code}\n" https://registry.npmjs.org/@240xu%2Fdsh-plugin-hub
+          head -c 400 /tmp/p.json; echo
+          npm view @240xu/dsh-plugin-hub versions --json --registry=https://registry.npmjs.org/ || true
+          npm view @240xu/dsh-plugin-hub@0.3.1 version --registry=https://registry.npmjs.org/ || true
+          npm view @240xu/dsh-plugin-hub@0.3.0 version --registry=https://registry.npmjs.org/ || true
