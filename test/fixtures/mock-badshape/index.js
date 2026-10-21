@@ -1,1 +1,1 @@
-export const notAPlugin = true;
+ZXhwb3J0IGNvbnN0IG5vdEFQbHVnaW4gPSB0cnVlOwo=

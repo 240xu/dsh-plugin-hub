@@ -1,1 +1,1 @@
-export function apply() { throw new Error("boom at start"); }
+ZXhwb3J0IGZ1bmN0aW9uIGFwcGx5KCkgeyB0aHJvdyBuZXcgRXJyb3IoImJvb20gYXQgc3RhcnQiKTsgfQo=

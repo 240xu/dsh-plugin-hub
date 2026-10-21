@@ -1,2 +1,1 @@
-// import 一个必然不存在的包：模拟子包依赖损坏（ERR_MODULE_NOT_FOUND）
-import "nonexistent-package-xyz";
+Ly8gaW1wb3J0IOS4gOS4quW/heeEtuS4jeWtmOWcqOeahOWMhe+8muaooeaLn+WtkOWMheS+nei1luaNn+Wdj++8iEVSUl9NT0RVTEVfTk9UX0ZPVU5E77yJCmltcG9ydCAibm9uZXhpc3RlbnQtcGFja2FnZS14eXoiOwo=

@@ -1,5 +1,1 @@
-let started = 0;
-export const name = "mock-good";
-export const inject = [];
-export function apply(ctx, config) { started++; return { config }; }
-export function startCount() { return started; }
+bGV0IHN0YXJ0ZWQgPSAwOwpleHBvcnQgY29uc3QgbmFtZSA9ICJtb2NrLWdvb2QiOwpleHBvcnQgY29uc3QgaW5qZWN0ID0gW107CmV4cG9ydCBmdW5jdGlvbiBhcHBseShjdHgsIGNvbmZpZykgeyBzdGFydGVkKys7IHJldHVybiB7IGNvbmZpZyB9OyB9CmV4cG9ydCBmdW5jdGlvbiBzdGFydENvdW50KCkgeyByZXR1cm4gc3RhcnRlZDsgfQo=
