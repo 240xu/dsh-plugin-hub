@@ -1,0 +1,20 @@
+name: cf-tunnel-audit
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query tunnel config
+        env:
+          CF_TOKEN: ${{ secrets.CF_TOKEN }}
+        run: |
+          set -e
+          ACCOUNT=b9bcfd7a8ef1ed6c6a137965eb5f84c3
+          TUN=0bd43504-7867-4c8b-9da6-21267ed190dd
+          echo "== tunnel =="
+          curl -fsSL -H "Authorization: Bearer $CF_TOKEN" "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT/cfd_tunnel/$TUN" | python3 -m json.tool | head -60
+          echo "== configurations =="
+          curl -fsSL -H "Authorization: Bearer $CF_TOKEN" "https://api.cloudflare.com/client/v4/accounts/$ACCOUNT/cfd_tunnel/$TUN/configurations" | python3 -m json.tool | head -120
