@@ -1,0 +1,13 @@
+name: verify-npm
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query registry
+        run: |
+          npm view @240xu/dsh-plugin-hub version dist-tags repository.url --registry=https://registry.npmjs.org/
+          npm view @240xu/dsh-suite version deprecated --registry=https://registry.npmjs.org/
